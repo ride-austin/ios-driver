@@ -1,0 +1,334 @@
+PODS:
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - BugfenderSDK/ObjC (1.6.6)
+  - Crashlytics (3.10.9):
+    - Fabric (~> 1.7.13)
+  - CZPhotoPickerController (1.2.5)
+  - DACircularProgress (2.3.1)
+  - Fabric (1.7.13)
+  - FBSDKCoreKit (4.44.1):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.44.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.44.1):
+    - FBSDKCoreKit
+  - Firebase/Analytics (6.5.0):
+    - Firebase/Core
+  - Firebase/Core (6.5.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.0.4)
+  - Firebase/CoreOnly (6.5.0):
+    - FirebaseCore (= 6.1.0)
+  - Firebase/InAppMessagingDisplay (6.5.0):
+    - Firebase/CoreOnly
+    - FirebaseInAppMessagingDisplay (~> 0.15.2)
+  - Firebase/Messaging (6.5.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 4.1.1)
+  - Firebase/RemoteConfig (6.5.0):
+    - Firebase/CoreOnly
+    - FirebaseRemoteConfig (~> 4.2.1)
+  - FirebaseABTesting (3.1.1):
+    - FirebaseAnalyticsInterop (~> 1.3)
+    - FirebaseCore (~> 6.1)
+    - Protobuf (~> 3.8)
+  - FirebaseAnalytics (6.0.4):
+    - FirebaseCore (~> 6.1)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleAppMeasurement (= 6.0.4)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 0.3)
+  - FirebaseAnalyticsInterop (1.4.0)
+  - FirebaseCore (6.1.0):
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/Logger (~> 6.0)
+  - FirebaseInAppMessaging (0.15.2):
+    - FirebaseAnalyticsInterop (~> 1.2)
+    - FirebaseCore (~> 6.0)
+    - FirebaseInstanceID (~> 4.0)
+  - FirebaseInAppMessagingDisplay (0.15.2):
+    - FirebaseCore (~> 6.0)
+    - FirebaseInAppMessaging (>= 0.15.0)
+  - FirebaseInstanceID (4.2.2):
+    - FirebaseCore (~> 6.0)
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/UserDefaults (~> 6.0)
+  - FirebaseMessaging (4.1.1):
+    - FirebaseAnalyticsInterop (~> 1.1)
+    - FirebaseCore (~> 6.0)
+    - FirebaseInstanceID (~> 4.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.2)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Reachability (~> 6.2)
+    - GoogleUtilities/UserDefaults (~> 6.2)
+    - Protobuf (~> 3.1)
+  - FirebaseRemoteConfig (4.2.1):
+    - FirebaseABTesting (~> 3.0)
+    - FirebaseCore (~> 6.1)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleUtilities/Environment (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - Protobuf (~> 3.5)
+  - GoogleAppMeasurement (6.0.4):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 0.3)
+  - GoogleMaps (3.2.0):
+    - GoogleMaps/Maps (= 3.2.0)
+  - GoogleMaps/Base (3.2.0)
+  - GoogleMaps/Maps (3.2.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.2.0):
+    - GoogleMaps/Base (= 3.2.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.2.3):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.2.3)
+  - GoogleUtilities/Logger (6.2.3):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.2.3):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.2.3):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.2.3)"
+  - GoogleUtilities/Reachability (6.2.3):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.2.3):
+    - GoogleUtilities/Logger
+  - ISO8601DateFormatterValueTransformer (0.6.1):
+    - RKValueTransformers (~> 1.1.0)
+  - LGRefreshView (1.0.5):
+    - DACircularProgress (~> 2.3.0)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - MRCountryPicker (0.0.8)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - "NSString+RemoveEmoji (1.1.0)"
+  - OHHTTPStubs (6.1.0):
+    - OHHTTPStubs/Default (= 6.1.0)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - Protobuf (3.9.0)
+  - REFormattedNumberField (1.1.6)
+  - RestKit (0.27.3):
+    - RestKit/Core (= 0.27.3)
+  - RestKit/Core (0.27.3):
+    - RestKit/CoreData
+    - RestKit/Network
+    - RestKit/ObjectMapping
+  - RestKit/CoreData (0.27.3):
+    - RestKit/ObjectMapping
+  - RestKit/Network (0.27.3):
+    - RestKit/ObjectMapping
+    - RestKit/Support
+    - SOCKit
+  - RestKit/ObjectMapping (0.27.3):
+    - ISO8601DateFormatterValueTransformer (~> 0.6.1)
+    - RestKit/Support
+    - RKValueTransformers (~> 1.1.0)
+  - RestKit/Support (0.27.3):
+    - TransitionKit (~> 2.2)
+  - Result (3.2.4)
+  - RKValueTransformers (1.1.3)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SAMKeychain (1.5.3)
+  - SDWebImage (3.8.3):
+    - SDWebImage/Core (= 3.8.3)
+  - SDWebImage/Core (3.8.3)
+  - SinchVerification (2.0.6)
+  - SOCKit (1.1)
+  - SVProgressHUD (2.2.5)
+  - TransitionKit (2.2.1)
+  - TrueTime (4.1.5):
+    - Result (~> 3.0)
+  - TTTAttributedLabel (2.0.0)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
+  - XLForm (4.0.1)
+
+DEPENDENCIES:
+  - BugfenderSDK/ObjC
+  - Crashlytics
+  - CZPhotoPickerController
+  - Fabric
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - Firebase/Analytics
+  - Firebase/Core
+  - Firebase/InAppMessagingDisplay
+  - Firebase/Messaging
+  - Firebase/RemoteConfig
+  - GoogleMaps
+  - GooglePlaces
+  - LGRefreshView (~> 1)
+  - Mantle
+  - MRCountryPicker (from `https://github.com/tedgonzalez/MRCountryPicker.git`, branch `objc`)
+  - "NSString+RemoveEmoji"
+  - OHHTTPStubs
+  - REFormattedNumberField
+  - RestKit
+  - RxCocoa
+  - SAMKeychain
+  - SDWebImage
+  - SinchVerification
+  - SVProgressHUD
+  - TrueTime (from `https://github.com/instacart/TrueTime.swift.git`, commit `8aadebabe2590d6ab295c390df5bbc109b346348`)
+  - TTTAttributedLabel
+  - UIActivityIndicator-for-SDWebImage (from `https://github.com/tedgonzalez/UIActivityIndicator-for-SDWebImage.git`)
+  - XLForm
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bolts
+    - BugfenderSDK
+    - Crashlytics
+    - CZPhotoPickerController
+    - DACircularProgress
+    - Fabric
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - Firebase
+    - FirebaseABTesting
+    - FirebaseAnalytics
+    - FirebaseAnalyticsInterop
+    - FirebaseCore
+    - FirebaseInAppMessaging
+    - FirebaseInAppMessagingDisplay
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FirebaseRemoteConfig
+    - GoogleAppMeasurement
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleUtilities
+    - ISO8601DateFormatterValueTransformer
+    - LGRefreshView
+    - Mantle
+    - nanopb
+    - "NSString+RemoveEmoji"
+    - OHHTTPStubs
+    - Protobuf
+    - REFormattedNumberField
+    - RestKit
+    - Result
+    - RKValueTransformers
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SAMKeychain
+    - SDWebImage
+    - SinchVerification
+    - SOCKit
+    - SVProgressHUD
+    - TransitionKit
+    - TTTAttributedLabel
+    - XLForm
+
+EXTERNAL SOURCES:
+  MRCountryPicker:
+    :branch: objc
+    :git: https://github.com/tedgonzalez/MRCountryPicker.git
+  TrueTime:
+    :commit: 8aadebabe2590d6ab295c390df5bbc109b346348
+    :git: https://github.com/instacart/TrueTime.swift.git
+  UIActivityIndicator-for-SDWebImage:
+    :git: https://github.com/tedgonzalez/UIActivityIndicator-for-SDWebImage.git
+
+CHECKOUT OPTIONS:
+  MRCountryPicker:
+    :commit: 2da0e003ea17c20457eb3f96f435c2e59fb29eae
+    :git: https://github.com/tedgonzalez/MRCountryPicker.git
+  TrueTime:
+    :commit: 8aadebabe2590d6ab295c390df5bbc109b346348
+    :git: https://github.com/instacart/TrueTime.swift.git
+  UIActivityIndicator-for-SDWebImage:
+    :commit: 152bcb4e4d7c3860a97e0b0f4b2da08d2cdb831d
+    :git: https://github.com/tedgonzalez/UIActivityIndicator-for-SDWebImage.git
+
+SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  BugfenderSDK: d5ad218b13df453bb072a3c46f5a29b7de6d514c
+  Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
+  CZPhotoPickerController: b8d2c5fe286e9b8d1b1143a69975d9d9eabee047
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
+  FBSDKCoreKit: a823ae35bdb60ebb8d7a7e51abe7c5d87d2bfced
+  FBSDKLoginKit: 54ae59987f2a8703021557c90a9aebb9e5c2bef6
+  FBSDKShareKit: 526d4cfb713d24855fa23d0dd74e191accd3a720
+  Firebase: dedc9e48ea3f3649ad5f6b982f8a0c73508a14b5
+  FirebaseABTesting: 662e8de812ceb5d57ad66381f6402f4d28dc5c91
+  FirebaseAnalytics: 3fb375bc9d13779add4039716f868d233a473fad
+  FirebaseAnalyticsInterop: d48b6ab67bcf016a05e55b71fc39c61c0cb6b7f3
+  FirebaseCore: aecf02fb2274ec361b9bebeac112f5daa18273bd
+  FirebaseInAppMessaging: f67c9157099d6ed58b2229e4642ac37d0c206192
+  FirebaseInAppMessagingDisplay: a06c3bd9e52e3db9f93dd58dfb425eab33543855
+  FirebaseInstanceID: 662b8108a09fe9ed01aafdedba100fde8536b0f6
+  FirebaseMessaging: 6bb0bdaf64c55fef7a219b7bb1e94e94a0855ced
+  FirebaseRemoteConfig: ed74d16d7e5b19e77a4c3e3eee4fe363039b0834
+  GoogleAppMeasurement: 183bd916af7f80deb67c01888368f1108d641832
+  GoogleMaps: 5046d7edfe381c1a0b20fdaf293915a375c3122b
+  GooglePlaces: 41bc2e480816b1234a48f4bec92e1c886f37cfe1
+  GoogleUtilities: d2b0e277a95962e09bb27f5cd42f5f0b6a506c7d
+  ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
+  LGRefreshView: 34746afadbd23de8d1449cab15f3d89269645d43
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  MRCountryPicker: 1aeea66de25cdef79dce3b91d8ad9db643c1cc01
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  "NSString+RemoveEmoji": 8bcac49d1d2ffd421fdc6582e739f2a1ea6e0fff
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
+  REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
+  RestKit: 0baa8b61899d1e00c24f4f2d8aea07ecef0c88bc
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RKValueTransformers: e5ed67e3811229b616fe01bddeeafe3bb337b1b9
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
+  SinchVerification: 3bf62ff2d57eb10ecc27796ce9736c786644fe23
+  SOCKit: c7376ac262bea9115b8f749358f762522a47d392
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
+  TrueTime: 32ce735a4735d9b7a3ba2c6833905471c9a7673a
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
+  XLForm: b8d47a9a00fb6166981cb40de7169d70d611e9be
+
+PODFILE CHECKSUM: 4a031b432c3c0cf9ec78b26eefec10958c63c32e
+
+COCOAPODS: 1.5.3
