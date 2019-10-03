@@ -28,9 +28,6 @@ jobs:
             [ ! -z "$GOOGLE_SERVICE_INFO_PLIST_QA" ] 
             echo $GOOGLE_SERVICE_INFO_PLIST_QA | base64 --decode -o FuelMeDriver/support/Plist/GoogleService-Info-QA.plist
       - run: export SRCROOT=FuelMeDriver && FuelMeDriver/scripts/infoplist.sh 
-      - run:
-          name: pre-start simulator
-          command: xcrun instruments -w "iPhone 6 (12.2) [" || true
       - restore_cache:
           key: 1-gems-{{ checksum "Gemfile.lock" }}
       - run: 
@@ -63,6 +60,9 @@ jobs:
     steps:
       - attach_workspace:
           at: .
+      - run:
+          name: pre-start simulator
+          command: xcrun instruments -w "iPhone 5S (11.4) [" || true
       - run: bundle exec fastlane unit_tests
       - store_artifacts:
           path: output

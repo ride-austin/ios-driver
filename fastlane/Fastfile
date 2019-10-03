@@ -88,7 +88,7 @@ platform :ios do
       scheme: SCHEME_DEBUG_QA,
       skip_build: false,
       clean: true,
-      device: "iPhone 6s (12.4)"
+      device: "iPhone 5s (11.4)"
     )
   end
 
