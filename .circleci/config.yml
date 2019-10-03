@@ -1,0 +1,195 @@
+# iOS CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/ios-migrating-from-1-2/ for more details
+#
+version: 2
+jobs:
+  initialize:
+    macos:
+      xcode: "11.0.0"
+    environment:
+      FL_OUTPUT_DIR: output
+    steps:
+      - checkout
+      - run: mkdir FuelMeDriver/support/Plist
+      - run:
+          name: Map GoogleService-Info-Production.plist
+          command: |
+            [ ! -z "$GOOGLE_SERVICE_INFO_PLIST_PRODUCTION" ] 
+            echo $GOOGLE_SERVICE_INFO_PLIST_PRODUCTION | base64 --decode -o FuelMeDriver/support/Plist/GoogleService-Info-Production.plist
+      - run:
+          name: Map GoogleService-Info-ProductionEnterprise.plist
+          command: |
+            [ ! -z "$GOOGLE_SERVICE_INFO_PLIST_PRODUCTION_ENTERPRISE" ] 
+            echo $GOOGLE_SERVICE_INFO_PLIST_PRODUCTION_ENTERPRISE | base64 --decode -o FuelMeDriver/support/Plist/GoogleService-Info-ProductionEnterprise.plist
+      - run:
+          name: Map GoogleService-Info-QA.plist
+          command: |
+            [ ! -z "$GOOGLE_SERVICE_INFO_PLIST_QA" ] 
+            echo $GOOGLE_SERVICE_INFO_PLIST_QA | base64 --decode -o FuelMeDriver/support/Plist/GoogleService-Info-QA.plist
+      - run: export SRCROOT=FuelMeDriver && FuelMeDriver/scripts/infoplist.sh 
+      - run:
+          name: pre-start simulator
+          command: xcrun instruments -w "iPhone 6 (12.2) [" || true
+      - restore_cache:
+          key: 1-gems-{{ checksum "Gemfile.lock" }}
+      - run: 
+          name: Install gems
+          command: bundle install --path circle_vendor/bundle
+      - save_cache:
+          key: 1-gems-{{ checksum "Gemfile.lock" }}
+          paths:
+            - circle_vendor/bundle
+      - restore_cache:
+          key: 1-pods-{{ checksum "Podfile.lock" }}
+      - run:
+          name: Install CocoaPods
+          command: |
+            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
+            bundle exec pod install
+      - save_cache:
+          key: 1-pods-{{ checksum "Podfile.lock" }}
+          paths:
+            - ./Pods
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+  unit-tests:
+    macos:
+      xcode: "11.0.0"
+    environment:
+      FL_OUTPUT_DIR: output
+    steps:
+      - attach_workspace:
+          at: .
+      - run: bundle exec fastlane unit_tests
+      - store_artifacts:
+          path: output
+      - store_test_results:
+          path: output/scan
+  upload-qa:
+    macos:
+      xcode: "11.0.0"
+    steps:
+      - attach_workspace:
+          at: .
+      - add_ssh_keys: 
+          fingerprints:
+            - "25:d8:d7:7b:20:a3:1a:62:96:72:34:10:5d:2a:92:9d"
+            - "fa:f9:91:c4:51:b6:ab:85:bb:ca:bf:d2:b6:70:ca:db"
+      - run:
+          name: Build QA
+          command: bundle exec fastlane qa
+  upload-production:
+    macos:
+      xcode: "11.0.0"
+    steps:
+      - attach_workspace:
+          at: .
+      - add_ssh_keys: 
+            fingerprints:
+              - "25:d8:d7:7b:20:a3:1a:62:96:72:34:10:5d:2a:92:9d"
+              - "fa:f9:91:c4:51:b6:ab:85:bb:ca:bf:d2:b6:70:ca:db"
+      - run:
+          name: Build Production
+          command: bundle exec fastlane prod
+      - run:
+          name: Build Production Enterprise
+          command: bundle exec fastlane prodenterprise
+  building-tests-qa:
+    macos:
+      xcode: "11.0.0"
+    steps:
+      - attach_workspace:
+          at: .
+      - add_ssh_keys:
+          fingerprints:
+            - "25:d8:d7:7b:20:a3:1a:62:96:72:34:10:5d:2a:92:9d"
+            - "fa:f9:91:c4:51:b6:ab:85:bb:ca:bf:d2:b6:70:ca:db"
+      - run:
+          name: Build QA
+          command: bundle exec fastlane qa skipupload:true
+  building-tests-prod:
+    macos:
+      xcode: "11.0.0"
+    steps:
+      - attach_workspace:
+          at: .
+      - add_ssh_keys:
+          fingerprints:
+            - "25:d8:d7:7b:20:a3:1a:62:96:72:34:10:5d:2a:92:9d"
+            - "fa:f9:91:c4:51:b6:ab:85:bb:ca:bf:d2:b6:70:ca:db"
+      - run:
+          name: Build Production
+          command: bundle exec fastlane prod skipupload:true
+  building-tests-prodenterprise:
+    macos:
+      xcode: "11.0.0"
+    steps:
+      - attach_workspace:
+          at: .
+      - add_ssh_keys:
+          fingerprints:
+            - "25:d8:d7:7b:20:a3:1a:62:96:72:34:10:5d:2a:92:9d"
+            - "fa:f9:91:c4:51:b6:ab:85:bb:ca:bf:d2:b6:70:ca:db"
+      - run:
+          name: Build Production Enterprise
+          command: bundle exec fastlane prodenterprise skipupload:true
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - initialize
+      - unit-tests:
+          requires:
+            - initialize
+          filters:
+            branches: 
+              ignore:
+                - develop
+                - master
+                - /release.*/
+      - building-tests-qa:
+          requires: 
+            - initialize
+          filters:
+            branches: 
+              ignore:
+                - develop
+                - master
+                - /release.*/
+      - building-tests-prod:
+          requires: 
+            - initialize
+          filters:
+            branches: 
+              ignore:
+                - develop
+                - master
+                - /release.*/
+      - building-tests-prodenterprise:
+          requires: 
+            - initialize
+          filters:
+            branches: 
+              ignore:
+                - develop
+                - master
+                - /release.*/
+      - upload-qa:
+          requires: 
+            - initialize
+          filters:
+            branches:
+              only: 
+                - develop
+      - upload-production:
+          requires: 
+            - initialize
+          filters:
+            branches:
+              only: 
+                - /release.*/
+
