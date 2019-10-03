@@ -1,0 +1,21 @@
+*.orig
+*.xcuserdatad
+fastlane/README.md
+fastlane/report.xml
+fastlane/.env.default
+.DS_Store
+AppConfig.m
+Pods/
+.idea
+
+#added because circle ci installs bundle to path: circle_vendor/bundle
+circle_vendor
+.bundle
+
+# Google/Firebase services
+#
+FuelMeDriver/support/Plist/GoogleService-Info.plist
+FuelMeDriver/support/Plist/GoogleService-Info-Production.plist
+FuelMeDriver/support/Plist/GoogleService-Info-ProductionEnterprise.plist
+FuelMeDriver/support/Plist/GoogleService-Info-QA.plist
+FuelMeDriver/support/Plist/RideDriverEnterprise-Info.plist
