@@ -1,0 +1,54 @@
+//
+//  FuelMeDriver-Prefix.pch
+//  FuelMeDriver
+//
+//  Created by Tyson Bunch on 12/31/14.
+//  Copyright (c) 2014 FuelMe LLC. All rights reserved.
+//
+
+#ifndef RideDriver_RideDriver_Prefix_pch
+#define RideDriver_RideDriver_Prefix_pch
+
+#define IS_EMPTY(value) (((value) == (id)[NSNull null] || (value) == nil || ([(value) isKindOfClass:[NSString class]] && ([(id)(value) isEqualToString:@""] || [(id)(value) isEqualToString:@"<null>"]))) ? YES : NO)
+#define IS_NULL(original) ((original) == (id)[NSNull null])
+#define IF_NULL(original, replacement) (IS_NULL((original)) ? (replacement) : (original))
+#define SAFE_STRING(value) (IF_NULL((value), @""))
+
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:(v) options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+
+// ******************* DEVICE INDENTIFICATION MACROS *****************//
+#define IS_IPAD             (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE           (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_IPHONE4          (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 480.0f)
+#define IS_IPHONE4S         (IS_IPHONE && [[UIScreen mainScreen] nativeBounds].size.height == 960.0f)
+#define IS_IPHONE5          (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0f)
+#define IS_IPHONE6          (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 667.0)
+#define IS_IPHONE6PLUS      (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 736.0)
+#define IS_RETINA           ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && ([UIScreen mainScreen].scale == 2.0))
+
+#define IS_LESS_THAN_VERSION(version)   ([[[UIDevice currentDevice] systemVersion] floatValue] < version)
+#define IS_GREATER_THAN_VERSION(version)   ([[[UIDevice currentDevice] systemVersion] floatValue] > version)
+#define IS_GREATER_THAN_OR_EQUAL_VERSION(version)   ([[[UIDevice currentDevice] systemVersion] floatValue] >= version)
+
+#ifdef DEBUG
+#define DBLog(x, ...) NSLog(x, ## __VA_ARGS__);
+#else
+#define DBLog(x, ...)
+#endif
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import <QuartzCore/QuartzCore.h>
+#import <Availability.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MessageUI/MessageUI.h>
+
+//Fabric.io
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
+#endif

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DriverCarPhotoViewController">
+            <connections>
+                <outlet property="imagePhoto" destination="BzA-UR-c71" id="srd-3g-tqd"/>
+                <outlet property="lblDescription" destination="Xpr-R9-xMh" id="1AN-p1-E4K"/>
+                <outlet property="vHelpBar" destination="vaW-A4-F5X" id="Avb-lq-PPT"/>
+                <outlet property="view" destination="9Ig-mf-Ebf" id="Ad5-nd-n42"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9Ig-mf-Ebf">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaW-A4-F5X" customClass="RAHelpBarView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dD9-4P-KNI"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="QlD-Ki-3JO"/>
+                    </connections>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZt-He-Oh5">
+                    <rect key="frame" x="0.0" y="40" width="375" height="526"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRu-EM-P2X">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconSeatsLarge" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-UR-c71" userLabel="photoImage">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="BzA-UR-c71" secondAttribute="trailing" id="3bk-Zw-Ufw"/>
+                                <constraint firstAttribute="height" constant="190" id="Ckn-P3-135"/>
+                                <constraint firstAttribute="bottom" secondItem="BzA-UR-c71" secondAttribute="bottom" id="aml-Mn-aRh"/>
+                                <constraint firstItem="BzA-UR-c71" firstAttribute="leading" secondItem="VRu-EM-P2X" secondAttribute="leading" id="f9E-bm-prY"/>
+                                <constraint firstItem="BzA-UR-c71" firstAttribute="top" secondItem="VRu-EM-P2X" secondAttribute="top" id="yMh-2v-w0E"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Front right angle, showing the license plate" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpr-R9-xMh">
+                            <rect key="frame" x="20" y="200" width="335" height="62"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.23529411764705882" green="0.2627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="19"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="VRu-EM-P2X" secondAttribute="trailing" id="E8X-c4-aUR"/>
+                        <constraint firstItem="Xpr-R9-xMh" firstAttribute="top" secondItem="VRu-EM-P2X" secondAttribute="bottom" constant="10" id="Fso-DF-3SK"/>
+                        <constraint firstAttribute="bottom" secondItem="Xpr-R9-xMh" secondAttribute="bottom" constant="20" id="GPp-OP-3c9"/>
+                        <constraint firstItem="VRu-EM-P2X" firstAttribute="leading" secondItem="PZt-He-Oh5" secondAttribute="leading" id="MIE-tE-qg7"/>
+                        <constraint firstItem="VRu-EM-P2X" firstAttribute="top" secondItem="PZt-He-Oh5" secondAttribute="top" id="PG5-Qo-ow4"/>
+                        <constraint firstAttribute="trailing" secondItem="Xpr-R9-xMh" secondAttribute="trailing" constant="20" id="ofj-sA-dV8"/>
+                        <constraint firstItem="Xpr-R9-xMh" firstAttribute="leading" secondItem="PZt-He-Oh5" secondAttribute="leading" constant="20" id="wQ0-PO-EVC"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JR-5S-PBs" customClass="FlatButton">
+                    <rect key="frame" x="20" y="592" width="335" height="50"/>
+                    <color key="backgroundColor" red="0.0078431372550000003" green="0.65490196079999996" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6yn-vJ-Cvr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                    <color key="tintColor" red="0.97254901959999995" green="0.32549019610000002" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="  TAKE PHOTO" image="icon-camera">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="22.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="takePhotoAction:" destination="-1" eventType="touchUpInside" id="MZy-FG-WAv"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Yb-aq-UoI">
+                    <rect key="frame" x="0.0" y="566" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="5Ad-H2-cS4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PZt-He-Oh5" firstAttribute="top" secondItem="vaW-A4-F5X" secondAttribute="bottom" id="346-Dv-SH5"/>
+                <constraint firstItem="PZt-He-Oh5" firstAttribute="width" secondItem="9Ig-mf-Ebf" secondAttribute="width" id="FNZ-aw-7oz"/>
+                <constraint firstItem="vaW-A4-F5X" firstAttribute="leading" secondItem="9Ig-mf-Ebf" secondAttribute="leading" id="I5U-Co-1FI"/>
+                <constraint firstItem="2Yb-aq-UoI" firstAttribute="leading" secondItem="9Ig-mf-Ebf" secondAttribute="leading" id="Lfp-kk-Ecr"/>
+                <constraint firstItem="VRu-EM-P2X" firstAttribute="width" secondItem="9Ig-mf-Ebf" secondAttribute="width" id="QCd-TP-wcg"/>
+                <constraint firstAttribute="trailing" secondItem="PZt-He-Oh5" secondAttribute="trailing" id="Wp6-S1-iZo"/>
+                <constraint firstAttribute="trailing" secondItem="vaW-A4-F5X" secondAttribute="trailing" id="Y6o-CE-Y2p"/>
+                <constraint firstItem="2Yb-aq-UoI" firstAttribute="top" secondItem="PZt-He-Oh5" secondAttribute="bottom" id="bQ6-1Q-geF"/>
+                <constraint firstItem="PZt-He-Oh5" firstAttribute="leading" secondItem="9Ig-mf-Ebf" secondAttribute="leading" id="cNk-7s-zRx"/>
+                <constraint firstAttribute="bottom" secondItem="1JR-5S-PBs" secondAttribute="bottom" constant="25" id="fIQ-3H-sJy"/>
+                <constraint firstItem="vaW-A4-F5X" firstAttribute="top" secondItem="9Ig-mf-Ebf" secondAttribute="top" id="nQe-Dp-fvs"/>
+                <constraint firstItem="1JR-5S-PBs" firstAttribute="leading" secondItem="9Ig-mf-Ebf" secondAttribute="leading" constant="20" id="ome-bM-Qxj"/>
+                <constraint firstItem="1JR-5S-PBs" firstAttribute="top" secondItem="2Yb-aq-UoI" secondAttribute="bottom" constant="25" id="paK-fZ-R1a"/>
+                <constraint firstAttribute="trailing" secondItem="1JR-5S-PBs" secondAttribute="trailing" constant="20" id="rhE-op-hcJ"/>
+                <constraint firstAttribute="trailing" secondItem="2Yb-aq-UoI" secondAttribute="trailing" id="zx9-Jh-gEg"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="277.5" y="161.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-camera" width="19" height="17"/>
+        <image name="iconSeatsLarge" width="375" height="190"/>
+    </resources>
+</document>

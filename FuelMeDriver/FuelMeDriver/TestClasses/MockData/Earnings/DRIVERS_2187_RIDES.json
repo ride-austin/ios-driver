@@ -1,0 +1,264 @@
+{
+  "number" : 0,
+  "content" : [
+    {
+      "bookingFee" : "0.00",
+      "surgeFare" : "0.00",
+      "status" : "RIDER_CANCELLED",
+      "cityFee" : "0.00",
+      "cancelledOn" : 1496752493000,
+      "surgeFactor" : 1,
+      "car" : {
+        "make" : "Cadillac",
+        "model" : "CTS Wagon"
+      },
+      "raFee" : "0.00",
+      "startLocationLat" : 30.41791,
+      "id" : 1234881,
+      "ratePerMile" : "0.00",
+      "distanceFare" : "0.00",
+      "driverPayment" : "4.00",
+      "totalFare" : "4.00",
+      "requestedCarType" : {
+        "iconUrl" : "https:\/\/media.rideaustin.com\/icon\/regular.png",
+        "maxPersons" : 4,
+        "title" : "STANDARD",
+        "order" : 1,
+        "cityCarTypes" : [
+          {
+            "id" : 21,
+            "processingFeeRate" : 1,
+            "ratePerMile" : "0.99",
+            "uuid" : "21",
+            "raFeeFactor" : 0,
+            "cityFeeRate" : 0,
+            "processingFeeText" : "$1.00 Processing fee",
+            "minimumFare" : "5.00",
+            "processingFeeFixedPart" : 0.3,
+            "processingFeeMinimum" : "1.00",
+            "cancellationFee" : "4.00",
+            "enabled" : true,
+            "baseFare" : "1.50",
+            "cityId" : 1,
+            "bookingFee" : "2.00",
+            "ratePerMinute" : "0.25"
+          },
+          {
+            "id" : 29,
+            "processingFeeRate" : 1,
+            "ratePerMile" : "3.00",
+            "uuid" : "29",
+            "raFeeFactor" : 0,
+            "cityFeeRate" : 0,
+            "processingFeeText" : "$1.00 Processing fee",
+            "minimumFare" : "3.00",
+            "processingFeeFixedPart" : 0.3,
+            "processingFeeMinimum" : "1.00",
+            "cancellationFee" : "14.00",
+            "enabled" : true,
+            "baseFare" : "0.50",
+            "cityId" : 2,
+            "bookingFee" : "1.95",
+            "ratePerMinute" : "1.00"
+          }
+        ],
+        "carCategory" : "REGULAR",
+        "description" : "Standard Car"
+      },
+      "startLocationLng" : -97.751294,
+      "end" : {
+
+      },
+      "rideMap" : "ride-maps\/e5713f2d-624d-4479-9b96-b5de759724ae.png",
+      "roundUpAmount" : "0.00",
+      "tip" : "0.00",
+      "minimumFare" : "0.00",
+      "start" : {
+        "address" : "11672 Jollyville Road, Austin, Texas",
+        "zipCode" : "78759"
+      },
+      "baseFare" : "0.00",
+      "ratePerMinute" : "0.00",
+      "timeFare" : "0.00",
+      "subTotal" : "4.00"
+    },
+    {
+      "endLocationLat" : 30.417174,
+      "startedOn" : 1496813041000,
+      "subTotal" : "5.00",
+      "status" : "COMPLETED",
+      "bookingFee" : "2.00",
+      "cityFee" : "0.00",
+      "surgeFare" : "0.00",
+      "driverRating" : 5,
+      "surgeFactor" : 1,
+      "car" : {
+        "make" : "Cadillac",
+        "model" : "CTS Wagon"
+      },
+      "raFee" : "0.00",
+      "endLocationLng" : -97.75021099999999,
+      "startLocationLat" : 30.417799,
+      "id" : 1235036,
+      "ratePerMile" : "0.99",
+      "distanceFare" : "0.06",
+      "driverPayment" : "10.00",
+      "totalFare" : "7.00",
+      "requestedCarType" : {
+        "iconUrl" : "https:\/\/media.rideaustin.com\/icon\/regular.png",
+        "maxPersons" : 4,
+        "title" : "STANDARD",
+        "order" : 1,
+        "cityCarTypes" : [
+          {
+            "id" : 21,
+            "processingFeeRate" : 1,
+            "ratePerMile" : "0.99",
+            "uuid" : "21",
+            "raFeeFactor" : 0,
+            "cityFeeRate" : 0,
+            "processingFeeText" : "$1.00 Processing fee",
+            "minimumFare" : "5.00",
+            "processingFeeFixedPart" : 0.3,
+            "processingFeeMinimum" : "1.00",
+            "cancellationFee" : "4.00",
+            "enabled" : true,
+            "baseFare" : "1.50",
+            "cityId" : 1,
+            "bookingFee" : "2.00",
+            "ratePerMinute" : "0.25"
+          },
+          {
+            "id" : 29,
+            "processingFeeRate" : 1,
+            "ratePerMile" : "3.00",
+            "uuid" : "29",
+            "raFeeFactor" : 0,
+            "cityFeeRate" : 0,
+            "processingFeeText" : "$1.00 Processing fee",
+            "minimumFare" : "3.00",
+            "processingFeeFixedPart" : 0.3,
+            "processingFeeMinimum" : "1.00",
+            "cancellationFee" : "14.00",
+            "enabled" : true,
+            "baseFare" : "0.50",
+            "cityId" : 2,
+            "bookingFee" : "1.95",
+            "ratePerMinute" : "1.00"
+          }
+        ],
+        "carCategory" : "REGULAR",
+        "description" : "Standard Car"
+      },
+      "startLocationLng" : -97.750951,
+      "end" : {
+        "address" : "11624 Jollyville Rd, Austin",
+        "zipCode" : "78759"
+      },
+      "rideMap" : "ride-maps\/4eb0530c-ba38-4cae-9b0c-e498163d5959.png",
+      "roundUpAmount" : "0.00",
+      "tip" : "5.00",
+      "minimumFare" : "5.00",
+      "start" : {
+        "address" : "11672 Jollyville Road, Austin, Texas",
+        "zipCode" : "78759"
+      },
+      "baseFare" : "1.50",
+      "completedOn" : 1496813047000,
+      "ratePerMinute" : "0.25",
+      "timeFare" : "0.03"
+    },
+    {
+      "endLocationLat" : 30.417174,
+      "startedOn" : 1496814767000,
+      "subTotal" : "5.00",
+      "status" : "COMPLETED",
+      "bookingFee" : "2.00",
+      "cityFee" : "0.00",
+      "surgeFare" : "0.00",
+      "driverRating" : 5,
+      "surgeFactor" : 1,
+      "car" : {
+        "make" : "Cadillac",
+        "model" : "CTS Wagon"
+      },
+      "raFee" : "0.00",
+      "endLocationLng" : -97.75021099999999,
+      "startLocationLat" : 30.416786,
+      "id" : 1235049,
+      "ratePerMile" : "0.99",
+      "distanceFare" : "0.03",
+      "driverPayment" : "10.00",
+      "totalFare" : "7.00",
+      "requestedCarType" : {
+        "iconUrl" : "https:\/\/media.rideaustin.com\/icon\/regular.png",
+        "maxPersons" : 4,
+        "title" : "STANDARD",
+        "order" : 1,
+        "cityCarTypes" : [
+          {
+            "id" : 21,
+            "processingFeeRate" : 1,
+            "ratePerMile" : "0.99",
+            "uuid" : "21",
+            "raFeeFactor" : 0,
+            "cityFeeRate" : 0,
+            "processingFeeText" : "$1.00 Processing fee",
+            "minimumFare" : "5.00",
+            "processingFeeFixedPart" : 0.3,
+            "processingFeeMinimum" : "1.00",
+            "cancellationFee" : "4.00",
+            "enabled" : true,
+            "baseFare" : "1.50",
+            "cityId" : 1,
+            "bookingFee" : "2.00",
+            "ratePerMinute" : "0.25"
+          },
+          {
+            "id" : 29,
+            "processingFeeRate" : 1,
+            "ratePerMile" : "3.00",
+            "uuid" : "29",
+            "raFeeFactor" : 0,
+            "cityFeeRate" : 0,
+            "processingFeeText" : "$1.00 Processing fee",
+            "minimumFare" : "3.00",
+            "processingFeeFixedPart" : 0.3,
+            "processingFeeMinimum" : "1.00",
+            "cancellationFee" : "14.00",
+            "enabled" : true,
+            "baseFare" : "0.50",
+            "cityId" : 2,
+            "bookingFee" : "1.95",
+            "ratePerMinute" : "1.00"
+          }
+        ],
+        "carCategory" : "REGULAR",
+        "description" : "Standard Car"
+      },
+      "startLocationLng" : -97.75000199999999,
+      "end" : {
+        "address" : "11624 Jollyville Rd, Austin",
+        "zipCode" : "78759"
+      },
+      "rideMap" : "ride-maps\/8fcef7d9-5ddd-4462-bc7c-011457f49a54.png",
+      "roundUpAmount" : "0.00",
+      "tip" : "5.00",
+      "minimumFare" : "5.00",
+      "start" : {
+        "address" : "11610 Jollyville Road, Austin, Texas",
+        "zipCode" : "78759"
+      },
+      "baseFare" : "1.50",
+      "completedOn" : 1496814781000,
+      "ratePerMinute" : "0.25",
+      "timeFare" : "0.06"
+    }
+  ],
+  "numberOfElements" : 3,
+  "totalPages" : 1,
+  "size" : 500,
+  "last" : true,
+  "totalElements" : 3,
+  "first" : true
+}

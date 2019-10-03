@@ -1,0 +1,6 @@
+{
+    "id" : 110765214,
+    "eventType" : "CAR_CATEGORY_CHANGE",
+    "parameters" : "{\"source\":\"ADMIN_EDIT\"}"
+}
+

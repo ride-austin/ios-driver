@@ -1,0 +1,29 @@
+{
+    "driverRegistration": {
+        "logoWhiteUrl": "https://media.rideaustin.com/images/logoRideAustin@3x.png",
+        "supportEmail": "support@rideaustin.com",
+        "requirements": [
+                         "2001 or Newer",
+                         "4 Door",
+                         "Not salvaged or Re-built Vehicles"
+                         ],
+        "driverRegistrationTerms": "https://media.rideaustin.com/download/DriverTermsAustin.txt",
+        "inspection_sticker": {
+            "enabled": false
+        },
+        "tnc_card": {
+            "enabled": true,
+            "backPhoto": true,
+            "header": "TNC Card Upload",
+            "title1": "TNC Driver Card",
+            "action1": "If you have this, upload a picture",
+            "text1": "You will need a TNC Card from the City Transportation Office. If you have this, upload a picture here:",
+            "title2": "Don't have one?",
+            "text2": "View new driver instructions <a href=\"http://www.rideaustin.com/drivers\">here</a> which include steps on how to obtain one."
+        },
+        "description": "Thank you for choosing to drive with RideAustin. To qualify, drivers are required to be 21 years of age and have vehicles that are:",
+        "newCarSuccessMessage": "After completing the next steps, check your email for further instructions..",
+        "enabled": true,
+        "minCarYear": 2001
+    }
+}

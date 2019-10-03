@@ -1,0 +1,146 @@
+{
+    "currentTerms": {
+        "currentTermsId": 1,
+        "currentTermsUrl": "https://media.rideaustin.com/download/DriverTermsAustin.txt",
+        "currentTermsIsMandatory": true,
+        "currentTermsVersion": "1.0",
+        "currentTermsPublicationDate": 1496015700000
+    },
+    "accessibility": {
+        "phoneNumber": "+15124782222",
+        "title": "Please contact Austin Cab Company (512) 478-2222",
+        "enabled": true
+    },
+    "supportedCities": [
+                        {
+                        "cityId": 1,
+                        "cityName": "AUSTIN",
+                        "logoUrl": "https://media.rideaustin.com/images/logoRideAustin@3x.png",
+                        "logoBlackUrl": "https://media.rideaustin.com/images/logoRideAustinBlack@3x.png"
+                        },
+                        {
+                        "cityId": 2,
+                        "cityName": "HOUSTON",
+                        "logoUrl": "https://media.rideaustin.com/images/logoRideHouston@3x.png",
+                        "logoBlackUrl": "https://media.rideaustin.com/images/logoRideHoustonBlack@3x.png"
+                        }
+                        ],
+    "smsMaskingEnabled": true,
+    "geocodingConfiguration": {
+        "queryHints": [
+                       {
+                       "prefixes": [
+                                    "ai",
+                                    "au"
+                                    ],
+                       "contains": [
+                                    "airport"
+                                    ],
+                       "description": "Austin-Bergstrom International Airport, Presidential Boulevard, Austin, TX, United States",
+                       "reference": "ChIJRf9KizuxRIYRaCfcyaj8pxw",
+                       "primaryAddress": "Austin-Bergstrom International Airport",
+                       "secondaryAddress": "Presidential Boulevard, Austin, TX, United States"
+                       }
+                       ]
+    },
+    "currentCity": {
+        "cityId": 1,
+        "cityName": "AUSTIN",
+        "cityCenterLocation": "30.267153 -97.743061",
+        "cityCenterLocationData": {
+            "lat": 30.267153,
+            "lng": -97.743061
+        },
+        "cityBoundaryPolygon": [
+                                {
+                                "lat": 30.58591,
+                                "lng": -97.41895
+                                },
+                                {
+                                "lat": 30.0758,
+                                "lng": -97.41895
+                                },
+                                {
+                                "lat": 30.0758,
+                                "lng": -98.08044
+                                },
+                                {
+                                "lat": 30.58591,
+                                "lng": -98.08044
+                                }
+                                ]
+    },
+    "generalInformation": {
+        "privacyStatement": "http://www.rideaustin.com/legal/userterms/",
+        "splashUrl": "https://media.rideaustin.com/images/photoAustin@3x.jpg",
+        "companyDomain": "rideaustin.com",
+        "playStoreLink": "market://details?id=com.rideaustin.android",
+        "logoUrl": "https://media.rideaustin.com/images/logoRideAustin@3x.png",
+        "appstoreLink": "itms-apps://itunes.apple.com/app/id1116489847",
+        "legalRider": "http://www.rideaustin.com/legal/userterms/",
+        "supportEmail": "support@rideaustin.com",
+        "facebookUrl": "https://www.facebook.com/werideaustin",
+        "legalDriver": "http://www.rideaustin.com/legal/driverterms/",
+        "playStoreWeb": "https://play.google.com/store/apps/details?id=com.rideaustin.android",
+        "applicationNamePipe": "Ride|Austin",
+        "logoBlackUrl": "https://media.rideaustin.com/images/logoRideAustinBlack@3x.png",
+        "facebookUrlSchemeiOS": "fb://page?id=241278152906970",
+        "iconUrl": "https://media.rideaustin.com/images/Ride_180-1.png",
+        "companyWebsite": "http://www.rideaustin.com",
+        "applicationName": "Ride Austin"
+    },
+    "rides": {
+        "distantPickUpNotificationThreshold": 200
+    },
+    "riderLiveLocation": {
+        "expirationTime": 5,
+        "requiredAccuracy": 50,
+        "enabled": true
+    },
+    "riderReferFriend": {
+        "detailtexttemplate": " Every time a new RideAustin user signs up with your invite code, theyll receive $5 off their first fare. Once they take their first ride, youll also get $5 off the fare on your next ride. Discounts expire after 7 days, and you can accumulate up to $500 of discounts in your account.",
+        "emailbodytemplate": "<p>You should try RideAustin! Get <codeValue> in ride credit using my code <b><codeLiteral><b>. Download the app at: <downloadUrl></p>",
+        "downloadUrl": "http://www.rideaustin.com",
+        "smsbodytemplate": "You should try RideAustin! Get <codeValue> in ride credit using my code <codeLiteral> Download the app at: <downloadUrl>",
+        "enabled": false
+    },
+    "commonMessages": {
+        "networkTimeoutMessage": "You appear to have a poor connection. Keep calm and try again later."
+    },
+    "ratingConfiguration": {
+        "defaultRating": 5,
+        "minimumRatingThreshold": 5,
+        "limit": 50
+    },
+    "tipping": {
+        "rideTipLimit": 300,
+        "ridePaymentDelay": 60
+    },
+    "directConnectPhone": "+12013895725",
+    "rideCancellation": {
+        "enabled": false
+    },
+    "rideUpgrade": {
+        "buttonTitle": "Ask rider to upgrade to SUV",
+        "variants": [
+                     {
+                     "carCategory": "REGULAR",
+                     "validUpgrades": [
+                                       "SUV"
+                                       ]
+                     },
+                     {
+                     "carCategory": "SUV",
+                     "validUpgrades": []
+                     },
+                     {
+                     "carCategory": "PREMIUM",
+                     "validUpgrades": []
+                     },
+                     {
+                     "carCategory": "LUXURY",
+                     "validUpgrades": []
+                     }
+                     ]
+    }
+}

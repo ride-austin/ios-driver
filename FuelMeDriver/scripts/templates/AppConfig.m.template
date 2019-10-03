@@ -1,0 +1,51 @@
+#import "AppConfig.h"
+
+#import "RAEnvironmentManager.h"
+
+@implementation AppConfig
+
++ (NSString *)apiKey {
+    return @"{{apiKey}}";
+}
+
++ (NSString *)googleDirectionsKey {
+    return @"{{googleMapDirectionsKey}}";
+}
+
++ (NSString *)googleMapKey {
+    return @"{{GoogleMapKey}}";
+}
+
++ (NSString *)bugFenderKey {
+    return @"{{bugFenderKey}}" ;
+}
+
++ (NSString *)productionServerURL {
+    return @"{{productionServerURL}}";
+}
+
++ (NSString *)qaServerURL {
+    return @"{{qaServerURL}}";
+}
+
++ (NSString *)stageServerURL {
+    return @"{{stageServerURL}}";
+}
+
++ (NSString *)devServerURL {
+    return @"{{devServerURL}}";
+}
+
++ (NSString *)md5PasswordSalt {
+    return @"{{md5PasswordSalt}}";
+}
+
++ (NSString *)hockeyAppId {
+    return @"{{hockeyAppId}}";
+}
+
++ (NSString *)hockeyAppTestId {
+    return @"{{hockeyAppTestId}}";
+}
+
+@end

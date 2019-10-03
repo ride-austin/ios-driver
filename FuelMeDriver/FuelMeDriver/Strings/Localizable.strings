@@ -1,0 +1,512 @@
+/* 
+  Localizable.strings
+  RideDriver
+
+  Created by Roberto Abreu on 3/7/18.
+  Copyright © 2018 FuelMe LLC. All rights reserved.
+*/
+
+/* Wait hud message */
+"PLEASE WAIT..." = "PLEASE WAIT...";
+
+/* Alert option title */
+"NO" = "NO";
+
+/* Alert option title */
+"YES" = "YES";
+
+/* Button title */
+"SAVE" = "SAVE";
+
+/* Button title */
+"NEXT" = "NEXT";
+
+/* Button title */
+"DONE" = "DONE";
+
+/* Button title */
+"CANCEL" = "CANCEL";
+
+/* Button title */
+"UPDATE" = "UPDATE";
+
+/* Button title */
+"READ" = "READ";
+
+/* Button title */
+"Decline" = "Decline";
+
+/* Location required title */
+"RideDriver needs your location!" = "RideDriver needs your location!";
+
+/* Location required message */
+"To re-enable, please go to Settings and turn on Location Service." = "To re-enable, please go to Settings and turn on Location Service.";
+
+/* Stacked ride contact button title */
+"  CALL %@" = "  CALL %@";
+
+/* Stacked ride contact button title */
+"  TEXT %@" = "  TEXT %@";
+
+/* Contact Rider title */
+"How do you want to contact %@?" = "How do you want to contact %@?";
+
+/* Contact principal rider call option */
+"CALL" = "CALL";
+
+/* Contact principal rider sms option */
+"SMS" = "SMS";
+
+/* Contact button title */
+"Contact" = "Contact";
+
+/* Stacked ride cancel pickup button title */
+"Cancel Pickup" = "Cancel Pickup";
+
+/* Cancel Ride alert title */
+"Cancel Ride" = "Cancel Ride";
+
+/* Cancel Ride confirmation - alert message */
+"Are you sure you want to cancel this ride?" = "Are you sure you want to cancel this ride?";
+
+/* BarButtonItem title */
+"Support" = "Support";
+
+/* Alert option title */
+"Dismiss" = "Dismiss";
+
+/* Alert option title */
+"Ok" = "Ok";
+
+/* Terms and conditions last update date */
+"LAST UPDATE: %@" = "LAST UPDATE: %@";
+
+/* Support issues title */
+"Select an Issue" = "Select an Issue";
+
+/* Support placeholder text */
+"Share Details" = "Share Details";
+
+/* Refer a friend screen title */
+"Refer a Friend" = "Refer a Friend";
+
+/* Online button title */
+"ONLINE" = "ONLINE";
+
+/* Offline button title */
+"OFFLINE" = "OFFLINE";
+
+/* Refer friend by email title */
+"Refer By Email" = "Refer By Email";
+
+/* Refer friend by email success message */
+"An Email message to refer your friend has been sent." = "An Email message to refer your friend has been sent.";
+
+/* Email empty validation message */
+"Please enter your email address." = "Please enter your email address.";
+
+/* Email validation message */
+"Please enter a valid email address." = "Please enter a valid email address.";
+
+/* Refer friend by phone title */
+"Refer By Phone" = "Refer By Phone";
+
+/* Refer friend by phone success message */
+"An SMS message to refer your friend has been sent." = "An SMS message to refer your friend has been sent.";
+
+/* Phone empty validation message */
+"Please enter a number." = "Please enter a number.";
+
+/* Phone validation message */
+"Please enter a valid phone number." = "Please enter a valid phone number.";
+
+/* Contacts screen title */
+"Contacts" = "Contacts";
+
+/* Car selection screen title */
+"My Cars" = "My Cars";
+
+/* Cannot change car while online message */
+"Please go offline to change your car" = "Please go offline to change your car";
+
+/* Cannot change car while on trip message */
+"You cannot change your car while on trip";
+
+/* Update insurance option */
+"Update Insurance" = "Update Insurance";
+
+/* Update car photos option */
+"Update Car Photos" = "Update Car Photos";
+
+/* Inspection sticker update title option */
+"Update %@" = "Update %@";
+
+/* Vehicle information screen title */
+"Vehicle Information" = "Vehicle Information";
+
+/* Driver signup alert title */
+"Driver Signup" = "Driver Signup";
+
+/* Car photo required message */
+"Please upload the car photo required to continue." = "Please upload the car photo required to continue.";
+"Please upload a valid photo to continue." = "Please upload a valid photo to continue.";
+
+/* Car photo updated successfully message */
+"Photo updated successfully" = "Photo updated successfully";
+
+/* Car photo angle message */
+"Front left angle, showing the license plate" = "Front left angle, showing the license plate";
+"Back right angle showing plate" = "Back right angle showing plate";
+"Inside photo showing the entire back seat" = "Inside photo showing the entire back seat";
+"Open trunk, full view" = "Open trunk, full view";
+
+/* Car photo angle alert message */
+"Are you sure the Photo is clearly taken from the Front left angle side and shows your license plate?" =
+"Are you sure the Photo is clearly taken from the Front left angle side and shows your license plate?";
+
+"Are you sure the Photo is clearly taken from the Back right angle side and shows your license plate?" =
+"Are you sure the Photo is clearly taken from the Back right angle side and shows your license plate?";
+
+"Are you sure the Photo is clearly taken from Inside the car showing the entire back seat?" =
+"Are you sure the Photo is clearly taken from Inside the car showing the entire back seat?";
+
+"Are you sure the Photo is showing the Trunk open in full view?" =
+"Are you sure the Photo is showing the Trunk open in full view?";
+
+/* Image validation quality title */
+"Invalid Size" = "Invalid Size";
+
+/* Image validation quality message */
+"Please upload a High Quality Photo with a minimum size of 190x250 pixels to be readable." =
+"Please upload a High Quality Photo with a minimum size of 190x250 pixels to be readable.";
+
+/* Internet messages */
+"Network Offline" = "Network Offline";
+"Network Connectivity Lost" = "Network Connectivity Lost";
+"No internet connection." = "No internet connection.";
+"Internet Connection is down. Please try again later." = "Internet Connection is down. Please try again later.";
+
+"Please check your internet connection. You'll be able to signout once connection is established." =
+"Please check your internet connection. You'll be able to signout once connection is established.";
+
+"Your internet appears to be offline. Please connect to the internet to continue." =
+"Your internet appears to be offline. Please connect to the internet to continue.";
+
+"We are unable to connect to server at this moment. Please try again later or Contact Support." =
+"We are unable to connect to server at this moment. Please try again later or Contact Support.";
+
+/* License screen title */
+"LICENSE PLATE" = "LICENSE PLATE";
+
+/* License validation message */
+"Please enter your license plate" = "Please enter your license plate";
+
+/* Car color screen title */
+"Color" = "Color";
+
+/* Car make screen title */
+"Make" = "Make";
+
+/* Car model screen title */
+"Model" = "Model";
+
+/* Car year screen title */
+"Year" = "Year";
+
+/* Inspection sticker photo validation message */
+"Please upload your Inspection Sticker Photo to continue." = "Please upload your Inspection Sticker Photo to continue.";
+
+/* Inspection sticker title */
+"Inspection Sticker" = "Inspection Sticker";
+
+/* Date validation message */
+"Please, select a valid expiration date." = "Please, select a valid expiration date.";
+
+/* Documents screen title */
+"Documents" = "Documents";
+
+/* Driver's License document option */
+"Driver's License" = "Driver's License";
+"To update your license, please send an email to %@" = "To update your license, please send an email to %@";
+
+
+/* Button title */
+"TAKE PHOTO" = "TAKE PHOTO";
+
+/* Insurance info message */
+"Add your insurance photo" = "Add your insurance photo";
+
+/* Insurance photo message */
+"Please add your insurance photo" = "Please add your insurance photo";
+
+/* Valid date messsage */
+"Please, select a valid date" = "Please, select a valid date";
+
+/* Error message while uploading insurance */
+"There was an error trying to upload the insurance information, please try again" =
+"There was an error trying to upload the insurance information, please try again";
+
+/* License photo description */
+"Update your driver's license photo" = "Update your driver's license photo";
+
+/* Driver photo screen title */
+"Update Driver Photo" = "Update Driver Photo";
+
+/* Driver photo alert title */
+"Driver Photo" = "Driver Photo";
+
+/* Driver profile photo confirmation message */
+"Are you sure your Driver Profile Photo clearly shows your face and eyes without sunglasses?" =
+"Are you sure your Driver Profile Photo clearly shows your face and eyes without sunglasses?";
+
+/* Outside queue message */
+"Numbers represent amount of drivers in the %@ queue" = "Numbers represent amount of drivers in the %@ queue";
+
+/* Inside queue message */
+"Numbers represent your current spot in the %@ queue" = "Numbers represent your current spot in the %@ queue";
+
+/* Queue position */
+"N/A" = "N/A";
+
+/* Daily Earnings title */
+"Daily Earnings" = "Daily Earnings";
+
+/* Fee title */
+"%@ Fee" = "%@ Fee";
+
+/* Trip header title */
+"Trips" = "Trips";
+
+/* Weekly Earnings title */
+"Weekly Earnings" = "Weekly Earnings";
+
+/* Priority fare on earnings title */
+"Priority Fare (%@X)" = "Priority Fare (%@X)";
+
+/* Total fare earnings */
+"TOTAL %@\n FEE" = "TOTAL %@\n FEE";
+
+/* Ride cancellation confirmation */
+"Are you sure you want to cancel?" = "Are you sure you want to cancel?";
+
+/* SimpleAlertView title */
+"Address Pickup" = "Address Pickup";
+"Address Destination" = "Address Destination";
+
+/* Forgot to start ride title */
+"Did you forget to start the ride?" = "Did you forget to start the ride?";
+
+/* Forgot to start ride options */
+"Start trip" = "Start trip";
+"Don't show again (on this trip)" = "Don't show again (on this trip)";
+"Cancel" = "Cancel";
+
+/* Navigation app alert title */
+"Navigation App" = "Navigation App";
+
+/* Navigation app alert message */
+"Which app would you prefer to use?" = "Which app would you prefer to use?";
+
+/* Default navigation app alert message */
+"Which app do you prefer as default?" = "Which app do you prefer as default?";
+
+/* Message shown when user tap navigation, but not destination set */
+"No Destination is selected by Rider to show navigation" = "No Destination is selected by Rider to show navigation";
+
+/* Default Navigation app message */
+"Do you want to set %@ as default navigation app? You can change later in settings." =
+"Do you want to set %@ as default navigation app? You can change later in settings.";
+
+/* Location settings alert title */
+"Location Settings" = "Location Settings";
+
+/* Go to settings alert option */
+"Go to Settings" = "Go to Settings";
+
+/* Ride request in background - local notification title */
+"Ride Request received!" =  "Ride Request received!";
+
+/* Ride request in background - option */
+"Accept Ride" =  "Accept Ride";
+
+/* Used when rider's firstname not available */
+"Rider" = "Rider";
+
+/* Who cancel format */
+"%@ has cancelled the " = "%@ has cancelled the ";
+
+/* append when is stacked ride */
+"next " = "next ";
+
+/* Part of rider cancellation message */
+"trip." = "trip.";
+
+/* Fee for cancellation */
+"\nYou will receive $%@ for trip cancellation." = "\nYou will receive $%@ for trip cancellation.";
+
+/* "Your" part of driver cancellation message */
+"Your " = "Your ";
+
+/* Part of driver cancellation message */
+"trip has been cancelled." = "trip has been cancelled.";
+
+/* Part of admin cancellation message */
+"trip " = "trip ";
+
+/* Part of admin cancellation message */
+"with %@ " = "with %@ ";
+
+/* Admin cancelled ride message */
+"has been cancelled by Admin" = "has been cancelled by Admin";
+
+/* Destination changed title */
+"Destination Changed" = "Destination Changed";
+
+/* Destination changed message */
+"%@ has changed the destination.";
+
+/* Categories updated by admin message */
+"Car Categories updated by admin!" = "Car Categories updated by admin!";
+
+/* Categories disabled */
+"Car Category %@ disabled" = "Car Category %@ disabled";
+
+/* Changed by admin */
+" by admin." = " by admin.";
+
+/* Categories activated by admin message */
+"Car Category %@ activated by admin.\n\nPlease visit Menu -> Ride Request Type to enable" =
+"Car Category %@ activated by admin.\n\nPlease visit Menu -> Ride Request Type to enable";
+
+/* Categories changed, steps to review */
+"Please visit Menu -> Ride Request Type to review" = "Please visit Menu -> Ride Request Type to review";
+
+/* RideRequest Button Title */
+"Accept \nFEMALE DRIVER" = "Accept \nFEMALE DRIVER";
+"FEMALE DRIVER" = "FEMALE DRIVER";
+"Accept" = "Accept";
+
+/* CallKit name */
+"%@ needs %@ ride" = "%@ needs %@ ride";
+
+/* Menu Options */
+"Ride Request Type" = "Ride Request Type";
+"Earnings" = "Earnings";
+"Settings" = "Settings";
+"ADMIN" = "ADMIN";
+
+/* Cannot change ride type during trip */
+"You cannot change ride type during trip." = "You cannot change ride type during trip.";
+
+/* Floating Menu Options */
+"My Location" = "My Location";
+"Contact Support" = "Contact Support";
+"Upgrade to %@" = "Upgrade to %@";
+"Upgrade Requested" = "Upgrade Requested";
+
+/* Sign In title */
+"Sign In" = "Sign In";
+
+/* Sign In Validation messages */
+"Please enter your email address." = "Please enter your email address.";
+"Please enter a valid email address." = "Please enter a valid email address.";
+"Please enter a password." = "Please enter a password.";
+"Your password needs to be at least %li characters long." = "Your password needs to be at least %li characters long.";
+
+/* Sign In failed title */
+"SIGN IN FAILED" = "SIGN IN FAILED";
+
+/* Sign In failed message */
+"Please register as a driver from the %@ app first" = "Please register as a driver from the %@ app first";
+
+/* Install RideAustin message */
+"Install RideAustin App" = "Install RideAustin App";
+
+/* Open RideAustin option */
+"Open RideAustin App" = "Open RideAustin App";
+
+/* Forgot Password title */
+"Forgot Password" = "Forgot Password";
+
+/* Validation error on Forgot password title */
+"Sorry" = "Sorry";
+
+/* Change password screen title */
+"Change Password" = "Change Password";
+
+/* Password validation message - Change Password */
+"Please choose a password with at least %ld or more characters." = "Please choose a password with at least %ld or more characters.";
+
+/* Password changed successfully message */
+"Password changed successfully" = "Password changed successfully";
+
+/* Settings screen menu options */
+"ABOUT - %@" = "ABOUT - %@";
+"My Stats" = "My Stats";
+"New Terms & Conditions" = "New Terms & Conditions";
+"Like us on Facebook" = "Like us on Facebook";
+"Legal" = "Legal";
+"Contact Support" = "Contact Support";
+"Sign out" = "Sign out";
+"Default Navigation App" = "Default Navigation App";
+"Call action" = "Call action";
+"Update Documents" = "Update Documents";
+"My Cars" = "My Cars";
+
+/* Request action message - {Accept or Open app} */
+"Which option you prefer to perform when receive a request call?" = "Which option you prefer to perform when receive a request call?";
+
+/* Accept Ride from CallKit option */
+"Accept Request" = "Accept Request";
+
+/* Open App from CallKit option */
+"Open App" = "Open App";
+
+/* Edit Account screen title */
+"Edit Account" = "Edit Account";
+
+/* Profile updated alert title */
+"Profile Updated" = "Profile Updated";
+
+/* Profile updated successfully message */
+"Your profile has been updated successfully." = "Your profile has been updated successfully.";
+
+/* Phone number validation */
+"Please enter a valid mobile phone number. i.e Minimum 8 digits" = "Please enter a valid mobile phone number. i.e Minimum 8 digits";
+
+/* Cannot recognize country code message */
+"We cannot recognize the country code of %@. Please update your phone number." = "We cannot recognize the country code of %@. Please update your phone number.";
+
+/* Pin mobile verification screen title */
+"Verify Mobile" = "Verify Mobile";
+
+/* SMS pin send to number message */
+"that was sent to %@" = "that was sent to %@";
+
+/* Ride Request Type screen title */
+"Ride Request Type" = "Ride Request Type";
+
+/* Display car name when not car selected */
+"Please select your car in Settings" = "Please select your car in Settings";
+
+/* Categories enabled prefix text */
+"Your current ride request type is now set to the following categories. You are set to receive:\n\n" =
+"Your current ride request type is now set to the following categories. You are set to receive:\n\n";
+
+/* Used in RideRequestTypeVC message format */
+"\nfemale driver requests ONLY" = "\nfemale driver requests ONLY";
+"\nfemale driver requests" = "\nfemale driver requests";
+"\nand\n" = "\nand\n";
+"All car types are selected" = "All car types are selected";
+"Please select car type" = "Please select car type";
+"Select or register for other car categories to receive ride requests in those categories." =
+"Select or register for other car categories to receive ride requests in those categories.";
+
+/* Message shown when all categories are disabled */
+"Please select at least one category" = "Please select at least one category";
+
+/* Support textView placeholder */
+"Please enter your message" = "Please enter your message";
+
+/* Contact format */
+"CONTACT %@" = "CONTACT %@";

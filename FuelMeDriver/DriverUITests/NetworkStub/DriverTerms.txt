@@ -1,0 +1,37 @@
+DRIVER TERMS: Ride Share Austin
+Last update: May 25, 2016
+The terms and conditions contained herein ("Agreement") constitute a legal agreement between you, an individual ("you") and Ride Share Austin ("Company"). The Company, through its proprietary application, provides lead generation to providers of shared or individual (person to person) passenger transportation services using the Services (defined below). The Services enable an authorized transportation provider to seek, receive and fulfil requests for transportation services from an authorized user of the Company"™s proprietary mobile application. You desire to enter into this Agreement for the purpose of using the Services and using the Driver App. You acknowledge and agree that the Company is a technology services provider that does not provide transportation services. In order to use the Services, you must agree to the terms and conditions that are set forth below. Upon your execution (electronic or otherwise) of this Agreement, you and Company shall be bound by the terms and conditions set forth herein.
+BY VIRTUE OF YOUR ELECTRONIC EXECUTION OF THIS AGREEMENT, YOU WILL BE ACKNOWLEDGING THAT YOU HAVE READ AND UNDERSTOOD ALL OF THE TERMS OF THIS AGREEMENT.
+1.	Definitions
+
+a.	"Affiliate" means an entity that, directly or indirectly, controls, is under the control of, or is under common control with a party, where control means having more than fifty percent (50%) of the voting stock or other ownership interest or the majority of the voting rights of such entity.
+
+b.	"Ride Austin Services" means your provision of person to person passenger transportation services to Users (defined below) via the Services in the Territory (defined below) using the Vehicle (defined below).
+
+c.	"Company Data" means all data related to the access and use of the Services hereunder, including all data related to Users (including User Information), all data related to the provision of Ride Austin Services via the Services and the Driver App, and the Driver ID.
+
+d.	"Driver App" means the mobile application developed, owned or provided by the Company to you that enables the Users to access the Services for the purpose of seeking, receiving and fulfilling on demand requests for Ride Austin Services by Users, as may be updated or modified from time to time.
+
+e.	"Driver ID" means the identification and password key assigned by Company to you that enables you to use and access the Driver App.
+
+f.	"Fees" has the meaning set forth in Section 8.
+
+g.	"Service Fee" has the meaning set forth in Section 8.
+
+h.	 "Territory" means the geographic areas in which you are enabled by the Driver App to receive requests for Ride Austin Services.
+
+i.	"Tolls" means any applicable road, bridge, ferry, tunnel and airport charges and fees, including inner-city congestion, environmental or similar charges as reasonably determined by the Services.
+
+j.	"Services" means the on-demand lead generation and related services licensed by the Company to you that enables you to seek, receive and fulfil on-demand requests for transportation services by Users seeking transportation services; such Services include access to the Driver App and Company"™s software, websites, payment services as described in Section 8 below, and related support services systems, as may be updated or modified from time to time.
+
+k.	"User" means an end user authorized by the Company to use the Company"™s proprietary mobile application for the purpose of obtaining the Ride Austin Services offered by Company through the drivers.
+
+l.	"User Information" means information about a User made available to you in connection with such User"™s request for and use of Ride Austin Services, which may include the User"™s name, pick-up location, contact information and photograph.
+
+m.	"Vehicle" means the vehicle used to provide the Ride Austin Service that: (a) is owned by you or is authorized for use by you by the rightful owner, (b) meets the then-current Company requirements for a vehicle on the Services; and (c) the Company authorizes for your use for the purpose of providing the Ride Austin Services.
+
+n.	"Your Device" means the relevant mobile phone or such other device used to provide Services to the Customer; and on which the Driver App has been installed as authorized by the Company solely for the purpose of providing the Ride Austin Services.
+
+2.	Procedure
+
+a.	You will be assigned with a Driver ID which will enable you to access and use the Driver App on Your Device in accordance with this Agreement. The Company will have the right, at all times and at its sole discretion, to reclaim, prohibit, suspend, limit or otherwise restrict you from accessing or using the Driver ID or Your Device. You agree that you will maintain your Driver ID in confidence and not share your Driver ID with any third party. You will immediately notify Company of any actual or suspected breach or improper use or disclosure of your Driver ID or the Driver App.

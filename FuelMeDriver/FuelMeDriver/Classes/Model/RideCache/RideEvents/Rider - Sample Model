@@ -1,0 +1,47 @@
+/*
+* Ride events
+
+{"events":[
+{
+"eventType":"CANCEL_RIDE",
+"eventTimestamp":"<epoch time in miliseconds>",
+"avatarType": "DRIVER"
+"rideID":"123123", //device time stamp
+
+},
+{
+"eventType":"DRIVER_REACHED",
+"eventTimestamp":"<epoch time in miliseconds>",
+"rideID":"123123", //device time stamp
+
+},
+{
+"eventType":"START_RIDE",
+"eventTimestamp":"<epoch time in miliseconds>",
+"rideID":"123123", //device time stamp
+
+},
+
+{
+"eventType":"UPDATE_LOCATION",
+"eventTimestamp":"<epoch time in miliseconds>", //device time stamp
+"rideID":"123123",
+"latitude":"30.259097325987234",
+"longitude":"-97.74615994855786",
+"speed":"123123.123",
+"heading":"123123.123",
+"course":"123123.123"
+},
+
+{
+"eventType":"END_RIDE",
+"eventTimestamp":"<epoch time in miliseconds>", //device time stamp
+"rideID":"123123",
+"endLocationLat":"30.259097325987234",
+"endLocationLong":"-97.74615994855786",
+"endAddress":"Texas",
+"endZipCode":"Texas",
+}]
+}
+
+*/

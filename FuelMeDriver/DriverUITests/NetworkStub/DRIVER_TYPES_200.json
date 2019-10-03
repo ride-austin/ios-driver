@@ -1,0 +1,16 @@
+[
+    {
+        "cityId": 1,
+        "availableInCategories": [
+            "REGULAR",
+            "SUV",
+            "PREMIUM",
+            "LUXURY"
+        ],
+        "name": "WOMEN_ONLY",
+        "description": "WOMEN ONLY",
+        "penalizeDeclinedRides": true,
+        "displayTitle": "Female Driver Mode",
+        "displaySubtitle": "You can enable booking Ride Austin Female Drivers"
+    }
+]

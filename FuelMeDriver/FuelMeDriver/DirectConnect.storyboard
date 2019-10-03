@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Direct Connect-->
+        <scene sceneID="Sfs-4w-xRW">
+            <objects>
+                <viewController storyboardIdentifier="DirectConnectViewController" title="Direct Connect" id="GTh-kp-ENh" customClass="DirectConnectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dgm-RH-Gg9"/>
+                        <viewControllerLayoutGuide type="bottom" id="sMB-gC-pde"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yEL-2i-AWy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To connect with a Rider directly, please have the rider to input this Driver ID:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TN0-pu-tiH">
+                                <rect key="frame" x="42" y="30" width="291" height="31.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.2627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55678" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcC-8Z-GQ1">
+                                <rect key="frame" x="-1" y="91.5" width="377" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Kce-Tc-hHT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="30"/>
+                                <color key="textColor" red="0.23529411759999999" green="0.26274509800000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                        <color key="value" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yru-z0-TJP">
+                                <rect key="frame" x="24" y="190.5" width="327" height="45"/>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.65490196079999996" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="So4-Sb-VF9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <state key="normal" title="GET NEW DRIVER ID">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnRequestNewDriverConnectIdTapped:" destination="GTh-kp-ENh" eventType="touchUpInside" id="RTR-uG-GaI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TN0-pu-tiH" firstAttribute="leading" secondItem="yEL-2i-AWy" secondAttribute="leading" constant="42" id="7Vd-jn-I2p"/>
+                            <constraint firstItem="dcC-8Z-GQ1" firstAttribute="trailing" secondItem="yEL-2i-AWy" secondAttribute="trailing" constant="1" id="8mv-9m-0Mf"/>
+                            <constraint firstItem="dcC-8Z-GQ1" firstAttribute="top" secondItem="TN0-pu-tiH" secondAttribute="bottom" constant="30" id="CMn-1m-2TN"/>
+                            <constraint firstItem="yru-z0-TJP" firstAttribute="leading" secondItem="yEL-2i-AWy" secondAttribute="leading" constant="24" id="DNh-Qf-s7E"/>
+                            <constraint firstItem="dcC-8Z-GQ1" firstAttribute="leading" secondItem="yEL-2i-AWy" secondAttribute="leading" constant="-1" id="MSs-eH-1YF"/>
+                            <constraint firstAttribute="trailing" secondItem="yru-z0-TJP" secondAttribute="trailing" constant="24" id="WD8-O9-z2u"/>
+                            <constraint firstAttribute="trailing" secondItem="TN0-pu-tiH" secondAttribute="trailing" constant="42" id="e2Q-te-SuT"/>
+                            <constraint firstItem="yru-z0-TJP" firstAttribute="top" secondItem="dcC-8Z-GQ1" secondAttribute="bottom" constant="24" id="p5n-X9-2wl"/>
+                            <constraint firstItem="TN0-pu-tiH" firstAttribute="top" secondItem="dgm-RH-Gg9" secondAttribute="bottom" constant="30" id="phU-yl-AAF"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="lblDescription" destination="TN0-pu-tiH" id="xka-MK-CD5"/>
+                        <outlet property="lblDirectConnectCode" destination="dcC-8Z-GQ1" id="6JX-Is-kdK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZt-Ml-AH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197.59999999999999" y="83.208395802098963"/>
+        </scene>
+    </scenes>
+</document>

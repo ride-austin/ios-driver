@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Driver Photo View Controller-->
+        <scene sceneID="UEk-mM-jpk">
+            <objects>
+                <viewController storyboardIdentifier="DriverPhotoViewController" id="Hml-Wx-Yry" customClass="DriverPhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9NN-N0-Y3H"/>
+                        <viewControllerLayoutGuide type="bottom" id="UAP-S0-Rk9"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="d8c-pG-EFw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5a-9v-zjv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.062745098040000002" green="0.074509803920000006" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AMi-aI-yaJ"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Need Help? Visit Us." image="Icon-need-help">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="needHelp:" destination="Hml-Wx-Yry" eventType="touchUpInside" id="0Qi-AT-scs"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9B-CD-V2h">
+                                <rect key="frame" x="0.0" y="40" width="375" height="552"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j5-EA-1EV">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-license" translatesAutoresizingMaskIntoConstraints="NO" id="lhz-P5-HRB" userLabel="photoImage">
+                                                <rect key="frame" x="92.5" y="0.0" width="190" height="190"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="190" id="ce6-uQ-GVr"/>
+                                                    <constraint firstAttribute="width" constant="190" id="xMz-hG-bQA"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="ce6-uQ-GVr"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="lhz-P5-HRB" firstAttribute="centerX" secondItem="3j5-EA-1EV" secondAttribute="centerX" id="6Dm-Wb-ElY"/>
+                                            <constraint firstAttribute="height" constant="190" id="HqZ-7e-y3Z"/>
+                                            <constraint firstItem="lhz-P5-HRB" firstAttribute="top" secondItem="3j5-EA-1EV" secondAttribute="top" id="IaM-c9-Qlg"/>
+                                            <constraint firstAttribute="trailing" secondItem="lhz-P5-HRB" secondAttribute="trailing" id="KEl-a1-Mzb"/>
+                                            <constraint firstItem="lhz-P5-HRB" firstAttribute="centerX" secondItem="3j5-EA-1EV" secondAttribute="centerX" id="Pck-e0-7Kw"/>
+                                            <constraint firstAttribute="bottom" secondItem="lhz-P5-HRB" secondAttribute="bottom" id="c9o-hY-UkY"/>
+                                            <constraint firstItem="lhz-P5-HRB" firstAttribute="centerY" secondItem="3j5-EA-1EV" secondAttribute="centerY" id="fWN-L7-ABE"/>
+                                            <constraint firstItem="lhz-P5-HRB" firstAttribute="leading" secondItem="3j5-EA-1EV" secondAttribute="leading" id="nML-S9-NWI"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="KEl-a1-Mzb"/>
+                                                <exclude reference="Pck-e0-7Kw"/>
+                                                <exclude reference="fWN-L7-ABE"/>
+                                                <exclude reference="nML-S9-NWI"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Update Your Driver Photo" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgG-dm-5mL">
+                                        <rect key="frame" x="20" y="200" width="335" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oQ-xj-pKc">
+                                        <rect key="frame" x="20" y="254.5" width="335" height="61"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">- Shows your face clearly (no dark shadows, not blurry)
+- No sunglasses (but regular glasses are fine)
+- Only has yourself (no group photos)</string>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0oQ-xj-pKc" secondAttribute="bottom" constant="20" id="Bxy-w0-4f3"/>
+                                    <constraint firstAttribute="trailing" secondItem="BgG-dm-5mL" secondAttribute="trailing" constant="20" id="CKg-us-uer"/>
+                                    <constraint firstItem="0oQ-xj-pKc" firstAttribute="top" secondItem="BgG-dm-5mL" secondAttribute="bottom" constant="10" id="EnK-bB-4c8"/>
+                                    <constraint firstItem="3j5-EA-1EV" firstAttribute="top" secondItem="o9B-CD-V2h" secondAttribute="top" id="aaQ-H9-eRw"/>
+                                    <constraint firstItem="0oQ-xj-pKc" firstAttribute="leading" secondItem="o9B-CD-V2h" secondAttribute="leading" constant="20" id="f7P-SI-wQe"/>
+                                    <constraint firstItem="BgG-dm-5mL" firstAttribute="top" secondItem="3j5-EA-1EV" secondAttribute="bottom" constant="10" id="klA-OJ-2oo"/>
+                                    <constraint firstAttribute="trailing" secondItem="3j5-EA-1EV" secondAttribute="trailing" id="n70-Kz-4UI"/>
+                                    <constraint firstItem="BgG-dm-5mL" firstAttribute="leading" secondItem="o9B-CD-V2h" secondAttribute="leading" constant="20" id="tyq-OW-McV"/>
+                                    <constraint firstAttribute="trailing" secondItem="0oQ-xj-pKc" secondAttribute="trailing" constant="20" id="uPT-eM-7mw"/>
+                                    <constraint firstItem="3j5-EA-1EV" firstAttribute="leading" secondItem="o9B-CD-V2h" secondAttribute="leading" id="wYI-uh-aak"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2m-jf-c6L" customClass="FlatButton">
+                                <rect key="frame" x="20" y="592" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tc7-Au-IYh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                <color key="tintColor" red="0.97254901959999995" green="0.32549019610000002" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="TAKE PHOTO" image="icon-camera">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="takePhotoAction:" destination="Hml-Wx-Yry" eventType="touchUpInside" id="tf9-AW-ZXY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="N5a-9v-zjv" firstAttribute="top" secondItem="d8c-pG-EFw" secondAttribute="top" id="DPS-OQ-P1e"/>
+                            <constraint firstItem="H2m-jf-c6L" firstAttribute="leading" secondItem="d8c-pG-EFw" secondAttribute="leading" constant="20" id="IYK-H2-a1e"/>
+                            <constraint firstAttribute="trailing" secondItem="H2m-jf-c6L" secondAttribute="trailing" constant="20" id="TRh-ee-58u"/>
+                            <constraint firstAttribute="trailing" secondItem="N5a-9v-zjv" secondAttribute="trailing" id="X4K-ur-qxb"/>
+                            <constraint firstItem="3j5-EA-1EV" firstAttribute="width" secondItem="d8c-pG-EFw" secondAttribute="width" id="XR9-ZO-6xg"/>
+                            <constraint firstItem="N5a-9v-zjv" firstAttribute="leading" secondItem="d8c-pG-EFw" secondAttribute="leading" id="YTT-py-YEw"/>
+                            <constraint firstAttribute="trailing" secondItem="o9B-CD-V2h" secondAttribute="trailing" id="eU7-6H-vqx"/>
+                            <constraint firstItem="o9B-CD-V2h" firstAttribute="top" secondItem="N5a-9v-zjv" secondAttribute="bottom" id="fdc-qM-hNZ"/>
+                            <constraint firstItem="H2m-jf-c6L" firstAttribute="top" secondItem="o9B-CD-V2h" secondAttribute="bottom" id="lU1-ee-pNV"/>
+                            <constraint firstItem="o9B-CD-V2h" firstAttribute="width" secondItem="d8c-pG-EFw" secondAttribute="width" id="obA-zY-JtW"/>
+                            <constraint firstAttribute="bottom" secondItem="H2m-jf-c6L" secondAttribute="bottom" constant="25" id="pC6-Od-eEL"/>
+                            <constraint firstItem="o9B-CD-V2h" firstAttribute="leading" secondItem="d8c-pG-EFw" secondAttribute="leading" id="xOX-lI-HNn"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imagePhoto" destination="lhz-P5-HRB" id="KvJ-FQ-hTz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3s-F7-2mj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328" y="369"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-license" width="537" height="272"/>
+        <image name="Icon-need-help" width="14" height="15"/>
+        <image name="icon-camera" width="20" height="17"/>
+    </resources>
+</document>

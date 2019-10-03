@@ -1,0 +1,5 @@
+{
+    "id" : 3416709,
+    "eventType" : "SURGE_AREA_UPDATES",
+    "parameters" : "{\"surgeAreas\":[{\"id\":510,\"name\":\"DOWNTOWN - EAST OF CONGRESS\",\"topLeftCornerLat\":-97.7452,\"topLeftCornerLng\":30.2738,\"bottomRightCornerLat\":-97.7319,\"bottomRightCornerLng\":30.2571,\"centerPointLat\":30.270609,\"centerPointLng\":-97.749071,\"csvGeometry\":\"-97.74070000000002,30.27380000000001 -97.7319,30.2716 -97.7359,30.2611 -97.7402,30.2622 -97.74209999999999,30.2571 -97.74299999999998,30.26 -97.7452,30.26160000000001 -97.74070000000002,30.27380000000001,0\",\"labelLat\":30.266687,\"labelLng\":-97.738785,\"geometry_id\":0,\"carCategories\":[\"SUV\",\"PREMIUM\",\"LUXURY\"],\"carCategoriesFactors\":{\"SUV\":2.5,\"PREMIUM\":2.5,\"LUXURY\":2.5},\"surgeFactor\":2.5}]}"
+}

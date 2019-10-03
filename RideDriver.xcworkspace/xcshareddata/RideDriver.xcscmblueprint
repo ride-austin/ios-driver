@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CFE8C371D430E5D97DF067B073D289FFBA409FA3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CFE8C371D430E5D97DF067B073D289FFBA409FA3" : 0,
+    "43A77F2089C6CA5551F4981F26B3F7E400A7ACD7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "93AF1776-586B-4BD1-A8B7-964BF5084358",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CFE8C371D430E5D97DF067B073D289FFBA409FA3" : "ridedriverios\/",
+    "43A77F2089C6CA5551F4981F26B3F7E400A7ACD7" : "RideClient-Dev\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RideDriver",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RideDriver.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/fuelmedevelopers\/rideclientios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43A77F2089C6CA5551F4981F26B3F7E400A7ACD7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/fuelmedevelopers\/ridedriverios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CFE8C371D430E5D97DF067B073D289FFBA409FA3"
+    }
+  ]
+}

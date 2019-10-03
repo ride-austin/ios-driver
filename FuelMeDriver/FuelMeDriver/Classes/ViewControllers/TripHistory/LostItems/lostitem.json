@@ -1,0 +1,46 @@
+{
+    "body" : "Calling your driver to connect is the best way to retrieve an item you may have left in a vehicle. If you have not tried contacting your driver directly, head back and select \"Contact my driver about a lost item\".\\n\\nIf more than 24 hours have passed since your trip ended and you're still unable to connect with your driver, we'll step in to help. Please share some details below.\\n\\nDrivers are independent contractors. Neither RideAustin nor drivers are responsible for the items left in a vehicle after a trip ends. We're here to help, but cannot guarantee that a driver has your item or can immediately deliver it to you.",
+    "supportFields" : [
+                {
+                "fieldTitle" : "Test text",
+                "fieldPlaceholder" : "text placeholder",
+                "fieldType" : "text",
+                "isMandatory" : true,
+                "variable" : "description"
+                },
+                {
+                "fieldTitle" : "Test Date",
+                "fieldPlaceholder" : "date placeholder",
+                "fieldType" : "text",
+                "isMandatory" : true,
+                "variable" : "details"
+                },
+                {
+                "fieldTitle" : "Test boolean picker",
+                "fieldPlaceholder" : "",
+                "fieldType" : "bool",
+                "isMandatory" : true,
+                "variable" : "can_share_number"
+                },
+                {
+                "fieldTitle" : "Test image picker",
+                "fieldPlaceholder" : "",
+                "fieldType" : "photo",
+                "isMandatory" : true,
+                "variable" : "image"
+                },
+                {
+                "fieldTitle" : "Enter the best phone number to reach you",
+                "fieldPlaceholder" : "(201) 555-5555",
+                "fieldType" : "phone",
+                "isMandatory" : true,
+                "variable" : "phone"
+                }
+                ],
+    "title" : "I couldn't reach my driver about a lost item",
+    "headerText" : "Tell us more",
+    "actionTitle" : "Submit",
+    "actionType" : "lostandfound/lost",
+    "id" : 52,
+    
+}

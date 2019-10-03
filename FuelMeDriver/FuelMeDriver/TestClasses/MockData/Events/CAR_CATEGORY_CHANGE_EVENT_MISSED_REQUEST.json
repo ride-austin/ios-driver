@@ -1,0 +1,6 @@
+{
+    "id" : 110765215,
+    "eventType" : "CAR_CATEGORY_CHANGE",
+    "parameters" : "{\"source\":\"MISSED_REQUEST\"}"
+}
+

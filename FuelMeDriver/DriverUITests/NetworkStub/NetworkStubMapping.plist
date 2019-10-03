@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MAP_TERM_NOT_ACCEPTED</key>
+	<array>
+		<string>newTermNotAcceptedStub</string>
+		<string>goOnlineNotAcceptedTermStub</string>
+	</array>
+	<key>MAP_INCOMING_RIDE_WITH_COMMENT</key>
+	<array>
+		<string>acceptRideRequestStub</string>
+		<string>sendArrivedStub</string>
+		<string>sendStartTripStub</string>
+		<string>getRideByIDStub</string>
+		<string>sendEndTripStub</string>
+		<string>sendRatingStub</string>
+	</array>
+	<key>MAP_INCOMING_RIDE_NEW_COMMENT</key>
+	<array>
+		<string>acceptRideRequestStub</string>
+		<string>sendArrivedStub</string>
+		<string>sendStartTripStub</string>
+		<string>getRideByIDStub</string>
+		<string>sendEndTripStub</string>
+		<string>sendRatingStub</string>
+	</array>
+	<key>MAP_INCOMING_RIDE_UPDATE_COMMENT</key>
+	<array>
+		<string>acceptRideRequestStub</string>
+		<string>sendArrivedStub</string>
+		<string>sendStartTripStub</string>
+		<string>getRideByIDStub</string>
+		<string>sendEndTripStub</string>
+		<string>sendRatingStub</string>
+	</array>
+	<key>MAP_UPGRADE_REQUEST_DISABLED</key>
+	<array>
+		<string>disableRequestUpgradeStub</string>
+	</array>
+	<key>MAP_UPGRADE_REQUEST_RESTORE</key>
+	<array>
+		<string>activeDriverRidingStub</string>
+		<string>currentRideWithUpgradeRequestedStub</string>
+	</array>
+	<key>MAP_DEFAULT_LOCATION_MANAGER</key>
+	<array>
+		<string>setupDefaultLocationManager</string>
+	</array>
+</dict>
+</plist>

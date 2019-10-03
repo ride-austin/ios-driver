@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="Pbg-sV-YgO" customClass="BaseXLPhonePickerCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pbg-sV-YgO" id="OVf-uQ-bjv">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNt-Gw-0ij">
+                        <rect key="frame" x="20" y="20" width="335" height="32"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.69411764710000001" green="0.69411764710000001" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="US.png" translatesAutoresizingMaskIntoConstraints="NO" id="bD8-w1-qoU">
+                        <rect key="frame" x="20" y="21" width="40" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="6wd-c8-e3N"/>
+                            <constraint firstAttribute="width" constant="40" id="MeB-b5-LjO"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="hCd-aI-CzE">
+                        <rect key="frame" x="64" y="27.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="3Hh-BJ-NC9"/>
+                            <constraint firstAttribute="width" constant="15" id="fhv-Ko-xQ1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" text="+XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zt5-hD-fNR">
+                        <rect key="frame" x="82" y="25" width="44" height="20"/>
+                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0501234567" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k4K-d3-hfi">
+                        <rect key="frame" x="129" y="24.5" width="226" height="21"/>
+                        <accessibility key="accessibilityConfiguration" identifier="phoneTextField"/>
+                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikl-8u-8in">
+                        <rect key="frame" x="0.0" y="0.0" width="79" height="64.5"/>
+                        <connections>
+                            <action selector="didTapCountry:" destination="Pbg-sV-YgO" eventType="touchUpInside" id="p0o-WT-Uur"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PP9-Ji-WOb">
+                        <rect key="frame" x="20" y="0.0" width="38" height="17"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Ikl-8u-8in" firstAttribute="trailing" secondItem="hCd-aI-CzE" secondAttribute="trailing" id="3Eq-er-JxX"/>
+                    <constraint firstItem="Zt5-hD-fNR" firstAttribute="centerY" secondItem="hCd-aI-CzE" secondAttribute="centerY" id="41K-2J-huf"/>
+                    <constraint firstItem="Ikl-8u-8in" firstAttribute="leading" secondItem="OVf-uQ-bjv" secondAttribute="leading" id="661-u8-szc"/>
+                    <constraint firstItem="FNt-Gw-0ij" firstAttribute="bottom" secondItem="bD8-w1-qoU" secondAttribute="bottom" constant="3" id="Bb7-rU-lR9"/>
+                    <constraint firstItem="FNt-Gw-0ij" firstAttribute="top" secondItem="bD8-w1-qoU" secondAttribute="top" constant="-1" id="DTA-X9-Snv"/>
+                    <constraint firstItem="Zt5-hD-fNR" firstAttribute="leading" secondItem="hCd-aI-CzE" secondAttribute="trailing" constant="3" id="Fhv-IB-EKt"/>
+                    <constraint firstItem="bD8-w1-qoU" firstAttribute="leading" secondItem="OVf-uQ-bjv" secondAttribute="leading" constant="20" id="Fmk-RV-olP"/>
+                    <constraint firstItem="hCd-aI-CzE" firstAttribute="leading" secondItem="bD8-w1-qoU" secondAttribute="trailing" constant="4" id="HzM-CF-kPr"/>
+                    <constraint firstAttribute="bottom" secondItem="Ikl-8u-8in" secondAttribute="bottom" id="Itv-h4-cVA"/>
+                    <constraint firstItem="PP9-Ji-WOb" firstAttribute="leading" secondItem="OVf-uQ-bjv" secondAttribute="leading" constant="20" id="XZz-l1-c3H"/>
+                    <constraint firstItem="FNt-Gw-0ij" firstAttribute="top" secondItem="PP9-Ji-WOb" secondAttribute="bottom" constant="3" id="Xvq-4a-9j1"/>
+                    <constraint firstItem="Ikl-8u-8in" firstAttribute="top" secondItem="OVf-uQ-bjv" secondAttribute="top" id="YJ3-sL-Msm"/>
+                    <constraint firstItem="PP9-Ji-WOb" firstAttribute="top" secondItem="OVf-uQ-bjv" secondAttribute="top" id="Yf7-Li-ePD"/>
+                    <constraint firstAttribute="trailing" secondItem="k4K-d3-hfi" secondAttribute="trailing" constant="20" id="caN-xY-VLd"/>
+                    <constraint firstAttribute="trailing" secondItem="FNt-Gw-0ij" secondAttribute="trailing" constant="20" id="h6g-57-UoO"/>
+                    <constraint firstItem="hCd-aI-CzE" firstAttribute="centerY" secondItem="bD8-w1-qoU" secondAttribute="centerY" id="jq8-Aa-phc"/>
+                    <constraint firstItem="FNt-Gw-0ij" firstAttribute="leading" secondItem="OVf-uQ-bjv" secondAttribute="leading" constant="20" id="s9O-4e-itK"/>
+                    <constraint firstItem="k4K-d3-hfi" firstAttribute="centerY" secondItem="Zt5-hD-fNR" secondAttribute="centerY" id="wL1-bg-ayh"/>
+                    <constraint firstItem="k4K-d3-hfi" firstAttribute="leading" secondItem="Zt5-hD-fNR" secondAttribute="trailing" constant="3" id="ydE-g7-hJ0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="ivFlag" destination="bD8-w1-qoU" id="gq9-Z1-C4r"/>
+                <outlet property="lbCountryCode" destination="Zt5-hD-fNR" id="x6B-Wb-H3t"/>
+                <outlet property="lbTitle" destination="PP9-Ji-WOb" id="TTe-0K-hjm"/>
+                <outlet property="textField" destination="k4K-d3-hfi" id="BCy-bL-GEd"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="-363"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="US.png" width="40" height="30"/>
+        <image name="dropdown" width="512" height="512"/>
+    </resources>
+</document>

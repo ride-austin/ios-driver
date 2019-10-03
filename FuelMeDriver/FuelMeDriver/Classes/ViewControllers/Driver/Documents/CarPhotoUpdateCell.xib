@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarPhotoUpdateCell" id="2Wr-Zb-3tq" customClass="CarPhotoUpdateCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="298"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="298"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5E-gy-n5n">
+                        <rect key="frame" x="0.0" y="33" width="180" height="227"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCarFront" translatesAutoresizingMaskIntoConstraints="NO" id="DtI-wE-hhn">
+                                <rect key="frame" x="21" y="42" width="139" height="142"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="TiH-8i-GA0"/>
+                                    <constraint firstAttribute="height" constant="142" id="y57-x5-S29"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cyt-8c-zLn">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="227"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cyt-8c-zLn" firstAttribute="leading" secondItem="d5E-gy-n5n" secondAttribute="leading" id="78P-jb-d6Y"/>
+                            <constraint firstItem="cyt-8c-zLn" firstAttribute="top" secondItem="d5E-gy-n5n" secondAttribute="top" id="Dfn-0V-PlF"/>
+                            <constraint firstItem="DtI-wE-hhn" firstAttribute="centerY" secondItem="d5E-gy-n5n" secondAttribute="centerY" id="GXv-Lk-bTD"/>
+                            <constraint firstAttribute="trailing" secondItem="cyt-8c-zLn" secondAttribute="trailing" id="KpA-uD-Ydv"/>
+                            <constraint firstItem="DtI-wE-hhn" firstAttribute="centerX" secondItem="d5E-gy-n5n" secondAttribute="centerX" id="mhZ-2u-quj"/>
+                            <constraint firstAttribute="bottom" secondItem="cyt-8c-zLn" secondAttribute="bottom" id="vYH-Ld-Dxo"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgd-zu-Wrz">
+                        <rect key="frame" x="0.0" y="268" width="180" height="30"/>
+                        <color key="backgroundColor" red="0.0078431372550000003" green="0.65490196079999996" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="LZU-ae-OsA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                        <state key="normal" title="Update">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front Right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdM-Pk-w8E">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Kfc-z6-dxW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                        <color key="textColor" red="0.23529411759999999" green="0.26274509800000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="mgd-zu-Wrz" firstAttribute="top" secondItem="d5E-gy-n5n" secondAttribute="bottom" constant="8" id="BlJ-dz-njI"/>
+                <constraint firstAttribute="bottom" secondItem="mgd-zu-Wrz" secondAttribute="bottom" id="GWp-aO-KqY"/>
+                <constraint firstItem="d5E-gy-n5n" firstAttribute="top" secondItem="WdM-Pk-w8E" secondAttribute="bottom" constant="12" id="Ghm-sj-mcx"/>
+                <constraint firstItem="WdM-Pk-w8E" firstAttribute="top" secondItem="2Wr-Zb-3tq" secondAttribute="top" id="Gui-Db-kfK"/>
+                <constraint firstAttribute="trailing" secondItem="d5E-gy-n5n" secondAttribute="trailing" id="K9D-UD-Ixa"/>
+                <constraint firstAttribute="trailing" secondItem="mgd-zu-Wrz" secondAttribute="trailing" id="KPc-ZK-jIs"/>
+                <constraint firstItem="mgd-zu-Wrz" firstAttribute="leading" secondItem="2Wr-Zb-3tq" secondAttribute="leading" id="Raq-Rq-0QC"/>
+                <constraint firstAttribute="trailing" secondItem="WdM-Pk-w8E" secondAttribute="trailing" id="agf-G2-9xz"/>
+                <constraint firstItem="d5E-gy-n5n" firstAttribute="leading" secondItem="2Wr-Zb-3tq" secondAttribute="leading" id="gsE-xJ-AZC"/>
+                <constraint firstItem="WdM-Pk-w8E" firstAttribute="leading" secondItem="2Wr-Zb-3tq" secondAttribute="leading" id="lmJ-L0-RTt"/>
+            </constraints>
+            <size key="customSize" width="192" height="298"/>
+            <connections>
+                <outlet property="btnUpdate" destination="mgd-zu-Wrz" id="0pf-9q-mEp"/>
+                <outlet property="imgCar" destination="cyt-8c-zLn" id="CDg-76-82b"/>
+                <outlet property="imgPlaceHolder" destination="DtI-wE-hhn" id="HuT-iO-r9S"/>
+                <outlet property="lblTitle" destination="WdM-Pk-w8E" id="1F9-RV-SHZ"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="116"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconCarFront" width="135" height="66"/>
+    </resources>
+</document>

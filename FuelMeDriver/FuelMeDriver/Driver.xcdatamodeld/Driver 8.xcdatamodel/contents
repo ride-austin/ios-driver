@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Automobile" representedClassName="Automobile" syncable="YES">
+        <attribute name="make" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="model" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="year" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="Avatar" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CachedRideLocation" syncable="YES">
+        <attribute name="course" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="heading" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lat" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lng" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sequence" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="speed" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CheckrReport" representedClassName="CheckrReport" syncable="YES">
+        <attribute name="accidentsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="createdDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="restrictionsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="violationsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Discount" representedClassName="Discount" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="credits" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="discountAmount" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="userUuid" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Driver" representedClassName="Driver" elementID="nickname" syncable="YES">
+        <attribute name="activationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="active" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="agreedToLegalTerms" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="agreementDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="checkrId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="checkrStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="fingerprintCleared" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="firstname" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" attributeType="String" syncable="YES"/>
+        <attribute name="lastname" attributeType="String" syncable="YES"/>
+        <attribute name="licenseNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="licensePictureUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="licenseState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payoneerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payoneerSignupUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payoneerStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="referralCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ssn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" syncable="YES"/>
+        <relationship name="cars" optional="YES" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="DriverCar" syncable="YES"/>
+        <relationship name="checkrReports" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CheckrReport" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="DriverCar" representedClassName="DriverCar" syncable="YES">
+        <attribute name="carCategories" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="license" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="make" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="model" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" syncable="YES"/>
+        <attribute name="year" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="PromoCode" representedClassName="PromoCode" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="code" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="deliveryFee" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="expiration" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="premiumPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="premiumPriceDiscount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="promo_message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="promoCodeType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regularPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="regularPriceDiscount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" elementID="nickname" syncable="YES">
+        <attribute name="active" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="backgroundTracking" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="cardExpired" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="companyUuid" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="email" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="facebookId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstname" attributeType="String" syncable="YES"/>
+        <attribute name="lastname" attributeType="String" syncable="YES"/>
+        <attribute name="merchantId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="promoCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="promoCodePresent" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="redactedAccount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="referralCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resettingPassword" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="timeZone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usedPromoCodes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" syncable="YES"/>
+        <relationship name="avatars" optional="YES" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Avatar" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Automobile" positionX="-135" positionY="36" width="128" height="90"/>
+        <element name="Avatar" positionX="-551" positionY="63" width="128" height="73"/>
+        <element name="CachedRideLocation" positionX="-342" positionY="72" width="128" height="165"/>
+        <element name="CheckrReport" positionX="-342" positionY="99" width="128" height="135"/>
+        <element name="Discount" positionX="-137" positionY="228" width="128" height="30"/>
+        <element name="Driver" positionX="-333" positionY="81" width="128" height="450"/>
+        <element name="DriverCar" positionX="-324" positionY="90" width="128" height="30"/>
+        <element name="PromoCode" positionX="27" positionY="66" width="128" height="30"/>
+        <element name="User" positionX="-369" positionY="-54" width="128" height="30"/>
+    </elements>
+</model>

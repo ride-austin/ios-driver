@@ -1,0 +1,18 @@
+ [
+  {
+  "code": "NO_SHOW",
+  "description": "Rider did not show up"
+  },
+  {
+  "code": "WRONG_GPS",
+  "description": "Wrong GPS location"
+  },
+  {
+  "code": "TOO_MANY_RIDERS",
+  "description": "Too many riders for car type"
+  },
+  {
+  "code": "OTHER",
+  "description": "Other"
+  }
+  ]

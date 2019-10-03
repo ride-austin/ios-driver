@@ -1,0 +1,67 @@
+{
+    "id" : 111383211,
+    "ride" : {
+        "id" : 1288783,
+        "rider" : {
+            "id" : 2982,
+            "rating" : 5,
+            "gender" : "UNKNOWN",
+            "phoneNumber" : "+971565362129",
+            "uuid" : "2982",
+            "active" : true,
+            "lastname" : "",
+            "type" : "RIDER",
+            "firstname" : "RiderName",
+            "fullName" : "RiderName ",
+            "applePayEnabled" : false,
+            "user" : {
+                "id" : 2245,
+                "uuid" : "2245",
+                "avatars" : [
+                
+                ],
+                "phoneNumberVerified" : true,
+                "lastname" : "",
+                "firstname" : "RiderName",
+                "address" : {
+                    
+                },
+                "fullName" : "RiderName ",
+                "enabled" : true,
+                "photoUrl" : "http:\/\/media-stage.rideaustin.com\/user-photos\/153c343b-98d7-464f-974f-dbe6b7e174b7.png",
+                "email" : "ride129@test.com",
+                "phoneNumber" : "+971565362129",
+                "gender" : "UNKNOWN"
+            },
+            "cityId" : 1,
+            "email" : "ride129@test.com"
+        },
+        "start" : {
+            "address" : "Jollyville Road, Austin, Texas",
+            "zipCode" : "78759"
+        },
+        "end" : {
+            
+        },
+        "requestedCarType" : {
+            "carCategory" : "REGULAR",
+            "title" : "STANDARD",
+            "plainIconUrl" : "https:\/\/media.rideaustin.com\/icon\/regular.png"
+        },
+        "cityId" : 1,
+        "startAddress" : "Jollyville Road, Austin, Texas",
+        "createdDate" : 1500393112000,
+        "raPayment" : "0.00",
+        "updatedDate" : 1500393130000,
+        "rideCost" : "0.00",
+        "uuid" : "1242706",
+        "totalFare" : "0.00",
+        "totalCharge" : "0.00",
+        "surgeFactor" : 1,
+        "startLocationLat" : 30.418022,
+        "startLocationLong" : -97.75052700000001,
+        "status" : "REQUESTED",
+        "estimatedTimeArrive" : 203
+    },
+    "eventType" : "RIDE_STACKED_REASSIGNED"
+}

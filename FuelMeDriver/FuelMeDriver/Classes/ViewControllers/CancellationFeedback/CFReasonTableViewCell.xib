@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CFReasonTableViewCell" id="qtX-Ie-UQe" customClass="CFReasonTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qtX-Ie-UQe" id="7js-Kc-ZVw">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFt-FH-VZE">
+                        <rect key="frame" x="56" y="12.5" width="295" height="18"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-circle-white-check" translatesAutoresizingMaskIntoConstraints="NO" id="mTY-yV-oGS">
+                        <rect key="frame" x="24" y="9" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="gXy-1p-sS0"/>
+                            <constraint firstAttribute="width" constant="24" id="j5l-qp-cjv"/>
+                        </constraints>
+                    </imageView>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baI-pI-lSE">
+                        <rect key="frame" x="24" y="9" width="24" height="24"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="baI-pI-lSE" firstAttribute="bottom" secondItem="mTY-yV-oGS" secondAttribute="bottom" id="4eL-tc-qUX"/>
+                    <constraint firstItem="mTY-yV-oGS" firstAttribute="centerY" secondItem="uFt-FH-VZE" secondAttribute="centerY" id="8Qd-WZ-pOt"/>
+                    <constraint firstItem="uFt-FH-VZE" firstAttribute="leading" secondItem="mTY-yV-oGS" secondAttribute="trailing" constant="8" id="AEE-cP-8Fm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uFt-FH-VZE" secondAttribute="trailing" constant="8" id="I6l-IB-np3"/>
+                    <constraint firstItem="baI-pI-lSE" firstAttribute="top" secondItem="mTY-yV-oGS" secondAttribute="top" id="J1T-sF-3Sv"/>
+                    <constraint firstItem="mTY-yV-oGS" firstAttribute="leading" secondItem="7js-Kc-ZVw" secondAttribute="leadingMargin" constant="8" id="J9a-HU-GON"/>
+                    <constraint firstItem="baI-pI-lSE" firstAttribute="trailing" secondItem="mTY-yV-oGS" secondAttribute="trailing" id="Rh4-4B-1Go"/>
+                    <constraint firstItem="uFt-FH-VZE" firstAttribute="centerY" secondItem="7js-Kc-ZVw" secondAttribute="centerY" id="Rov-Sj-8vx"/>
+                    <constraint firstItem="baI-pI-lSE" firstAttribute="leading" secondItem="mTY-yV-oGS" secondAttribute="leading" id="pR1-Cg-tHW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="ivCheck" destination="mTY-yV-oGS" id="wz6-qz-KVL"/>
+                <outlet property="lbTitle" destination="uFt-FH-VZE" id="1f6-TP-020"/>
+                <outlet property="vCircle" destination="baI-pI-lSE" id="gcz-VQ-hqj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blue-circle-white-check" width="24" height="24"/>
+    </resources>
+</document>

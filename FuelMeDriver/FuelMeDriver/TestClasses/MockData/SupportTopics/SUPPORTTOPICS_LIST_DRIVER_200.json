@@ -1,0 +1,72 @@
+[
+  {
+    "hasChildren" : true,
+    "id" : 1,
+    "hasForms" : false,
+    "description" : "Trip fare related issues",
+    "avatarType" : "DRIVER",
+    "followUpTypes" : [
+      "EMAIL"
+    ]
+  },
+  {
+    "hasChildren" : true,
+    "id" : 2,
+    "hasForms" : false,
+    "description" : "Rider related issues",
+    "avatarType" : "DRIVER",
+    "followUpTypes" : [
+      "EMAIL"
+    ]
+  },
+  {
+    "hasChildren" : false,
+    "id" : 3,
+    "hasForms" : true,
+    "description" : "Lost item found",
+    "avatarType" : "DRIVER",
+    "followUpTypes" : [
+      "EMAIL"
+    ]
+  },
+  {
+    "hasChildren" : true,
+    "id" : 4,
+    "hasForms" : false,
+    "description" : "Vehicle issue or problems during the trip",
+    "avatarType" : "DRIVER",
+    "followUpTypes" : [
+      "EMAIL"
+    ]
+  },
+  {
+    "hasChildren" : true,
+    "id" : 5,
+    "hasForms" : false,
+    "description" : "Ride request problems",
+    "avatarType" : "DRIVER",
+    "followUpTypes" : [
+      "EMAIL"
+    ]
+  },
+  {
+    "hasChildren" : false,
+    "id" : 6,
+    "hasForms" : false,
+    "description" : "Application problem report",
+    "avatarType" : "DRIVER",
+    "followUpTypes" : [
+      "EMAIL"
+    ]
+  },
+  {
+    "hasChildren" : false,
+    "id" : 7,
+    "hasForms" : false,
+    "description" : "General issues",
+    "avatarType" : "DRIVER",
+    "followUpTypes" : [
+      "EMAIL"
+    ]
+  }
+]

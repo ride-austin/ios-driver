@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-ExtraBold.otf">
+            <string>Montserrat-ExtraBold</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My Stats-->
+        <scene sceneID="N0j-So-u1b">
+            <objects>
+                <viewController storyboardIdentifier="DriverStatisticViewController" title="My Stats" id="QD9-ZG-32L" customClass="DriverStatisticViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mwb-gX-9vv"/>
+                        <viewControllerLayoutGuide type="bottom" id="y91-Ed-3Yv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ak-n7-Fsg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WzN-Uh-6S3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="lbM-zd-qNd">
+                                    <rect key="frame" x="0.0" y="108" width="375" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DriverStatisticTableViewCell" rowHeight="80" id="baS-my-tEE" customClass="DriverStatisticTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="baS-my-tEE" id="Ffg-cl-XcY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acceptance Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxF-m9-LPt">
+                                                    <rect key="frame" x="16" y="12" width="143" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <color key="textColor" red="0.17254901960784313" green="0.19607843137254902" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99 out of 100 dispatches" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfv-9r-Z4M">
+                                                    <rect key="frame" x="16" y="38" width="169.5" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                    <color key="textColor" red="0.51764705882352935" green="0.52941176470588236" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="99%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqF-zZ-tWu">
+                                                    <rect key="frame" x="319" y="29.5" width="40" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="17"/>
+                                                    <color key="textColor" red="0.17254901959999999" green="0.1960784314" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SxF-m9-LPt" firstAttribute="leading" secondItem="Ffg-cl-XcY" secondAttribute="leading" constant="16" id="2l5-0X-o34"/>
+                                                <constraint firstItem="SxF-m9-LPt" firstAttribute="top" secondItem="Ffg-cl-XcY" secondAttribute="top" constant="12" id="2lh-H5-yas"/>
+                                                <constraint firstItem="tfv-9r-Z4M" firstAttribute="top" secondItem="SxF-m9-LPt" secondAttribute="bottom" constant="6" id="IJn-dM-le4"/>
+                                                <constraint firstItem="OqF-zZ-tWu" firstAttribute="centerY" secondItem="Ffg-cl-XcY" secondAttribute="centerY" id="Ra4-aX-syZ"/>
+                                                <constraint firstItem="tfv-9r-Z4M" firstAttribute="leading" secondItem="Ffg-cl-XcY" secondAttribute="leading" constant="16" id="aum-IB-1lI"/>
+                                                <constraint firstItem="OqF-zZ-tWu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tfv-9r-Z4M" secondAttribute="trailing" constant="16" id="hht-AB-pud"/>
+                                                <constraint firstAttribute="trailing" secondItem="OqF-zZ-tWu" secondAttribute="trailing" constant="16" id="yFu-8m-4YH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblDescription" destination="tfv-9r-Z4M" id="Kqd-cn-7Ge"/>
+                                            <outlet property="lblPercent" destination="OqF-zZ-tWu" id="5zy-pI-gVI"/>
+                                            <outlet property="lblTitle" destination="SxF-m9-LPt" id="CJ1-GV-QVS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="QD9-ZG-32L" id="Bhy-3t-8da"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WzN-Uh-6S3" secondAttribute="trailing" id="2hr-A4-Fpz"/>
+                            <constraint firstItem="y91-Ed-3Yv" firstAttribute="top" secondItem="WzN-Uh-6S3" secondAttribute="bottom" id="RVV-3m-wir"/>
+                            <constraint firstItem="WzN-Uh-6S3" firstAttribute="top" secondItem="mwb-gX-9vv" secondAttribute="bottom" id="lCE-88-JUW"/>
+                            <constraint firstItem="WzN-Uh-6S3" firstAttribute="leading" secondItem="9ak-n7-Fsg" secondAttribute="leading" id="w60-4R-aKY"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="tblStatistics" destination="WzN-Uh-6S3" id="pvn-us-LHJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxr-Kf-b0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-191.19999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

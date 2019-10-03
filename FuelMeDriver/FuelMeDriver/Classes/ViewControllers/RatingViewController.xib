@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingViewController">
+            <connections>
+                <outlet property="btnSubmit" destination="AwJ-n9-06c" id="tjr-bn-eBZ"/>
+                <outlet property="constraintHeightContainer" destination="O5H-yG-nar" id="9q1-b7-eH6"/>
+                <outlet property="lblDriverEarning" destination="2mO-VU-fHy" id="DKa-Sh-QsU"/>
+                <outlet property="ratingView" destination="m3u-Te-pbX" id="bE7-cW-bdX"/>
+                <outlet property="view" destination="caq-SR-hix" id="PoX-pE-6xm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="caq-SR-hix">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="359"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpJ-fi-BT2">
+                    <rect key="frame" x="0.0" y="54.5" width="300" height="250"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwJ-n9-06c">
+                            <rect key="frame" x="51" y="259" width="198" height="30"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration" identifier="rateSubmitButton"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="AhE-bv-cEn"/>
+                                <constraint firstAttribute="width" constant="198" id="D92-EH-MPT"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="198" id="es6-sw-L3i"/>
+                                <constraint firstAttribute="height" constant="30" id="y8y-GH-ZaX"/>
+                            </constraints>
+                            <state key="normal" title="Submit">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="submitTapped:" destination="-1" eventType="touchUpInside" id="1lW-jK-lB1"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driver Earnings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8n-Rd-RBN">
+                            <rect key="frame" x="71.5" y="30" width="157" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="jcL-iY-O74"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="23"/>
+                            <color key="textColor" red="0.17254901959999999" green="0.1960784314" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 12.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mO-VU-fHy">
+                            <rect key="frame" x="88" y="78" width="125" height="21"/>
+                            <accessibility key="accessibilityConfiguration" identifier="fareLabel"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="VPv-BV-dVb"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="XR8-cj-jZL"/>
+                                <constraint firstAttribute="height" constant="21" id="YIs-0W-I7K"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="24"/>
+                            <color key="textColor" red="0.17254901959999999" green="0.1960784314" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7H-qa-hvq">
+                            <rect key="frame" x="0.0" y="129" width="300" height="1"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="G2i-pG-GEe"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate Rider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1v-bc-kKf">
+                            <rect key="frame" x="117.5" y="160" width="66.5" height="17"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3u-Te-pbX" customClass="HCSStarRatingView">
+                            <rect key="frame" x="0.0" y="197" width="300" height="31"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration" identifier="starRatingView">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="a7O-2W-LKv"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowsHalfStars" value="NO"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="emptyStarImage" value="star-inactive"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="filledStarImage" value="star-active"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="ratingViewChanged:" destination="-1" eventType="valueChanged" id="f6j-Hm-nSL"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="AwJ-n9-06c" firstAttribute="centerX" secondItem="GpJ-fi-BT2" secondAttribute="centerX" id="0z0-i9-fz4"/>
+                        <constraint firstItem="F7H-qa-hvq" firstAttribute="leading" secondItem="GpJ-fi-BT2" secondAttribute="leading" id="7c8-U5-ScM"/>
+                        <constraint firstAttribute="width" constant="300" id="8Ot-xQ-hp4"/>
+                        <constraint firstItem="s8n-Rd-RBN" firstAttribute="centerX" secondItem="GpJ-fi-BT2" secondAttribute="centerX" id="BVA-Co-qKG"/>
+                        <constraint firstItem="2mO-VU-fHy" firstAttribute="top" secondItem="s8n-Rd-RBN" secondAttribute="bottom" constant="20" id="Fhm-I5-Gha"/>
+                        <constraint firstItem="F7H-qa-hvq" firstAttribute="top" secondItem="2mO-VU-fHy" secondAttribute="bottom" constant="30" id="JDg-j8-mxU"/>
+                        <constraint firstItem="m3u-Te-pbX" firstAttribute="leading" secondItem="GpJ-fi-BT2" secondAttribute="leading" id="NUq-9U-iJP"/>
+                        <constraint firstAttribute="height" constant="250" id="O5H-yG-nar"/>
+                        <constraint firstItem="p1v-bc-kKf" firstAttribute="top" secondItem="F7H-qa-hvq" secondAttribute="bottom" constant="30" id="Pvj-EO-xtg"/>
+                        <constraint firstItem="m3u-Te-pbX" firstAttribute="top" secondItem="p1v-bc-kKf" secondAttribute="bottom" constant="20" id="QDa-AB-Gy2"/>
+                        <constraint firstItem="AwJ-n9-06c" firstAttribute="top" secondItem="m3u-Te-pbX" secondAttribute="bottom" constant="31" id="YJN-gb-SuE"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="305" id="Zyp-4h-OM4"/>
+                        <constraint firstAttribute="trailing" secondItem="m3u-Te-pbX" secondAttribute="trailing" id="eTr-a7-7YY"/>
+                        <constraint firstItem="s8n-Rd-RBN" firstAttribute="top" secondItem="GpJ-fi-BT2" secondAttribute="top" constant="30" id="hql-pf-pIg"/>
+                        <constraint firstItem="2mO-VU-fHy" firstAttribute="centerX" secondItem="GpJ-fi-BT2" secondAttribute="centerX" id="wUn-ZL-7T7"/>
+                        <constraint firstItem="p1v-bc-kKf" firstAttribute="centerX" secondItem="GpJ-fi-BT2" secondAttribute="centerX" id="y6i-LG-kpr"/>
+                        <constraint firstAttribute="trailing" secondItem="F7H-qa-hvq" secondAttribute="trailing" id="zVY-sZ-Mev"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GpJ-fi-BT2" firstAttribute="centerY" secondItem="caq-SR-hix" secondAttribute="centerY" id="Hn4-YH-OIa"/>
+                <constraint firstItem="GpJ-fi-BT2" firstAttribute="centerX" secondItem="caq-SR-hix" secondAttribute="centerX" id="IrV-MS-Wls"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="star-active" width="33" height="31"/>
+        <image name="star-inactive" width="33" height="31"/>
+    </resources>
+</document>

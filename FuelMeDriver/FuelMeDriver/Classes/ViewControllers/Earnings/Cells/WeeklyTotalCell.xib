@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WeeklyTotalCell" rowHeight="75" id="KGk-i7-Jjw" customClass="WeeklyTotalCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3oV-Jn-RIy" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="i1b-iq-uts"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Week:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="70" translatesAutoresizingMaskIntoConstraints="NO" id="ZUX-Hw-JyL">
+                        <rect key="frame" x="13" y="28.5" width="81" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="7Rn-CH-D7m"/>
+                            <constraint firstAttribute="width" constant="81" id="eJp-m1-YQB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 395.20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="55" translatesAutoresizingMaskIntoConstraints="NO" id="gy5-tM-dPL">
+                        <rect key="frame" x="142" y="7.5" width="220" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Ge1-mv-Ukg"/>
+                            <constraint firstAttribute="width" constant="220" id="Hkn-ou-Rqz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="45"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8U-XX-nvc" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="73.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vNG-Sg-Arm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3oV-Jn-RIy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2dX-QK-w0M"/>
+                    <constraint firstItem="ZUX-Hw-JyL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4nw-tn-Rfo"/>
+                    <constraint firstAttribute="trailing" secondItem="3oV-Jn-RIy" secondAttribute="trailing" id="5DN-ZI-zRQ"/>
+                    <constraint firstItem="J8U-XX-nvc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8Bu-bE-u11"/>
+                    <constraint firstItem="gy5-tM-dPL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="A84-Um-x1A"/>
+                    <constraint firstItem="ZUX-Hw-JyL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="RhE-Ww-yW1"/>
+                    <constraint firstAttribute="trailing" secondItem="J8U-XX-nvc" secondAttribute="trailing" id="Yko-tB-L8f"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gy5-tM-dPL" secondAttribute="trailing" constant="5" id="cwm-XR-SZb"/>
+                    <constraint firstAttribute="bottom" secondItem="J8U-XX-nvc" secondAttribute="bottom" id="lhf-MN-giC"/>
+                    <constraint firstItem="3oV-Jn-RIy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ocu-Ff-Bqk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="totalLabel" destination="gy5-tM-dPL" id="xaf-xR-8tp"/>
+            </connections>
+            <point key="canvasLocation" x="303.5" y="383.5"/>
+        </tableViewCell>
+    </objects>
+</document>

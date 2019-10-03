@@ -1,0 +1,15 @@
+[
+ {
+ "latitude": 30.415783,
+ "longitude": -97.751294,
+ "course": -1,
+ "status": "AVAILABLE",
+ "driver": {
+ "id": 2187,
+ "user": {
+ "id": 991
+ }
+ },
+ "drivingTimeToRider": 300
+ }
+]

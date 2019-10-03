@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarsDetailViewController">
+            <connections>
+                <outlet property="license" destination="p8K-Wj-SJG" id="VL8-zf-cDZ"/>
+                <outlet property="view" destination="110" id="131"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="110">
+            <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="900" verticalCompressionResistancePriority="900" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="License Plate" minimumFontSize="8" background="Field" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="p8K-Wj-SJG" customClass="HTAutocompleteTextField">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3X8-O3-Ojp"/>
+                        <constraint firstAttribute="height" constant="30" id="J7w-Hh-AfX"/>
+                    </constraints>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3X8-O3-Ojp"/>
+                        </mask>
+                    </variation>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="p8K-Wj-SJG" secondAttribute="trailing" constant="10" id="Blc-WC-ivw"/>
+                <constraint firstItem="p8K-Wj-SJG" firstAttribute="leading" secondItem="110" secondAttribute="leading" constant="10" id="K1j-GY-RbS"/>
+                <constraint firstItem="p8K-Wj-SJG" firstAttribute="top" secondItem="110" secondAttribute="top" constant="10" id="OEZ-ej-dBx"/>
+                <constraint firstAttribute="trailing" secondItem="p8K-Wj-SJG" secondAttribute="trailing" constant="10" id="PRV-Oj-Arm"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="PRV-Oj-Arm"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="555" y="310"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Field" width="327" height="40"/>
+    </resources>
+</document>

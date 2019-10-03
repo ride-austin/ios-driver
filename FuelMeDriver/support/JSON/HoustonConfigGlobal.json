@@ -1,0 +1,80 @@
+{
+    "referFriend": {
+        "emailEnabled": true,
+        "smsEnabled": true,
+        "header": "Receive a $125 bonus",
+        "title": "Refer a Friend",
+        "body": "Refer a driver, and you'll each receive a $125 bonus after your friend completes 20 trips with"
+    },
+    "tipping": {
+        "enabled": true
+    },
+    "smsMaskingEnabled": true,
+    "supportedCities": [
+                        {
+                        "cityId": 1,
+                        "cityName": "AUSTIN",
+                        "logoUrl": "https://media.rideaustin.com/images/logoRideAustin@3x.png"
+                        },
+                        {
+                        "cityId": 2,
+                        "cityName": "HOUSTON",
+                        "logoUrl": "https://media.rideaustin.com/images/logoRideHouston@3x.png"
+                        }
+                        ],
+    "rideCancellation": {
+        "rideCancellationPeriod": 300
+    },
+    "riderLiveLocation" : {
+        "enabled" : false,
+        "expirationTime" : 120,
+        "requiredAccuracy" : 50
+    },
+    "currentCity": {
+        "cityId": 2,
+        "cityName": "HOUSTON",
+        "cityCenterLocation": "29.760314 -95.370162",
+        "cityCenterLocationData": {
+            "lat": 29.760314,
+            "lng": -95.370162
+        },
+        "cityBoundaryPolygon": [
+                                {
+                                "lat": 30.20211,
+                                "lng": -94.70215
+                                },
+                                {
+                                "lat": 29.13777,
+                                "lng": -94.70215
+                                },
+                                {
+                                "lat": 29.13777,
+                                "lng": -95.85022
+                                },
+                                {
+                                "lat": 30.20211,
+                                "lng": -95.85022
+                                }
+                                ]
+    },
+    "driverMessages": {
+        "iOSLocationSettingsAlwaysPrompt": "When online, please allow location access 'Always' to avoid unexpected issues"
+    },
+    "generalInformation": {
+        "privacyStatement": "http://www.ridehou.com/legal/driverprivacystatement/",
+        "companyDomain": "ridehou.com",
+        "playStoreLink": "market://details?id=com.rideaustin.android",
+        "appstoreLink": "itms-apps://itunes.apple.com/app/id1116489847",
+        "legalRider": "http://www.ridehou.com/legal/userterms/",
+        "supportEmail": "support@ridehou.com",
+        "facebookUrl": "https://www.facebook.com/werideaustin",
+        "legalDriver": "http://www.ridehou.com/legal/driverterms/",
+        "playStoreWeb": "https://play.google.com/store/apps/details?id=com.rideaustin.android",
+        "applicationNamePipe": "Ride|Houston",
+        "logoBlackUrl": "https://media.rideaustin.com/images/logoRideHoustonBlack@3x.png",
+        "facebookUrlSchemeiOS": "fb://page?id=241278152906970",
+        "iconUrl": "https://media.rideaustin.com/images/Ride_180-1.png",
+        "companyWebsite": "http://www.rideaustin.com",
+        "applicationName": "Ride Houston"
+    }
+}

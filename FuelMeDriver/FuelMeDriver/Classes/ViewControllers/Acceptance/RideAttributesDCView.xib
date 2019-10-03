@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RideAttributesView">
+            <connections>
+                <outlet property="lbCarCategory" destination="V62-gt-liZ" id="Z6R-aQ-9ID"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIRECT CONNECT: STANDARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="V62-gt-liZ">
+                    <rect key="frame" x="41.5" y="12.5" width="267.5" height="26"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="22"/>
+                    <color key="textColor" red="0.027450980390000001" green="0.050980392159999999" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="direct-connect-icon-v" translatesAutoresizingMaskIntoConstraints="NO" id="rgv-jE-PVg">
+                    <rect key="frame" x="11.5" y="13" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="4Wa-5e-5jk"/>
+                        <constraint firstAttribute="width" constant="25" id="yup-67-ty7"/>
+                    </constraints>
+                </imageView>
+                <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTH-eV-UnV" userLabel="center guide">
+                    <rect key="frame" x="11.5" y="0.0" width="297.5" height="51"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wTH-eV-UnV" secondAttribute="bottom" id="2nP-kL-oe8"/>
+                <constraint firstItem="wTH-eV-UnV" firstAttribute="leading" secondItem="rgv-jE-PVg" secondAttribute="leading" id="7br-u7-lya"/>
+                <constraint firstItem="rgv-jE-PVg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="7m5-e7-rVr"/>
+                <constraint firstItem="V62-gt-liZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Auo-IH-GQ7"/>
+                <constraint firstItem="wTH-eV-UnV" firstAttribute="trailing" secondItem="V62-gt-liZ" secondAttribute="trailing" id="D8v-IW-uex"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="V62-gt-liZ" secondAttribute="trailing" constant="11" id="iLx-o5-ppB"/>
+                <constraint firstItem="rgv-jE-PVg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="puf-Da-sdT"/>
+                <constraint firstItem="wTH-eV-UnV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qhY-CE-HNj"/>
+                <constraint firstItem="wTH-eV-UnV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yBd-GQ-xeP"/>
+                <constraint firstItem="V62-gt-liZ" firstAttribute="leading" secondItem="rgv-jE-PVg" secondAttribute="trailing" constant="5" id="zsC-V6-IKk"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52" y="166.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="direct-connect-icon-v" width="20" height="20"/>
+    </resources>
+</document>

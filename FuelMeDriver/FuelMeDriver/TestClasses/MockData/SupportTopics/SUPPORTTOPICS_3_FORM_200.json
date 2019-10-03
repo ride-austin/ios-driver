@@ -1,0 +1,45 @@
+{
+  "actionType" : "lostandfound\/found",
+  "id" : 3,
+  "title" : "I found an item",
+  "headerText" : "Tell us more",
+  "supportFields" : [
+    {
+      "fieldTitle" : "When did you find this item?",
+      "fieldPlaceholder" : "",
+      "fieldType" : "date",
+      "isMandatory" : true,
+      "variable" : "foundOn"
+    },
+    {
+      "fieldTitle" : "Do you know which ride this item belongs to?",
+      "fieldPlaceholder" : "",
+      "fieldType" : "text",
+      "isMandatory" : true,
+      "variable" : "rideDescription"
+    },
+    {
+      "fieldTitle" : "Photo of lost item",
+      "fieldPlaceholder" : "",
+      "fieldType" : "photo",
+      "isMandatory" : true,
+      "variable" : "image"
+    },
+    {
+      "fieldTitle" : "Can we share your number with the rider?",
+      "fieldPlaceholder" : "Yes or No",
+      "fieldType" : "bool",
+      "isMandatory" : true,
+      "variable" : "sharingContactsAllowed"
+    },
+    {
+      "fieldTitle" : "Share details",
+      "fieldPlaceholder" : "What item did you find? Where was it left in your vehicle",
+      "fieldType" : "text",
+      "isMandatory" : true,
+      "variable" : "details"
+    }
+  ],
+  "body" : "If you notice an item left behind, please let us know by sharing details and a photo here.\n\nWe'll help you connect with the rider so that the two of you can arrange a mutually convenient time and place for a return. In the next 48 hours, the rider may reach out to you directly to recover the lost item.\n\nIn the meantime, please keep the item safe.\n\nIn the future, it's helpful to remind riders to take all their belongings as they exit your vehicle.",
+  "actionTitle" : "Submit"
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Message View Controller-->
+        <scene sceneID="q5w-Zx-k2F">
+            <objects>
+                <viewController storyboardIdentifier="SMessageViewController" id="CtE-Gh-go7" customClass="SMessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dIb-xg-Txl"/>
+                        <viewControllerLayoutGuide type="bottom" id="gg3-w1-cAq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9gf-jd-yYB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ybn-oe-etl">
+                                <rect key="frame" x="16" y="30" width="343" height="627"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="CtE-Gh-go7" id="hfy-Q6-MAZ"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gg3-w1-cAq" firstAttribute="top" secondItem="Ybn-oe-etl" secondAttribute="bottom" constant="10" id="Bkf-le-29b"/>
+                            <constraint firstItem="Ybn-oe-etl" firstAttribute="leading" secondItem="9gf-jd-yYB" secondAttribute="leadingMargin" id="Ilb-V5-4uH"/>
+                            <constraint firstItem="Ybn-oe-etl" firstAttribute="top" secondItem="dIb-xg-Txl" secondAttribute="bottom" constant="10" id="b91-ER-3oA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ybn-oe-etl" secondAttribute="trailing" id="g3K-qq-eN5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btSend" destination="j3H-uZ-RHp" id="jkM-t6-nCK"/>
+                        <outlet property="constraintTextViewBottom" destination="Bkf-le-29b" id="K9L-TD-bbI"/>
+                        <outlet property="textView" destination="Ybn-oe-etl" id="8oC-2y-gZN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJJ-cf-HdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem title="Send" id="j3H-uZ-RHp">
+                    <connections>
+                        <action selector="btSendTapped:" destination="CtE-Gh-go7" id="mSo-ri-b4u"/>
+                    </connections>
+                </barButtonItem>
+            </objects>
+            <point key="canvasLocation" x="117.33333333333333" y="143.89333333333335"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

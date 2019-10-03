@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Automobile" representedClassName="Automobile" syncable="YES">
+        <attribute name="make" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="model" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="year" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="BaseEntity" representedClassName="BaseEntity" isAbstract="YES" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="createMillisecondsGMT" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="updatedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updatedMillisecondsGMT" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="wasDeleted" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+    </entity>
+    <entity name="BaseEntityPhoto" representedClassName="BaseEntityPhoto" isAbstract="YES" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="photoName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoVersion" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Discount" representedClassName="Discount" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="credits" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="discountAmount" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="userUuid" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PromoCode" representedClassName="PromoCode" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="code" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="deliveryFee" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="expiration" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="premiumPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="premiumPriceDiscount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="promo_message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="promoCodeType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regularPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="regularPriceDiscount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" parentEntity="BaseEntityPhoto" syncable="YES">
+        <attribute name="backgroundTracking" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="cardExpired" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="companyUuid" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="email" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="facebookId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstname" attributeType="String" syncable="YES"/>
+        <attribute name="lastname" attributeType="String" syncable="YES"/>
+        <attribute name="merchantId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="promoCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="promoCodePresent" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="redactedAccount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="referralCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resettingPassword" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="role" attributeType="String" defaultValueString="Customer" syncable="YES"/>
+        <attribute name="timeZone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usedPromoCodes" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Automobile" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="BaseEntity" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="BaseEntityPhoto" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="Discount" positionX="9" positionY="162" width="128" height="105"/>
+        <element name="PromoCode" positionX="9" positionY="153" width="128" height="195"/>
+        <element name="User" positionX="0" positionY="0" width="128" height="315"/>
+    </elements>
+</model>

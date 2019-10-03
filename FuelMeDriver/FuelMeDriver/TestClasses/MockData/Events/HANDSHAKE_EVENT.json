@@ -1,0 +1,5 @@
+{
+    "id" : 341341,
+    "eventType" : "HANDSHAKE",
+    "parameters" : "{\"handshakeExpiration\":1901357096000,\"rideId\":123}"
+}

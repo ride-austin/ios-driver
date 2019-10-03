@@ -1,0 +1,39 @@
+ [
+  {
+  "areaQueueName": "RideAustin Airport",
+  "lengths": {
+  "REGULAR": 2,
+  "SUV": 0,
+  "PREMIUM": 0,
+  "LUXURY": 0
+  }
+  },
+  {
+  "areaQueueName": "JKIA Airport 2",
+  "lengths": {
+  "REGULAR": 0,
+  "SUV": 0,
+  "PREMIUM": 0,
+  "LUXURY": 0
+  }
+  },
+  {
+  "areaQueueName": "Maria Airport",
+  "lengths": {
+  "REGULAR": 0,
+  "SUV": 0,
+  "PREMIUM": 0,
+  "LUXURY": 0
+  }
+  },
+  {
+  "areaQueueName": "F1 COTA",
+  "iconUrl": "https://media.rideaustin.com/icon/honda.png",
+  "lengths": {
+  "REGULAR": 0,
+  "SUV": 0,
+  "PREMIUM": 0,
+  "LUXURY": 0
+  }
+  }
+]

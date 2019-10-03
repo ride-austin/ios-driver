@@ -1,0 +1,86 @@
+{
+    "referFriend": {
+        "emailEnabled": false,
+        "smsEnabled": false,
+        "header": "Receive a $125 bonus",
+        "title": "Refer a Friend",
+        "body": "Refer a driver, and you'll each receive a $125 bonus after your friend completes 20 trips with"
+    },
+    "tipping": {
+        "enabled": true
+    },
+    "smsMaskingEnabled": true,
+    "supportedCities": [
+                        {
+                        "cityId": 1,
+                        "cityName": "AUSTIN",
+                        "logoUrl": "https://media.rideaustin.com/images/logoRideAustin@3x.png"
+                        },
+                        {
+                        "cityId": 2,
+                        "cityName": "HOUSTON",
+                        "logoUrl": "https://media.rideaustin.com/images/logoRideHouston@3x.png"
+                        }
+                        ],
+    "rideCancellation": {
+        "rideCancellationPeriod": 300
+    },
+    "riderLiveLocation" : {
+        "enabled" : false,
+        "expirationTime" : 120,
+        "requiredAccuracy" : 50
+    },
+    "currentCity": {
+        "cityId": 1,
+        "cityName": "AUSTIN",
+        "cityCenterLocation": "30.58591079711914 -97.41895294189453",
+        "cityCenterLocationData": {
+            "lat": 30.58591079711914,
+            "lng": -97.41895294189453
+        },
+        "cityBoundaryPolygon": [
+                                {
+                                "lat": 30.58591,
+                                "lng": -97.41895
+                                },
+                                {
+                                "lat": 30.0758,
+                                "lng": -97.41895
+                                },
+                                {
+                                "lat": 30.0758,
+                                "lng": -98.08044
+                                },
+                                {
+                                "lat": 30.58591,
+                                "lng": -98.08044
+                                }
+                                ]
+    },
+    "directConnect": {
+        "requiresChauffeur": true,
+        "description": "To connect with a Rider directly, please have the rider to input this ID",
+        "title": "Direct Connect",
+        "enabled": false
+    },
+    "driverMessages": {
+        "iOSLocationSettingsAlwaysPrompt": "When online, please allow location access 'Always' to avoid unexpected issues"
+    },
+    "generalInformation": {
+        "privacyStatement": "http://www.rideaustin.com/legal/driverprivacystatement/",
+        "companyDomain": "rideaustin.com",
+        "playStoreLink": "market://details?id=com.rideaustin.android",
+        "appstoreLink": "itms-apps://itunes.apple.com/app/id1116489847",
+        "legalRider": "http://www.rideaustin.com/legal/userterms/",
+        "supportEmail": "support@rideaustin.com",
+        "facebookUrl": "https://www.facebook.com/werideaustin",
+        "legalDriver": "http://www.rideaustin.com/legal/driverterms/",
+        "playStoreWeb": "https://play.google.com/store/apps/details?id=com.rideaustin.android",
+        "applicationNamePipe": "Ride|Austin",
+        "logoBlackUrl": "https://media.rideaustin.com/images/logoRideAustinBlack@3x.png",
+        "facebookUrlSchemeiOS": "fb://page?id=241278152906970",
+        "iconUrl": "https://media.rideaustin.com/images/Ride_180-1.png",
+        "companyWebsite": "http://www.rideaustin.com",
+        "applicationName": "Ride Austin"
+    }
+}

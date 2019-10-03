@@ -1,0 +1,215 @@
+{
+    "id": 2187,
+    "user": {
+        "id": 991,
+        "photoUrl": "http://media-stage.rideaustin.com/user-photos/60251362-bfc2-4021-8db6-5099cea0506e.png",
+        "email": "cruz.minerva@gmail.com",
+        "firstname": "Cruz",
+        "lastname": "Minerva",
+        "nickName": "Sample",
+        "phoneNumber": "+18097637331",
+        "phoneNumberVerified": true,
+        "address": {
+            "address": "278 Austin St, Lakehills, TX 78063, USA",
+            "zipCode": "78063"
+        },
+        "dateOfBirth": "1995-11-23",
+        "gender": "UNKNOWN",
+        "fullName": "Cruz Minerva",
+        "uuid": "991",
+        "enabled": true,
+        "active": true,
+        "avatars": [
+                    {
+                    "id": 1211,
+                    "type": "RIDER",
+                    "active": true
+                    },
+                    {
+                    "id": 2187,
+                    "type": "DRIVER",
+                    "active": true
+                    }
+                    ]
+    },
+    "active": true,
+    "agreementDate": "2016-11-23 13:51:41",
+    "ssn": "XXXXXXX6789",
+    "licenseNumber": "12345678",
+    "licensePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-licenses/91979d59-6163-46c3-bf3e-f14b2f7e5e56.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1495981751&Signature=69YtHFLga%2B8Fm90voCOBJv385nA%3D",
+    "licenseExpiryDate": "2017-05-02",
+    "licenseState": "MA",
+    "cars": [
+             {
+             "id": 821,
+             "color": "Blue",
+             "license": "QWERTYUUU",
+             "make": "Alfa Romeo",
+             "model": "Giulia",
+             "year": "2017",
+             "insuranceExpiryDate": "2019-05-11",
+             "insurancePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/78fef97b-36fe-4d8b-a29f-ef995a096967.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1495981751&Signature=PWCNGG%2F0qJ93sG5Pmbgq4IWCooc%3D",
+             "photoUrl": "http://media-stage.rideaustin.com/car-photos/c0fc76de-1e2f-4a33-ae96-e2a17bbcd2ef.png",
+             "selected": true,
+             "inspectionStatus": "APPROVED",
+             "removed": false,
+             "carCategories": [
+                               "REGULAR",
+                               "SUV",
+                               "PREMIUM",
+                               "LUXURY"
+                               ],
+             "inspectionSticker": false,
+             "uuid": "821"
+             },
+             {
+             "id": 997,
+             "color": "Blue",
+             "license": "XXXXXXXXX",
+             "make": "Buick",
+             "model": "Lucerne",
+             "year": "2011",
+             "insurancePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/85f3f85c-e855-4cd6-b0d8-8e9de230d4b0.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1495981751&Signature=CNuE%2Bpkjyq%2F1CoUqUuC4B3UvAJ4%3D",
+             "photoUrl": "http://media-stage.rideaustin.com/car-photos/a2ad7440-9e84-4f68-81e7-b1571ed95acf.png",
+             "selected": false,
+             "inspectionStatus": "NOT_INSPECTED",
+             "removed": true,
+             "carCategories": [
+                               "REGULAR",
+                               "SUV",
+                               "PREMIUM",
+                               "LUXURY"
+                               ],
+             "inspectionSticker": false,
+             "uuid": "997"
+             },
+             {
+             "id": 936,
+             "color": "Blue",
+             "license": "QWERTYYYY",
+             "make": "Aston Martin",
+             "model": "DB7",
+             "year": "2002",
+             "insurancePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/1275fc55-429d-481f-9e03-0f56b3af1815.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1495981751&Signature=4otwrBQhxiAE1AFIC2u3lOMIsNg%3D",
+             "photoUrl": "http://media-stage.rideaustin.com/car-photos/adee02b2-6980-4708-a7ac-11e56406773a.png",
+             "selected": false,
+             "inspectionStatus": "NOT_INSPECTED",
+             "removed": true,
+             "carCategories": [
+                               "REGULAR",
+                               "SUV",
+                               "PREMIUM",
+                               "LUXURY"
+                               ],
+             "inspectionSticker": false,
+             "uuid": "936"
+             },
+             {
+             "id": 1353,
+             "color": "Black",
+             "license": "CVZXCVZCX",
+             "make": "Acura",
+             "model": "ZDX",
+             "year": "2013",
+             "insuranceExpiryDate": "2020-05-08",
+             "insurancePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/65445b0f-2ff7-4ecb-a870-d7b07afff790.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1495981751&Signature=RrZDK8OBfI01OWTkT0zDy4WdrVI%3D",
+             "photoUrl": "http://media-stage.rideaustin.com/car-photos/e1235d5d-cd07-4969-98f0-fc5b92055982.png",
+             "selected": false,
+             "inspectionStatus": "NOT_INSPECTED",
+             "removed": true,
+             "carCategories": [
+                               "REGULAR"
+                               ],
+             "inspectionSticker": false,
+             "uuid": "1353"
+             },
+             {
+             "id": 1354,
+             "color": "Brown",
+             "license": "DSFASDFAF",
+             "make": "Buick",
+             "model": "Lucerne",
+             "year": "2011",
+             "insuranceExpiryDate": "2028-05-03",
+             "insurancePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/85a37d59-fafd-44ad-8cc4-7ea3c410e50a.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1495981751&Signature=uBH89Vjn4RxnCYrgMItYyPeVUSs%3D",
+             "photoUrl": "http://media-stage.rideaustin.com/car-photos/e47059ac-9332-4d97-898a-e77ff7630b98.png",
+             "selected": false,
+             "inspectionStatus": "APPROVED",
+             "removed": false,
+             "carCategories": [
+                               "REGULAR"
+                               ],
+             "inspectionSticker": false,
+             "uuid": "1354"
+             },
+             {
+             "id": 507,
+             "color": "Black",
+             "license": "123456789",
+             "make": "Cadillac",
+             "model": "XT7",
+             "year": "2018",
+             "insurancePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/a14a927e-9db6-4fb1-8d48-4905fc911972.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1495981751&Signature=taf6WVoMhjov1tsYv%2FQxxdcwTHQ%3D",
+             "photoUrl": "http://media-stage.rideaustin.com/car-photos/3a3ae12d-e355-40e0-91f9-227282060774.png",
+             "selected": true,
+             "inspectionStatus": "APPROVED",
+             "inspectionNotes": "",
+             "removed": true,
+             "carCategories": [
+                               "REGULAR",
+                               "SUV",
+                               "PREMIUM",
+                               "LUXURY"
+                               ],
+             "inspectionSticker": false,
+             "uuid": "507"
+             },
+             {
+             "id": 1227,
+             "color": "Blue",
+             "license": "QWEQWERQW",
+             "make": "Audi",
+             "model": "A8",
+             "year": "2001",
+             "insuranceExpiryDate": "2017-03-06",
+             "insurancePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/162dd3dc-27ac-45c3-ad14-05631b11afec.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1495981751&Signature=HNmwuxYlu4wKwuGkkIVG6yupGZs%3D",
+             "photoUrl": "http://media-stage.rideaustin.com/car-photos/be3b79ef-4585-47c4-9820-55eb0e033899.png",
+             "selected": false,
+             "inspectionStatus": "NOT_INSPECTED",
+             "removed": true,
+             "carCategories": [
+                               "REGULAR"
+                               ],
+             "inspectionSticker": false,
+             "uuid": "1227"
+             }
+             ],
+    "rating": 4.92,
+    "payoneerId": "2187",
+    "payoneerStatus": "Inactive",
+    "payoneerSignupUrl": "https://payouts.sandbox.payoneer.com/partners/lp.aspx?token=b2b6f22099a148baab228084da0c94e0F648CFF8FB",
+    "checkrStatus": "MANUAL",
+    "photoUrl": "http://media-stage.rideaustin.com/driver-photos/f4207d95-3e52-4146-9325-7beba432e0ba.png",
+    "activationDate": "2017-04-14",
+    "agreedToLegalTerms": false,
+    "fingerprintCleared": false,
+    "cityApprovalStatus": "PENDING",
+    "activationStatus": "ACTIVE",
+    "activationNotes": "",
+    "onboardingStatus": "PENDING",
+    "onboardingPendingSince": 1489508495000,
+    "grantedDriverTypes": [
+                           "WOMEN_ONLY"
+                           ],
+    "cityId": 1,
+    "enabledRequestTypes": [],
+    "type": "DRIVER",
+    "email": "cruz.minerva@gmail.com",
+    "gender": "UNKNOWN",
+    "firstname": "Cruz",
+    "lastname": "Minerva",
+    "phoneNumber": "+18097637331",
+    "fullName": "Cruz Minerva",
+    "uuid": "2187",
+    "checkrReports": []
+}

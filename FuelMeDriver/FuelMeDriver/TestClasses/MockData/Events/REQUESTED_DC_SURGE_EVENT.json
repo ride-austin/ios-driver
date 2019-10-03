@@ -1,0 +1,88 @@
+{
+    "id" : 3413420,
+    "ride" : {
+        "id" : 1242706,
+        "requestedDriverType" : {
+            "name" : "DIRECT_CONNECT"
+        },
+        "rider" : {
+            "id" : 2982,
+            "rating" : 5,
+            "gender" : "UNKNOWN",
+            "phoneNumber" : "+971565362129",
+            "uuid" : "2982",
+            "active" : true,
+            "lastname" : "",
+            "type" : "RIDER",
+            "firstname" : "RiderName",
+            "fullName" : "RiderName ",
+            "applePayEnabled" : false,
+            "user" : {
+                "id" : 2245,
+                "uuid" : "2245",
+                "avatars" : [
+                
+                ],
+                "phoneNumberVerified" : true,
+                "lastname" : "",
+                "firstname" : "RiderName",
+                "address" : {
+                    
+                },
+                "fullName" : "RiderName ",
+                "enabled" : true,
+                "photoUrl" : "http:\/\/media-stage.rideaustin.com\/user-photos\/153c343b-98d7-464f-974f-dbe6b7e174b7.png",
+                "email" : "ride129@test.com",
+                "phoneNumber" : "+971565362129",
+                "gender" : "UNKNOWN"
+            },
+            "cityId" : 1,
+            "email" : "ride129@test.com"
+        },
+        "start" : {
+            "address" : "Jollyville Road, Austin, Texas",
+            "zipCode" : "78759"
+        },
+        "end" : {
+            
+        },
+        "requestedCarType" : {
+            "maxPersons" : 4,
+            "tncFeeRate" : 0,
+            "title" : "PREMIUM",
+            "active" : true,
+            "processingFee" : "1.00",
+            "cancellationFee" : "4.00",
+            "processingFeeRate" : 1,
+            "plainIconUrl" : "https:\/\/media.rideaustin.com\/icon\/regular.png",
+            "iconUrl" : "https:\/\/media.rideaustin.com\/icon\/regular_seats.png",
+            "cityId" : 1,
+            "ratePerMile" : "0.99",
+            "processingFeeText" : "$1.00 Processing fee",
+            "raFeeFactor" : 0,
+            "carCategory" : "PREMIUM",
+            "minimumFare" : "5.00",
+            "order" : 1,
+            "baseFare" : "1.50",
+            "ratePerMinute" : "0.20",
+            "bookingFee" : "2.00",
+            "description" : "Standard Car"
+        },
+        "cityId" : 1,
+        "startAddress" : "Jollyville Road, Austin, Texas",
+        "createdDate" : 1500393112000,
+        "raPayment" : "0.00",
+        "updatedDate" : 1500393130000,
+        "rideCost" : "0.00",
+        "uuid" : "1242706",
+        "totalFare" : "0.00",
+        "totalCharge" : "0.00",
+        "surgeFactor" : 2.99,
+        "startLocationLat" : 30.418022,
+        "startLocationLong" : -97.75052700000001,
+        "status" : "REQUESTED",
+        "estimatedTimeArrive" : 203
+    },
+    "eventType" : "REQUESTED",
+    "parameters" : "{\"acceptanceExpiration\":1901357096000,\"acknowledgeExpiration\":1901357096000}"
+}

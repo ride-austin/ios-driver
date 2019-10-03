@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RAUpgradePopup">
+            <connections>
+                <outlet property="btnCancel" destination="Zpp-wv-umQ" id="9p2-FV-cvd"/>
+                <outlet property="constraintHeightCancelUpgradeBtn" destination="lEi-BQ-sPf" id="PCB-kH-gBj"/>
+                <outlet property="constraintTopCloseBtn" destination="IAQ-gy-H1T" id="ivk-hx-vOa"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="e13-wE-tJE"/>
+                <outlet property="iconState" destination="mQr-cj-Sls" id="Gep-ox-N1M"/>
+                <outlet property="lblBodyContent" destination="Kxd-LM-85X" id="F52-a8-mxC"/>
+                <outlet property="lblTitle" destination="6dN-X7-kE8" id="cD7-71-Ire"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="426"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPf-aS-2QV">
+                    <rect key="frame" x="0.0" y="132" width="280" height="162"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade to SUV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dN-X7-kE8">
+                            <rect key="frame" x="8" y="53" width="264" height="29"/>
+                            <accessibility key="accessibilityConfiguration" identifier="upgradeTitle"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
+                            <color key="textColor" red="0.027450980392156862" green="0.050980392156862744" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for Rider's Confirmation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxd-LM-85X">
+                            <rect key="frame" x="48" y="88" width="184" height="48"/>
+                            <accessibility key="accessibilityConfiguration" identifier="upgradeMessage"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
+                            <color key="textColor" red="0.011764705882352941" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Kxd-LM-85X" firstAttribute="top" secondItem="6dN-X7-kE8" secondAttribute="bottom" constant="6" id="HpB-9l-Vhc"/>
+                        <constraint firstAttribute="bottom" secondItem="Kxd-LM-85X" secondAttribute="bottom" constant="26" id="QKX-8j-gSi"/>
+                        <constraint firstAttribute="trailing" secondItem="Kxd-LM-85X" secondAttribute="trailing" constant="48" id="fz2-al-y1M"/>
+                        <constraint firstAttribute="trailing" secondItem="6dN-X7-kE8" secondAttribute="trailing" constant="8" id="h74-DF-EuX"/>
+                        <constraint firstItem="6dN-X7-kE8" firstAttribute="leading" secondItem="WPf-aS-2QV" secondAttribute="leading" constant="8" id="hac-cp-z4v"/>
+                        <constraint firstItem="6dN-X7-kE8" firstAttribute="top" secondItem="WPf-aS-2QV" secondAttribute="top" constant="53" id="qw8-pT-Ytn"/>
+                        <constraint firstItem="Kxd-LM-85X" firstAttribute="leading" secondItem="WPf-aS-2QV" secondAttribute="leading" constant="48" id="wOe-K1-OZ3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgHeader" translatesAutoresizingMaskIntoConstraints="NO" id="2Gh-If-JVt">
+                    <rect key="frame" x="0.0" y="70" width="280" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="xrt-ZB-N4O"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="requestedUpgradeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="mQr-cj-Sls">
+                    <rect key="frame" x="99" y="88" width="82" height="82"/>
+                    <accessibility key="accessibilityConfiguration" identifier="iconRequestUpgrade">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="82" id="OK6-DA-fVt"/>
+                        <constraint firstAttribute="width" constant="82" id="WrN-aw-eqK"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpp-wv-umQ">
+                    <rect key="frame" x="0.0" y="294" width="280" height="54"/>
+                    <accessibility key="accessibilityConfiguration" identifier="btnCancelUpgrade"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="lEi-BQ-sPf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                    <state key="normal" title="Cancel Upgrade">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelUpgrade:" destination="-1" eventType="touchUpInside" id="RfM-Ul-kBk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrp-ot-agG">
+                    <rect key="frame" x="123" y="376" width="34" height="34"/>
+                    <accessibility key="accessibilityConfiguration" identifier="btnCloseUpgrade"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="HO7-Lh-qIU"/>
+                        <constraint firstAttribute="height" constant="34" id="t7Z-2n-fig"/>
+                    </constraints>
+                    <state key="normal" image="cancelUpgradeIcon"/>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="ju6-Ae-rgc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2Gh-If-JVt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="83c-ye-ior"/>
+                <constraint firstItem="mQr-cj-Sls" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BDH-b6-k3K"/>
+                <constraint firstItem="Jrp-ot-agG" firstAttribute="top" secondItem="Zpp-wv-umQ" secondAttribute="bottom" constant="28" id="IAQ-gy-H1T"/>
+                <constraint firstItem="WPf-aS-2QV" firstAttribute="top" secondItem="2Gh-If-JVt" secondAttribute="bottom" constant="-8" id="R0a-Ki-ssh"/>
+                <constraint firstItem="Jrp-ot-agG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gb5-a1-y6Q"/>
+                <constraint firstItem="WPf-aS-2QV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hyA-9c-Oij"/>
+                <constraint firstAttribute="trailing" secondItem="2Gh-If-JVt" secondAttribute="trailing" id="koa-Hj-6FK"/>
+                <constraint firstItem="mQr-cj-Sls" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="88" id="nn2-RV-7NX"/>
+                <constraint firstItem="2Gh-If-JVt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="pQ1-32-ux6"/>
+                <constraint firstItem="Zpp-wv-umQ" firstAttribute="top" secondItem="WPf-aS-2QV" secondAttribute="bottom" id="u53-nb-43O"/>
+                <constraint firstAttribute="trailing" secondItem="Zpp-wv-umQ" secondAttribute="trailing" id="y4v-m2-OR3"/>
+                <constraint firstAttribute="trailing" secondItem="WPf-aS-2QV" secondAttribute="trailing" id="z69-w9-SMN"/>
+                <constraint firstItem="Zpp-wv-umQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zyU-C4-dIC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-10" y="-49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancelUpgradeIcon" width="34" height="35"/>
+        <image name="imgHeader" width="280" height="70"/>
+        <image name="requestedUpgradeIcon" width="82" height="82"/>
+    </resources>
+</document>
