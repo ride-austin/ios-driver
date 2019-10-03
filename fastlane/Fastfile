@@ -1,0 +1,303 @@
+fastlane_version "1.109.0"
+
+default_platform :ios
+
+platform :ios do
+  before_all do 
+    ENV["FL_VERSION_NUMBER_TARGET"] = "RideDriverTest - Enterprise"
+    ENV["FL_BUILD_NUMBER_PROJECT"] = "./FuelMeDriver/RideDriver.xcodeproj"
+    ENV["FL_COCOAPODS_PODFILE"] = "./Podfile"
+    ENV["FL_HOCKEY_API_TOKEN"] = ENV["HOCKEYAPP_API_TOKEN"]
+    xcversion(version: "11.0")
+    setup_circle_ci
+  end
+
+  proj = 'FuelMeDriver/RideDriver.xcodeproj'
+
+  SCHEME_DEBUG_QA = 'QA'
+  SCHEME_RELEASE_PROD = 'Production'
+  SCHEME_RELEASE_QA_ENTERPRISE = 'QA'
+  SCHEME_RELEASE_PROD_ENTERPRISE = 'ProductionEnterprise'
+
+  desc "Increment Build Number and Commit"
+  lane :increment do |values|
+    #increment version when all code is committed
+    ensure_git_status_clean
+    increment_build_number(xcodeproj: proj)
+    build   = get_build_number(xcodeproj: proj)
+    version = get_version_number(xcodeproj: proj)
+
+    commit_message = "Version " +  version + " (" + build + ")"
+    sh("git add -A && git commit -m '#{commit_message}'")
+  end
+
+  desc "Create qa enterprise build and upload to hockey"
+  lane :qa do |values|
+    raise "Missing APPCENTER_APP_NAME" unless ENV["APPCENTER_APP_NAME"] != nil
+    raise "Missing APPCENTER_OWNER_NAME" unless ENV["APPCENTER_OWNER_NAME"] != nil
+    raise "Missing APPCENTER_API_TOKEN" unless ENV["APPCENTER_API_TOKEN"] != nil
+    ####################################################
+    # if fastlane is triggered by increment build, quit
+    old_build = get_build_number(xcodeproj: proj)
+    version = get_version_number(xcodeproj: proj)
+    unexpected_commit_message = "Version " +  version + " (" + old_build + ")"
+    release_notes = last_git_commit[:message]
+    if release_notes.include? unexpected_commit_message
+      next
+    end
+    ####################################################
+
+    raise "DONT FORGET HOCKEYAPP_API_TOKEN see https://confluence.devfactory.com/display/RA/Using+Fastlane" unless ENV["HOCKEYAPP_API_TOKEN"] != nil
+
+    increment_build_number(xcodeproj: proj)
+    build   = get_build_number(xcodeproj: proj)
+    version = get_version_number(xcodeproj: proj)
+    commit_message = "Version " +  version + " (" + build + ")"
+    message = "QAAustinDriver" + " " + commit_message + " " + "uploaded by:" + ENV["FASTLANE_USER"]
+
+    match(
+        type: "enterprise",
+        readonly: true,
+        app_identifier: ENV["ENTERPRISE_MATCH_APP_IDENTIFIER_QA"],
+        username: ENV["ENTERPRISE_MATCH_USERNAME"],
+        team_id: ENV["ENTERPRISE_FASTLANE_TEAM_ID"],
+        git_url: ENV["ENTERPRISE_MATCH_GIT_URL"]
+    )
+    gym(
+      scheme: SCHEME_RELEASE_QA_ENTERPRISE, 
+      export_method: 'enterprise'
+    )
+    if values[:skipupload] == true
+      next
+    end
+    appcenter_upload(
+        app_name: ENV["APPCENTER_APP_NAME"],
+        owner_type: "organization",
+        release_notes: release_notes
+    )
+
+    clean_build_artifacts
+    sh("git add -A && git commit -m '#{commit_message}'")
+    push_to_git_remote(tags:false)
+  end
+
+
+  desc "Run Unit Tests"
+  lane :unit_tests do |values|
+    scan(
+      scheme: SCHEME_DEBUG_QA,
+      skip_build: false,
+      clean: true,
+      device: "iPhone 6s (12.4)"
+    )
+  end
+
+  desc "Create Archive, upload to hockeyapp - Production Austin"
+  lane :prodenterprise do |values|
+    raise "Missing FL_HOCKEY_API_TOKEN" unless ENV["FL_HOCKEY_API_TOKEN"] != nil
+    raise "Missing ENTERPRISE_APPCENTER_APP_NAME" unless ENV["ENTERPRISE_APPCENTER_APP_NAME"] != nil
+    raise "Missing APPCENTER_OWNER_NAME" unless ENV["APPCENTER_OWNER_NAME"] != nil
+    raise "Missing APPCENTER_API_TOKEN" unless ENV["APPCENTER_API_TOKEN"] != nil
+    release_notes = "Thank you for driving with RideAustin! For new installation, please go to Settings > General > Profiles & Device Management > Crossover Markets"
+    build   = get_build_number(xcodeproj: proj)
+    test_version = get_version_number(xcodeproj: proj)
+
+    #remove b
+    production_version = test_version.chomp("b")
+    set_info_plist_value(path: "./FuelMeDriver/support/Plist/RideDriverEnterprise-Info.plist", key:"CFBundleShortVersionString", value:production_version)
+
+    match(
+        type: "enterprise",
+        readonly: true,
+        app_identifier: ENV["ENTERPRISE_MATCH_APP_IDENTIFIER_PROD"],
+        username: ENV["ENTERPRISE_MATCH_USERNAME"],
+        team_id: ENV["ENTERPRISE_FASTLANE_TEAM_ID"],
+        git_url: ENV["ENTERPRISE_MATCH_GIT_URL"]
+    )
+    gym(
+      scheme: SCHEME_RELEASE_PROD_ENTERPRISE, 
+      export_method: 'enterprise'
+    )
+    if values[:skipupload] == true
+      next
+    end
+    hockey(
+      public_identifier:ENV["HOCKEYAPP_ID_PRODUCTION"],
+      notes: release_notes,
+      notify: '0', # Means do not notify
+      status: '0', # 0 Means not available for download
+    )
+    appcenter_upload(
+        app_name: ENV["ENTERPRISE_APPCENTER_APP_NAME"],
+        owner_type: "organization",
+        release_notes: release_notes
+    )
+    clean_build_artifacts
+    reset_git_repo(force: true, 
+                   skip_clean: true)
+
+    hockey_info  = lane_context[SharedValues::HOCKEY_BUILD_INFORMATION]
+    hockey_link  = lane_context[SharedValues::HOCKEY_DOWNLOAD_LINK]
+    hockey_title = hockey_info[:title]
+    message =  "Production build uploaded to hockey by:" + ENV["FASTLANE_USER"]
+    slack(message:message,
+          attachment_properties: {
+              title:hockey_title, 
+              title_link:hockey_link
+          })
+  end
+
+  desc "Create Archive, upload to hockeyapp - Production Austin"
+  lane :prod do |values|
+    build   = get_build_number(xcodeproj: proj)
+    test_version = get_version_number(xcodeproj: proj)
+
+    #remove b
+    production_version = test_version.chomp("b")
+    set_info_plist_value(path: "./FuelMeDriver/support/Plist/RideDriverEnterprise-Info.plist", key:"CFBundleShortVersionString", value:production_version)
+
+    match(
+      type: "appstore",
+      readonly: true
+    )
+    gym(
+      scheme: SCHEME_RELEASE_PROD, 
+      export_method: 'app-store'
+    )
+    if values[:skipupload] == true
+      next
+    end
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true,
+      skip_submission: true,
+      beta_app_description:'Fixed bugs. Minor UI Enhancements.',
+      demo_account_required: true,
+      changelog: 'Fixed bugs. Minor UI Enhancements.',
+      distribute_external: true
+    )
+
+    clean_build_artifacts
+    reset_git_repo(force: true, 
+                   skip_clean: true)
+    message =  "Production build uploaded by:" + ENV["PILOT_USERNAME"]
+    slack(message:message)
+  end
+
+  desc "Create push certificate for app store in production. force=false by default"
+  lane :pushrenew do |values|
+    force = values[:force]
+    if force.nil? 
+      force = false
+    end
+    get_push_certificate(
+      development: false,
+      force: force, # create a new profile, even if the old one is still valid
+      app_identifier: ENV["APP_IDENTIFIER_PROD"]
+    )
+  end
+
+  desc "Create push certificate for enterprise in production. force=false by default"
+  lane :pushrenewenterprise do |values|
+    raise "DONT FORGET HOCKEYAPP_API_TOKEN see https://confluence.devfactory.com/display/RA/Using+Fastlane" unless ENV["ENTERPRISE_APP_IDENTIFIER_PROD"] != nil 
+    force = values[:force]
+    if force.nil? 
+      force = false
+    end
+    get_push_certificate(
+      development: false,
+      force: force, # create a new profile, even if the old one is still valid
+      app_identifier: ENV["ENTERPRISE_APP_IDENTIFIER_PROD"],
+      username: ENV["ENTERPRISE_PEM_USERNAME"],
+      team_id: ENV["ENTERPRISE_PEM_TEAM_ID"]
+    )
+  end
+
+  desc "Create push certificate for enterprise in qa. force=false by default"
+  lane :pushrenewenterpriseqa do |values|
+    force = values[:force]
+    if force.nil? 
+      force = false
+    end
+    get_push_certificate(
+      development: false,
+      force: force, # create a new profile, even if the old one is still valid
+      app_identifier: ENV["ENTERPRISE_APP_IDENTIFIER_QA"],
+      username: ENV["ENTERPRISE_PEM_USERNAME"],
+      team_id: ENV["ENTERPRISE_PEM_TEAM_ID"]
+    )
+  end
+
+  desc "Summary of all provisioning profiles needed"
+  lane :matchall do |values|
+    readonly = values[:readonly]
+    if readonly.nil?
+      readonly = true
+    end
+
+    verbose = values[:verbose]
+    if verbose.nil?
+      verbose = false
+    end
+
+    match(
+      type: "development",
+      readonly: readonly,
+      app_identifier: ENV['APP_IDENTIFIER_PROD'],
+      username: ENV['MATCH_USERNAME'],
+      force_for_new_devices: true,
+      verbose: verbose
+    )
+    match(
+      type: "appstore",
+      readonly: readonly,
+      verbose: verbose
+    )
+  end
+
+  desc "Summary of all provisioning profiles needed"
+  lane :matchall_enterprise do |values|
+    readonly = values[:readonly]
+    if readonly.nil?
+      readonly = true
+    end
+
+    verbose = values[:verbose]
+    if verbose.nil?
+      verbose = false
+    end
+
+    if ENV["ENTERPRISE_MATCH_APP_IDENTIFIERS"].nil?
+      puts "ENTERPRISE_MATCH_APP_IDENTIFIERS not provided skipping match for enterprise"
+      next
+    elsif ENV["ENTERPRISE_MATCH_USERNAME"].nil?
+      puts "ENTERPRISE_MATCH_USERNAME not provided skipping match for enterprise"
+      next
+    elsif ENV["ENTERPRISE_FASTLANE_TEAM_ID"].nil?
+      puts "ENTERPRISE_FASTLANE_TEAM_ID not provided skipping match for enterprise"
+      next
+    elsif ENV["ENTERPRISE_MATCH_GIT_URL"].nil?
+      puts "ENTERPRISE_MATCH_GIT_URL not provided skipping match for enterprise"
+      next
+    else
+      match(
+          app_identifier: ENV['ENTERPRISE_MATCH_APP_IDENTIFIER_QA'],
+          force_for_new_devices: true,
+          git_url: ENV["ENTERPRISE_MATCH_GIT_URL"],
+          readonly: readonly,
+          team_id: ENV["ENTERPRISE_FASTLANE_TEAM_ID"],
+          type: "development",
+          username: ENV["ENTERPRISE_MATCH_USERNAME"],
+          verbose: verbose
+      )
+      match(
+          type: "enterprise",
+          readonly: readonly,
+          app_identifier: ENV["ENTERPRISE_MATCH_APP_IDENTIFIERS"],
+          username: ENV["ENTERPRISE_MATCH_USERNAME"],
+          team_id: ENV["ENTERPRISE_FASTLANE_TEAM_ID"],
+          git_url: ENV["ENTERPRISE_MATCH_GIT_URL"],
+          verbose: verbose
+      )
+    end
+  end
+end
