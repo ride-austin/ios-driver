@@ -69,6 +69,24 @@
     }];
 }
 
++ (NSValueTransformer *)checkrStatusJSONTransformer {
+    NSDictionary *checkrStatus =
+    @{
+      @"CLEAR"  : @(RACheckrStatusClear),
+      @"CLEAR_MANUAL" : @(RACheckrStatusClearManual),
+      @"CONSIDER"    : @(RACheckrStatusConsider),
+      @"SUSPENDED" : @(RACheckrStatusSuspended),
+      @"DISPUTE"      : @(RACheckrStatusDispute),
+      @"PENDING"  : @(RACheckrStatusPending),
+      @"REJECTED_MANUAL" : @(RACheckrStatusRejectedManual),
+      @"MANUAL"    : @(RACheckrStatusManual),
+      @"NOT_REQUESTED" : @(RACheckrStatusNotRequested),
+      @"ERROR"      : @(RACheckrStatusError),
+      @"PAYMENT_FAILED" : @(RACheckrStatusPaymentFailed)
+      };
+    return [MTLValueTransformer mtl_valueMappingTransformerWithDictionary:checkrStatus defaultValue:@(RACheckrStatusClear) reverseDefaultValue:nil];
+}
+
 #pragma mark -
 
 - (Car *)selectedCar {
