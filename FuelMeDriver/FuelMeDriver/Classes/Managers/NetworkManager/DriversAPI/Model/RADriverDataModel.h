@@ -10,6 +10,21 @@
 #import "RABaseDataModel.h"
 #import "RAUserDataModel.h"
 
+typedef NS_ENUM(NSUInteger, RACheckrStatus) {
+    RACheckrStatusClear         = 1,
+    RACheckrStatusClearManual   = 2,
+    RACheckrStatusConsider      = 3,
+    RACheckrStatusSuspended     = 4,
+    RACheckrStatusDispute       = 5,
+    RACheckrStatusPending       = 6,
+    RACheckrStatusRejectedManual    = 7,
+    RACheckrStatusManual        = 8,
+    RACheckrStatusNotRequested  = 9,
+    RACheckrStatusError     = 10,
+    RACheckrStatusPaymentFailed     = 11
+};
+
+
 @interface RADriverDataModel : RABaseDataModel
 
 @property (nonatomic, readwrite) RAUserDataModel *user;
@@ -26,7 +41,7 @@
 @property (nonatomic, readonly) NSString *payoneerId;
 @property (nonatomic, readonly) NSString *payoneerStatus;
 @property (nonatomic, readonly) NSURL *payoneerSignupUrl;
-@property (nonatomic, readonly) NSString *checkrStatus;
+@property (nonatomic, readonly) RACheckrStatus checkrStatus;
 @property (nonatomic, readwrite) NSURL *photoUrl;
 @property (nonatomic, readonly) NSString *activationDate; //"2017-04-14"
 @property (nonatomic, readwrite) BOOL agreedToLegalTerms;

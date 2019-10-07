@@ -256,13 +256,13 @@ static CGFloat const kFeatureViewTag = 9999;
     
     SettingsItem *item = self.sections[indexPath.section].items[indexPath.row];
     UIApplication *app = [UIApplication sharedApplication];
-    if ([app canOpenURL:item.mainURL]) {
+    if (item.didSelectBlock) {
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        item.didSelectBlock(cell);
+    } else if ([app canOpenURL:item.mainURL]) {
         [app openURL:item.mainURL];
     } else if ([app canOpenURL:item.secondaryURL]) {
         [app openURL:item.secondaryURL];
-    } else if (item.didSelectBlock) {
-        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-        item.didSelectBlock(cell);
     }
 }
 
