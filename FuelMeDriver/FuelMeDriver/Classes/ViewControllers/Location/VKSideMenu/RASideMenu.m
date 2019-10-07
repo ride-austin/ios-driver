@@ -112,6 +112,18 @@
         }]];
     }
     
+    switch (currentDriver.checkrStatus) {
+        case RACheckrStatusPaymentFailed:
+        case RACheckrStatusDispute:
+        case RACheckrStatusNotRequested: {
+            [self.menuItems addObject:[RASideMenuItem itemWithTitle:[@"Fingerprints" localized] iconName:@"fingerprint" block:^(UITableViewCell * _Nonnull cell) {
+                [weakself showFingerPrintScreen];
+            }]];
+        }
+        default:
+            break;
+    }
+    
     //queues
     for (QueueZone *q in self.queueZones) {
         id iconName = q.iconUrl ?: @"menuAirportQueue";
@@ -180,6 +192,10 @@
 - (void)showDirectConnectVC {
     id vc = [[UIStoryboard storyboardWithName:@"DirectConnect" bundle:nil] instantiateViewControllerWithIdentifier:DirectConnectViewController.className];
     [self.presenter.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)showFingerPrintScreen {
+    
 }
 
 - (void)showAdminVC {
