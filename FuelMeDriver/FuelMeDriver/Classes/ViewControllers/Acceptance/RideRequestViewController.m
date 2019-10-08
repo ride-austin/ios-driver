@@ -357,7 +357,8 @@
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self];
     navController.navigationBar.backgroundColor = [UIColor whiteColor];
-    
+    navController.modalPresentationStyle = UIModalPresentationFullScreen;
+    self.modalPresentationStyle = UIModalPresentationFullScreen;
     [self.internalWindow.rootViewController presentViewController:navController animated:animated completion:nil];
 }
 

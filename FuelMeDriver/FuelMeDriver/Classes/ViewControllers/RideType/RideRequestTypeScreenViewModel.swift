@@ -168,6 +168,9 @@ public extension RideRequestTypeScreenViewModel {
         control.addTarget(target, action: action, for: .valueChanged)
         control.translatesAutoresizingMaskIntoConstraints = false
         control.tintColor = UIColor.azureBlue()
+        if #available(iOS 13.0, *) {
+            control.selectedSegmentTintColor = UIColor.azureBlue()
+        }
         
         let font = UIFont(name: RAFontType.regular.rawValue, size: 14)!
         control.setTitleTextAttributes([NSAttributedString.Key(rawValue: convertFromNSAttributedStringKey(NSAttributedString.Key.font)):font, NSAttributedString.Key(rawValue: convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor)):UIColor.azureBlue()], for: .normal)
