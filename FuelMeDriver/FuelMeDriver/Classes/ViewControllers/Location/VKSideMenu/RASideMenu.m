@@ -113,9 +113,9 @@
     }
     
     switch (currentDriver.checkrStatus) {
-        case RACheckrStatusPaymentFailed:
         case RACheckrStatusDispute:
-        case RACheckrStatusNotRequested: {
+        case RACheckrStatusNotRequested:
+        case RACheckrStatusPaymentFailed: {
             [self.menuItems addObject:[RASideMenuItem itemWithTitle:[@"Fingerprints" localized] iconName:@"fingerprint" block:^(UITableViewCell * _Nonnull cell) {
                 [weakself showFingerPrintScreen];
             }]];
@@ -195,7 +195,11 @@
 }
 
 -(void)showFingerPrintScreen {
-    
+    NSString *urlString = [NSString stringWithFormat:@"rideaustin://checkr?driverId=%@",[RASessionManager shared].currentSession.driver.modelID];
+    NSURL *urlApp = [NSURL URLWithString:urlString];
+    if ([[UIApplication sharedApplication] canOpenURL:urlApp]) {
+         [[UIApplication sharedApplication] openURL:urlApp];
+    }
 }
 
 - (void)showAdminVC {

@@ -75,16 +75,16 @@
       @"CLEAR"  : @(RACheckrStatusClear),
       @"CLEAR_MANUAL" : @(RACheckrStatusClearManual),
       @"CONSIDER"    : @(RACheckrStatusConsider),
-      @"SUSPENDED" : @(RACheckrStatusSuspended),
       @"DISPUTE"      : @(RACheckrStatusDispute),
-      @"PENDING"  : @(RACheckrStatusPending),
-      @"REJECTED_MANUAL" : @(RACheckrStatusRejectedManual),
+      @"ERROR"      : @(RACheckrStatusError),
       @"MANUAL"    : @(RACheckrStatusManual),
       @"NOT_REQUESTED" : @(RACheckrStatusNotRequested),
-      @"ERROR"      : @(RACheckrStatusError),
-      @"PAYMENT_FAILED" : @(RACheckrStatusPaymentFailed)
+      @"PAYMENT_FAILED" : @(RACheckrStatusPaymentFailed),
+      @"PENDING"  : @(RACheckrStatusPending),
+      @"REJECTED_MANUAL" : @(RACheckrStatusRejectedManual),
+      @"SUSPENDED" : @(RACheckrStatusSuspended),
       };
-    return [MTLValueTransformer mtl_valueMappingTransformerWithDictionary:checkrStatus defaultValue:@(RACheckrStatusClear) reverseDefaultValue:nil];
+    return [MTLValueTransformer mtl_valueMappingTransformerWithDictionary:checkrStatus defaultValue:@(RACheckrStatusUnknown) reverseDefaultValue:nil];
 }
 
 #pragma mark -
