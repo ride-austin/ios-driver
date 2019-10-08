@@ -402,8 +402,12 @@
     }];
     
     //Apply buttons style
-    self.segmentControl.backgroundColor = [UIColor clearColor];
+    self.segmentControl.backgroundColor = [UIColor whiteColor];
     self.segmentControl.tintColor       = [AssetCityManager colorCurrentCity:Border];
+
+    if (@available(iOS 13.0, *)) {
+        self.segmentControl.selectedSegmentTintColor = [AssetCityManager colorCurrentCity:Border];
+    }
     
     [self.loginButton applyLoginStyle];
     
