@@ -14,14 +14,15 @@ typedef NS_ENUM(NSUInteger, RACheckrStatus) {
     RACheckrStatusClear         = 1,
     RACheckrStatusClearManual   = 2,
     RACheckrStatusConsider      = 3,
-    RACheckrStatusSuspended     = 4,
-    RACheckrStatusDispute       = 5,
-    RACheckrStatusPending       = 6,
-    RACheckrStatusRejectedManual    = 7,
-    RACheckrStatusManual        = 8,
-    RACheckrStatusNotRequested  = 9,
-    RACheckrStatusError     = 10,
-    RACheckrStatusPaymentFailed     = 11
+    RACheckrStatusDispute       = 4,
+    RACheckrStatusError     = 5,
+    RACheckrStatusManual        = 6,
+    RACheckrStatusNotRequested  = 7,
+    RACheckrStatusPaymentFailed     = 8,
+    RACheckrStatusPending       = 9,
+    RACheckrStatusRejectedManual    = 10,
+    RACheckrStatusSuspended     = 11,
+    RACheckrStatusUnknown   = 12
 };
 
 
