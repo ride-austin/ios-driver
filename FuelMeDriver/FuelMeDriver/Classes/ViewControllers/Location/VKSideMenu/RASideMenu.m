@@ -195,11 +195,26 @@
 }
 
 -(void)showFingerPrintScreen {
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:[@"FINGERPRINTS" localized] message:[NSString stringWithFormat:[@"Please complete fingerprinting on %@ app" localized], [ConfigurationManager appName]] preferredStyle:UIAlertControllerStyleAlert];
+       
+    [alert addAction:[UIAlertAction actionWithTitle:[@"Cancel" localized] style:UIAlertActionStyleCancel handler:nil]];
+       
     NSString *urlString = [NSString stringWithFormat:@"rideaustin://checkr?driverId=%@",[RASessionManager shared].currentSession.driver.modelID];
     NSURL *urlApp = [NSURL URLWithString:urlString];
+    
+    NSURL *urlAppLink = [NSURL URLWithString:@"https://itunes.apple.com/us/app/ride-austin-non-profit-tnc/id1116489847?ls=1&mt=8"];
     if ([[UIApplication sharedApplication] canOpenURL:urlApp]) {
-         [[UIApplication sharedApplication] openURL:urlApp];
+        [alert addAction:[UIAlertAction actionWithTitle:[@"Open RideAustin App" localized] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [[UIApplication sharedApplication] openURL:urlApp];
+        }]];
+    } else {
+        [alert addAction:[UIAlertAction actionWithTitle:[@"Install RideAustin App" localized] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+               [[UIApplication sharedApplication] openURL:urlAppLink];
+        }]];
     }
+       
+    [self.presenter.navigationController presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)showAdminVC {
