@@ -200,7 +200,7 @@
        
     [alert addAction:[UIAlertAction actionWithTitle:[@"Cancel" localized] style:UIAlertActionStyleCancel handler:nil]];
        
-    NSString *urlString = [NSString stringWithFormat:@"rideaustin://checkr?driverId=%@",[RASessionManager shared].currentSession.driver.modelID];
+    NSString *urlString = [NSString stringWithFormat:@"rideaustin://checkr?driverId=%@&email=%@",[RASessionManager shared].currentSession.driver.modelID,[RASessionManager shared].currentSession.driver.email];
     NSURL *urlApp = [NSURL URLWithString:urlString];
     
     NSURL *urlAppLink = [NSURL URLWithString:@"https://itunes.apple.com/us/app/ride-austin-non-profit-tnc/id1116489847?ls=1&mt=8"];
