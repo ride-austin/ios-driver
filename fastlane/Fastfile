@@ -19,18 +19,6 @@ platform :ios do
   SCHEME_RELEASE_QA_ENTERPRISE = 'QA'
   SCHEME_RELEASE_PROD_ENTERPRISE = 'ProductionEnterprise'
 
-  desc "Increment Build Number and Commit"
-  lane :increment do |values|
-    #increment version when all code is committed
-    ensure_git_status_clean
-    increment_build_number(xcodeproj: proj)
-    build   = get_build_number(xcodeproj: proj)
-    version = get_version_number(xcodeproj: proj)
-
-    commit_message = "Version " +  version + " (" + build + ")"
-    sh("git add -A && git commit -m '#{commit_message}'")
-  end
-
   desc "Create qa enterprise build and upload to hockey"
   lane :qa do |values|
     raise "Missing APPCENTER_APP_NAME" unless ENV["APPCENTER_APP_NAME"] != nil
@@ -51,6 +39,8 @@ platform :ios do
 
     increment_build_number(xcodeproj: proj)
     build   = get_build_number(xcodeproj: proj)
+    plist_command = "Set :CFBundleVersion " + build
+    sh("/usr/libexec/PlistBuddy", "-c", plist_command, "../FuelMeDriver/scripts/templates/RideDriverEnterprise-Info.plist.template")
     version = get_version_number(xcodeproj: proj)
     commit_message = "Version " +  version + " (" + build + ")"
     message = "QAAustinDriver" + " " + commit_message + " " + "uploaded by:" + ENV["FASTLANE_USER"]
