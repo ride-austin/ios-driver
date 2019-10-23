@@ -83,13 +83,13 @@ PODS:
     - GoogleUtilities/Network (~> 6.0)
     - "GoogleUtilities/NSData+zlib (~> 6.0)"
     - nanopb (~> 0.3)
-  - GoogleMaps (3.2.0):
-    - GoogleMaps/Maps (= 3.2.0)
-  - GoogleMaps/Base (3.2.0)
-  - GoogleMaps/Maps (3.2.0):
+  - GoogleMaps (3.5.0):
+    - GoogleMaps/Maps (= 3.5.0)
+  - GoogleMaps/Base (3.5.0)
+  - GoogleMaps/Maps (3.5.0):
     - GoogleMaps/Base
-  - GooglePlaces (3.2.0):
-    - GoogleMaps/Base (= 3.2.0)
+  - GooglePlaces (3.5.0):
+    - GoogleMaps/Base (= 3.5.0)
   - GoogleUtilities/AppDelegateSwizzler (6.2.3):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -300,8 +300,8 @@ SPEC CHECKSUMS:
   FirebaseMessaging: 6bb0bdaf64c55fef7a219b7bb1e94e94a0855ced
   FirebaseRemoteConfig: ed74d16d7e5b19e77a4c3e3eee4fe363039b0834
   GoogleAppMeasurement: 183bd916af7f80deb67c01888368f1108d641832
-  GoogleMaps: 5046d7edfe381c1a0b20fdaf293915a375c3122b
-  GooglePlaces: 41bc2e480816b1234a48f4bec92e1c886f37cfe1
+  GoogleMaps: 32ca02de09de357a10ac773f2c70f1986751392d
+  GooglePlaces: be6f19fe8aa6ff0b5bcccfa1b8805cc977ea1450
   GoogleUtilities: d2b0e277a95962e09bb27f5cd42f5f0b6a506c7d
   ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
   LGRefreshView: 34746afadbd23de8d1449cab15f3d89269645d43
