@@ -625,6 +625,10 @@
     NSString *userCarTypes = currentSession.userCarTypes.stringArrayToString;
     
     if ([RASessionManager shared].isSignedIn && self.isDriverOnline && userCarTypes) {
+        
+        UIBackgroundTaskIdentifier identifier = [UIApplication.sharedApplication beginBackgroundTaskWithExpirationHandler:^{
+            DBLog(@"Failed to update");
+        }];
         [RAActiveDriversAPI putActiveDriverWithLatitude:coordinate.latitude
                                               longitude:coordinate.longitude
                                                   speed:speed
@@ -644,8 +648,10 @@
                     completion(error);
                 }
             } else {
+                DBLog(@"Location updated");
                 completion(nil);
             }
+            [UIApplication.sharedApplication endBackgroundTask:identifier];
         }];
     } else {
         completion(nil);
