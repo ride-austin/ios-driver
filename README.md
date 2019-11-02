@@ -57,10 +57,6 @@ This project is configured with Fastlane to work with CLI tools  here are the en
 
 - __GOOGLE_MAP_DIRECTIONS_KEY:__ To use the Directions API, you must get an API key which you can then add to your mobile app, website, or web server. The API key is used to track API requests associated with your project for usage and billing. To learn more about API keys, see the [API Key Best Practices](https://developers.google.com/maps/api-key-best-practices) 
 
-- __HOCKEYAPP_ID_PRODUCTION:__  Add APP ID from hockey app here  get it from the main page of the app.  Just select the application in the hockey app it will open the page showing the overview tab. 
-
-- __HOCKEYAPP_API_TOKEN:__ While using HockeyApp , with the help of API Tokens we can control the access rights for a single app or multiple apps. The common API Access token key (All Apps) can be useful for all the apps. But, in case you want to give specific access right such as only upload, or just a read only, we should create specific access token. builds to devices. Please check the [guide](https://dailydotnettips.com/obtaining-the-app-specific-hockeyapp-api-token/) for help.
-
 - __MATCH_GIT_FULL_NAME:__ git user full name to commit
 
 - __MATCH_GIT_URL:__ URL to the git repo containing all the certificates
@@ -85,8 +81,6 @@ This project is configured with Fastlane to work with CLI tools  here are the en
 
 ### Optional
 
-- __APPCENTER_APP_NAME:__ Add your app name to be uploaded on Appcenter to get App name find at `https://appcenter.ms/orgs/<APPCENTER_OWNER_NAME>/apps/<APPCENTER_APP_NAME>`
-
 - __APPCENTER_OWNER_NAME:__ Add owner name of the app to be uploaded on Appcenter to get App owner name find at `https://appcenter.ms/orgs/<APPCENTER_OWNER_NAME>`
 
 - __APPCENTER_API_TOKEN:__ Add Api token for Appcenter.  Goto. `https://appcenter.ms/orgs/<organization-name>/applications?os=iOS` then in account settings, you can create token.  `Settings / API tokens`
@@ -102,6 +96,10 @@ This project is configured with Fastlane to work with CLI tools  here are the en
 - __ENTERPRISE_APP_IDENTIFIER_PROD:__ App ID for Enterprise app distribution to distribute the production build 
 
 - __ENTERPRISE_APP_IDENTIFIER_QA:__ App ID for Enterprise app distribution to distribute the QA build
+
+- __ENTERPRISE_APPCENTER_APP_NAME_PROD:__ Add your app name to be uploaded on Appcenter to get App name find at `https://appcenter.ms/orgs/<APPCENTER_OWNER_NAME>/apps/<APPCENTER_APP_NAME>`
+
+- __ENTERPRISE_APPCENTER_APP_NAME_QA:__ Add your app name to be uploaded on Appcenter to get App name find at `https://appcenter.ms/orgs/<APPCENTER_OWNER_NAME>/apps/<APPCENTER_APP_NAME>`
 
 - __ENTERPRISE_FASTLANE_TEAM_ID:__ Team ID for Enterprise app distribution 
 
@@ -124,8 +122,6 @@ This project is configured with Fastlane to work with CLI tools  here are the en
 - __GOOGLE_SERVICE_INFO_PLIST_PRODUCTION_ENTERPRISE:__ When using circleci, run ```base64 GoogleService-Info-ProductionEnterprise.plist``` and use the output as environment variable. Otherwise, just add the file FuelMeDriver/support/Plist/GoogleService-Info-ProductionEnterprise.plist to enable firebase services in production for enterprise distribution
 
 - __GOOGLE_SERVICE_INFO_PLIST_QA:__ When using circleci, run ```base64 GoogleService-Info-QA.plist``` and use the output as environment variable. Otherwise, just add the file FuelMeDriver/support/Plist/GoogleService-Info-QA.plist to enable firebase services in QA environment for enterprise distribution
-
-- __HOCKEYAPP_ID_QA:__  Add APP ID from hockey app here  get it from the main page of the app.  Just select the application in the hockey app it will open the page showing the overview tab. 
 
 - __QA_SERVER_URL:__ If you have a QA environment you can provide QA server url for the apis. 
 

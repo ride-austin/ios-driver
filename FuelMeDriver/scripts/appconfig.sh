@@ -54,15 +54,6 @@ then
 	echo "Please provide missing \$MD5_PASSWORD_SALT"
 	exit 1
 fi
-if test -z "$HOCKEYAPP_ID_PRODUCTION"
-then
-	echo "Please provide missing \$HOCKEYAPP_ID_PRODUCTION"
-	exit 1
-fi
-if test -z "$HOCKEYAPP_ID_QA"
-then
-	echo "Please provide missing \$HOCKEYAPP_ID_QA"
-fi
 
 sed -i '' -e "s|{{apiKey}}|$API_KEY|g" $OUTPUT_FILE
 sed -i '' -e "s|{{GoogleMapKey}}|$GOOGLE_MAP_KEY|g" $OUTPUT_FILE
@@ -73,7 +64,5 @@ sed -i '' -e "s|{{qaServerURL}}|$QA_SERVER_URL|g" $OUTPUT_FILE
 sed -i '' -e "s|{{stageServerURL}}|$STAGE_SERVER_URL|g" $OUTPUT_FILE
 sed -i '' -e "s|{{devServerURL}}|$DEV_SERVER_URL|g" $OUTPUT_FILE
 sed -i '' -e "s|{{md5PasswordSalt}}|$MD5_PASSWORD_SALT|g" $OUTPUT_FILE
-sed -i '' -e "s|{{hockeyAppId}}|$HOCKEYAPP_ID_PRODUCTION|g" $OUTPUT_FILE
-sed -i '' -e "s|{{hockeyAppTestId}}|$HOCKEYAPP_ID_QA|g" $OUTPUT_FILE
 
 echo "Done with setup of AppConfig.m"
