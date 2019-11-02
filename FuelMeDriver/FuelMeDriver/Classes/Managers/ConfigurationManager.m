@@ -22,7 +22,7 @@ NSString* const kNotificationDidChangeConfiguration = @"kNotificationDidChangeCo
 NSString* const kNotificationDidChangeCurrentCityType = @"kNotificationDidChangeCurrentCityType";
 
 // DEPLOYMENT: the url for the latest version of Driver should be served by server, but until it is, this url must be updated
-NSString * const kLatestDriverAustinVersionDownloadURL = @"https://rink.hockeyapp.net/apps/84e082dbcaf040b0acb3571894c0ad74"; //RideAustin
+NSString * const kLatestDriverAustinVersionDownloadURL = @"https://rideaustin.com/driver"; //RideAustin
 NSString * const kLatestDriverHoustonVersionDownloadURL = @"https://rink.hockeyapp.net/apps/2169a86c75064d64bdb65d033b41057b"; //RideHouston (for now it is private, update if necessary)
 
 @interface ConfigurationManager ()
