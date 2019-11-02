@@ -19,7 +19,7 @@ platform :ios do
   SCHEME_RELEASE_QA_ENTERPRISE = 'QA'
   SCHEME_RELEASE_PROD_ENTERPRISE = 'ProductionEnterprise'
 
-  desc "Create qa enterprise build and upload to hockey"
+  desc "Create qa enterprise build and upload to appcenter"
   lane :qa do |values|
     raise "Missing APPCENTER_APP_NAME" unless ENV["APPCENTER_APP_NAME"] != nil
     raise "Missing APPCENTER_OWNER_NAME" unless ENV["APPCENTER_OWNER_NAME"] != nil
