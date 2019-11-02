@@ -11,8 +11,6 @@
 @interface AppConfig : NSObject
 
 + (NSString *)apiKey;
-+ (NSString *)hockeyAppId;
-+ (NSString *)hockeyAppTestId;
 + (NSString *)googleDirectionsKey;
 + (NSString *)googleMapKey;
 + (NSString *)bugFenderKey;
