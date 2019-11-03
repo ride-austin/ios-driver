@@ -80,7 +80,7 @@ jobs:
       - run:
           name: Build QA
           command: bundle exec fastlane qa
-  upload-production:
+  upload-production-appstore:
     macos:
       xcode: "11.0.0"
     steps:
@@ -92,6 +92,15 @@ jobs:
       - run:
           name: Build Production
           command: bundle exec fastlane prod
+  upload-production-enterprise:
+    macos:
+      xcode: "11.0.0"
+    steps:
+      - attach_workspace:
+          at: .
+      - add_ssh_keys: 
+            fingerprints:
+              - "60:9b:99:39:c7:d9:31:df:6b:51:73:2d:be:31:c9:5e"
       - run:
           name: Build Production Enterprise
           command: bundle exec fastlane prodenterprise
@@ -180,7 +189,14 @@ workflows:
             branches:
               only: 
                 - develop
-      - upload-production:
+      - upload-production-appstore:
+          requires: 
+            - initialize
+          filters:
+            branches:
+              only: 
+                - /release.*/
+      - upload-production-enterprise:
           requires: 
             - initialize
           filters:
