@@ -39,7 +39,12 @@
     self.navigationController.navigationBar.translucent = NO;
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:backTitle style:UIBarButtonItemStylePlain target:nil action:nil];
-    backButton.tintColor = [UIColor blackColor];
+    
+    if (@available(iOS 11.0, *)) {
+        backButton.tintColor = [UIColor colorNamed:@"navigationTitleColor"];
+    } else {
+        backButton.tintColor = [UIColor blackColor];
+    }
     
     self.navigationItem.backBarButtonItem = backButton;
 }

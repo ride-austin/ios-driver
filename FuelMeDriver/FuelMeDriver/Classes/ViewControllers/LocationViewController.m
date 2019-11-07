@@ -621,6 +621,12 @@ static NSString *const FAChevronDownIcon = @"\uf078";
     self.navigationController.navigationBar.accessibilityIdentifier = @"LocationViewControllerNavigationBar";
     self.btMenu.accessibilityIdentifier = @"show menu";
     
+    if (@available(iOS 11.0, *)) {
+        self.btMenu.tintColor = [UIColor colorNamed:@"menuButtonColor"];
+    } else {
+        self.btMenu.tintColor = UIColor.blackColor;
+    }
+    
     self.riderAddressView.accessibilityLabel = @"riderAddressView";
     self.riderAddressView_pickup.accessibilityLabel = @"riderAddressView_pickup";
     self.riderAddressView_dropoff.accessibilityLabel = @"riderAddressView_dropoff";
