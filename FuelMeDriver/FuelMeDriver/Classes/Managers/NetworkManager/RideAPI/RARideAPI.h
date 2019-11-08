@@ -23,7 +23,7 @@ typedef void(^IsRideActiveBlock)(BOOL isRideActive, NSError *_Nullableerror);
 + (void)postEvents:(NSDictionary *)events withCompletion:(void(^)(NSError *))completion;
 + (void)ackReceivedRideWithId:(NSNumber*)rideId completion:(StatusCompletionBlock)completion;
 + (void)acceptRideWithId:(NSNumber *)rideId andCompletion:(void(^)(NSError *))completion;
-+ (void)startRideWithId:(NSString*)rideId andCompletion:(StatusCompletionBlock)completion;
++ (void)startRideWithId:(NSString*)rideId latitude:(double)lat longitude:(double)lng andCompletion:(StatusCompletionBlock)completion;
 + (void)reachedRideWithId:(NSString*)rideId andCompletion:(StatusCompletionBlock)completion;
 + (void)endRideWithId:(NSString*)rideId latitude:(double)lat longitude:(double)lng andCompletion:(RideCompletionBlock)completion;
 + (void)getRideWithId:(NSString*)rideId andCompletion:(RideCompletionBlock)completion;

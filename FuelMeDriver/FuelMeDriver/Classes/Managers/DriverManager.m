@@ -462,6 +462,7 @@
 
 - (void)startTripWithCompletion:(void (^)(void))completion {
     if (self.canStartTrip) {
+        CLLocation *location = [LocationService sharedService].myLocation;
         NSString *rideID = self.rideDataModel.modelID.stringValue;
         
         if ([[RARideCacheManager sharedManager] hasReachedInCacheForRideWithId:rideID]) {
@@ -473,7 +474,7 @@
             return;
         }
         
-        [RARideAPI startRideWithId:rideID andCompletion:^(NSInteger statusCode, NSError *error) {
+        [RARideAPI startRideWithId:rideID latitude:location.coordinate.latitude longitude:location.coordinate.longitude andCompletion:^(NSInteger statusCode, NSError *error) {
             if (error) {
                 if (statusCode == 400) {
                     [self synchronizeStateWithCompletion:nil];
