@@ -86,10 +86,12 @@
     }];
 }
 
-+ (void)startRideWithId:(NSString *)rideId andCompletion:(StatusCompletionBlock)completion {
++ (void)startRideWithId:(NSString *)rideId latitude:(double)lat longitude:(double)lng andCompletion:(StatusCompletionBlock)completion {
     NSString *path = [[NSString stringWithFormat:kPathStartRide,rideId] pathWithCityAppendType:AppendAsFirstParameter];
+    NSDictionary *params = @{@"endLocationLat"  : @(lat),
+                            @"endLocationLong" : @(lng)};
     AFRKHTTPClient *httpClient = [[RKObjectManager sharedManager].HTTPClient copy];
-    [httpClient postPath:path parameters:nil success:^(AFRKHTTPRequestOperation *operation, id responseObject) {
+    [httpClient postPath:path parameters:params success:^(AFRKHTTPRequestOperation *operation, id responseObject) {
         BFLog(@"Driver Start Ride %@ success", rideId);
         if (completion) {
             completion(operation.response.statusCode, nil);
