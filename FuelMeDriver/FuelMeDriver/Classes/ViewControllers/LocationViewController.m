@@ -320,6 +320,10 @@ static NSString *const FAChevronDownIcon = @"\uf078";
     }
 }
 
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection{
+    [self configureDarkMode];
+}
+
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     if ([self isBeingDismissed] || [self isMovingFromParentViewController]) {
@@ -613,6 +617,34 @@ static NSString *const FAChevronDownIcon = @"\uf078";
     CLLocation *currentLocation = [LocationService sharedService].myLocation;
     [self.googleMapsManager defaultMapConfigurationWithDelegate:self andLocation:currentLocation];
     [self.googleMapsManager createCarMarkerWithCoordinate:currentLocation.coordinate];
+    [self configureDarkMode];
+
+}
+
+-(void)configureDarkMode{
+    if (@available(iOS 12.0, *)) {
+        if (self.traitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
+            NSBundle *mainBundle = [NSBundle mainBundle];
+            NSURL *styleUrl = [mainBundle URLForResource:@"nightMode" withExtension:@"json"];
+            NSError *error;
+            GMSMapStyle *style = [GMSMapStyle styleWithContentsOfFileURL:styleUrl error:&error];
+
+            if (!style) {
+                NSLog(@"The style definition could not be loaded: %@", error);
+            }
+            self.googleMapView.mapStyle = style;
+        }
+        else {
+            NSError *error;
+            GMSMapStyle *style = [GMSMapStyle styleWithJSONString:@"[]" error:&error];
+
+            if (!style) {
+              NSLog(@"The style definition could not be loaded: %@", error);
+            }
+
+            self.googleMapView.mapStyle = style;
+        }
+    }
 }
 
 #pragma mark- Accessibilities
