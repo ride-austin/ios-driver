@@ -41,7 +41,7 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:backTitle style:UIBarButtonItemStylePlain target:nil action:nil];
     
     if (@available(iOS 11.0, *)) {
-        backButton.tintColor = [UIColor colorNamed:@"navigationTitleColor"];
+        backButton.tintColor = [UIColor colorNamed:@"menuButtonColor"];
     } else {
         backButton.tintColor = [UIColor blackColor];
     }
