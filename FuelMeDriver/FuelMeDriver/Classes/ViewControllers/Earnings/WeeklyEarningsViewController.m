@@ -98,6 +98,10 @@ typedef enum : NSUInteger {
     [self hideHUD];
 }
 
+- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
+    return UIUserInterfaceStyleLight;
+}
+
 - (void)configureData {
     self.weekDates = [NSMutableArray new];
     self.weekDaysData = [NSMutableArray new];    

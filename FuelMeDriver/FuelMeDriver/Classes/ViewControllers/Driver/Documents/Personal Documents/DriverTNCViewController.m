@@ -62,6 +62,10 @@
     [self configureData];
 }
 
+- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
+    return UIUserInterfaceStyleLight;
+}
+
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     if (!self.tableView.tableHeaderView) {

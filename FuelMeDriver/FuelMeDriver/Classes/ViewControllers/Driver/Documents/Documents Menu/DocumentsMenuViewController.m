@@ -33,6 +33,10 @@ static NSString * const kDriversLicense = @"Driver's License";
     [self updateData];
 }
 
+- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
+    return UIUserInterfaceStyleLight;
+}
+
 - (void)updateData {
     __weak __typeof__(self) weakself = self;
     

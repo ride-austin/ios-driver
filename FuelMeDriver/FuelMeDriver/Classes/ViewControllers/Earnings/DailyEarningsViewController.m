@@ -78,6 +78,10 @@ typedef enum : NSUInteger {
     }
 }
 
+- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
+    return UIUserInterfaceStyleLight;
+}
+
 - (void)configureTableView {
     
     self.shouldDisplayTable = NO;

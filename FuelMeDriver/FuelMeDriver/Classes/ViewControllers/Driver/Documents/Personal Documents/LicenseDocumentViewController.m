@@ -47,6 +47,10 @@
     [self hideHUD];
 }
 
+- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
+    return UIUserInterfaceStyleLight;
+}
+
 - (void)setupUI {
     NSString *docsEmail = @"documents@rideaustin.com";
     self.title = [@"Driver's License" localized];

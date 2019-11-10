@@ -65,6 +65,10 @@ static NSString * const kCarSelectionHeaderIdentifier = @"CarSelectionHeader";
     [self updateCarList];
 }
 
+- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
+    return UIUserInterfaceStyleLight;
+}
+
 #pragma mark - Data Filling
 
 - (void)updateCarList {
