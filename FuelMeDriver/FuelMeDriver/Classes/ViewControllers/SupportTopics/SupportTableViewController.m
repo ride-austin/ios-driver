@@ -26,6 +26,10 @@
     self.tableView.estimatedRowHeight = 50;
 }
 
+- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
+    return UIUserInterfaceStyleLight;
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

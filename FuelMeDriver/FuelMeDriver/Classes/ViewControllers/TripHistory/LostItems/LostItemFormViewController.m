@@ -27,6 +27,11 @@
     [self configureFormBasedOnViewModel:self.viewModel];
 }
 
+- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
+    return UIUserInterfaceStyleLight;
+}
+
+
 - (void)setFormDataModel:(LIOptionDataModel *)formDataModel andRideId:(NSNumber *)rideId {
     _viewModel = [[LostItemViewModel alloc] initWithDataModel:formDataModel rideId:rideId];
 }

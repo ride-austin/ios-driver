@@ -47,6 +47,10 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
+    return UIUserInterfaceStyleLight;
+}
+
 - (void)setupUI {
     self.tvIssueDetails.text = [kPlaceHolderText localized];
     self.tvIssueDetails.textColor = kPlaceHolderColor;
