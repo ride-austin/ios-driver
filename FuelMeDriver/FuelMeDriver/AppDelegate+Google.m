@@ -21,6 +21,7 @@
     [FIRMessaging messaging].delegate = self;
     if (NSProcessInfo.processInfo.environment[@"XCTestConfigurationFilePath"] == nil) {
         [FIRApp configure];
+        [Fabric with:@[[Crashlytics sharedInstance]]];
     }
 }
 
