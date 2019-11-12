@@ -47,7 +47,7 @@
 }
 
 - (void)configureNavBar {
-    self.title = [NSString stringWithFormat:[@"CONTACT %@" localized],self.recipientName];
+    self.title = [[NSString stringWithFormat:[@"CONTACT %@" localized],self.recipientName] capitalizedString];
     [self.btSend setTintColor:[UIColor blackColor]];
     [self.btSend setEnabled:NO];
     [self.navigationItem setRightBarButtonItem:self.btSend];
