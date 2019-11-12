@@ -56,6 +56,9 @@ typedef enum : NSUInteger {
     [self configureData];
     [self loadData];
     [self addObservers];
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 - (void)addObservers {

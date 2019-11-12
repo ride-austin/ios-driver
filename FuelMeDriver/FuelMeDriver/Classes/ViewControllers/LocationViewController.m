@@ -633,6 +633,8 @@ static NSString *const FAChevronDownIcon = @"\uf078";
                 NSLog(@"The style definition could not be loaded: %@", error);
             }
             self.googleMapView.mapStyle = style;
+            self.riderAddressView_pickup.textColor = UIColor.blackColor;
+            self.riderAddressView_dropoff.textColor = UIColor.blackColor;
         }
         else {
             NSError *error;

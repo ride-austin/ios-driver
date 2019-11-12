@@ -58,6 +58,9 @@ static NSString * const kCarSelectionHeaderIdentifier = @"CarSelectionHeader";
     self.vAddCarContainer.layer.shadowRadius = 3.5;
     self.vAddCarContainer.layer.shadowOpacity = 0.5;
     self.vAddCarContainer.layer.shadowOffset = CGSizeMake(0,-1);
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
