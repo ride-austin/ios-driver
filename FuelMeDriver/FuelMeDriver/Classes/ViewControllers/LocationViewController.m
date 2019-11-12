@@ -635,6 +635,8 @@ static NSString *const FAChevronDownIcon = @"\uf078";
             self.googleMapView.mapStyle = style;
             self.riderAddressView_pickup.textColor = UIColor.blackColor;
             self.riderAddressView_dropoff.textColor = UIColor.blackColor;
+            NSAttributedString *placeholder = [[NSAttributedString alloc] initWithString:@"Enter Destination" attributes:@{ NSForegroundColorAttributeName : [UIColor lightGrayColor] }];
+            self.riderAddressView_dropoff.attributedPlaceholder = placeholder;
         }
         else {
             NSError *error;

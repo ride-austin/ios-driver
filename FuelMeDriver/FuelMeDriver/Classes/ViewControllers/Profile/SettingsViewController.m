@@ -59,7 +59,7 @@ static CGFloat const kFeatureViewTag = 9999;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = [kScreenTitle localized];
+    self.title = kScreenTitle.localizedCapitalizedString;
     
     self.sections = [NSMutableArray new];
     [self configureTable];

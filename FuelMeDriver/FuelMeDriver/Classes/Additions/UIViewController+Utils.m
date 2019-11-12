@@ -61,7 +61,11 @@
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textAlignment = NSTextAlignmentCenter;
     [titleLabel setFont:[UIFont fontWithName:@"Montserrat-Regular" size:18]];
-    titleLabel.textColor = [UIColor blackColor];
+    if (@available(iOS 11.0, *)) {
+        titleLabel.textColor = [UIColor colorNamed:@"navigationTitleColor"];
+    } else {
+        titleLabel.textColor = [UIColor blackColor];
+    }
     titleLabel.text = title;
     [titleView addSubview:titleLabel];
     
