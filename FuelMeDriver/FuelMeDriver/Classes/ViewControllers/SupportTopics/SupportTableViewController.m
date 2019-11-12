@@ -24,10 +24,9 @@
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 50;
-}
-
-- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
-    return UIUserInterfaceStyleLight;
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 #pragma mark - Table view data source

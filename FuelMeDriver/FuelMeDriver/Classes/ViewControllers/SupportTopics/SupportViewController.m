@@ -41,14 +41,13 @@
     self.validDetails = NO;
     [self addObservers];
     [self setupUI];
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
-    return UIUserInterfaceStyleLight;
 }
 
 - (void)setupUI {

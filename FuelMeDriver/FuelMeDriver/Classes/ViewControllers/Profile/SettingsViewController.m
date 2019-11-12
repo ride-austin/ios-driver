@@ -65,6 +65,9 @@ static CGFloat const kFeatureViewTag = 9999;
     [self configureTable];
     [self configureObservers];
     [self updateData];
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -85,10 +88,6 @@ static CGFloat const kFeatureViewTag = 9999;
     } else {
         self.avatarImage.image = placeholder;
     }
-}
-
-- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
-    return UIUserInterfaceStyleLight;
 }
 
 - (void)dealloc {

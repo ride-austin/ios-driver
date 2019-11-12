@@ -56,6 +56,9 @@ typedef enum : NSUInteger {
     [self configureData];
     [self loadData];
     [self addObservers];
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 - (void)addObservers {
@@ -96,10 +99,6 @@ typedef enum : NSUInteger {
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self hideHUD];
-}
-
-- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
-    return UIUserInterfaceStyleLight;
 }
 
 - (void)configureData {

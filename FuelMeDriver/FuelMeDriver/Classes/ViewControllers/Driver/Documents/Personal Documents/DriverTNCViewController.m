@@ -60,10 +60,9 @@
     [self configureLayout];
     [self configureText];
     [self configureData];
-}
-
-- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
-    return UIUserInterfaceStyleLight;
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 - (void)viewDidLayoutSubviews {

@@ -25,12 +25,10 @@
     
     self.title = self.viewModel.headerText;
     [self configureFormBasedOnViewModel:self.viewModel];
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
-
-- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
-    return UIUserInterfaceStyleLight;
-}
-
 
 - (void)setFormDataModel:(LIOptionDataModel *)formDataModel andRideId:(NSNumber *)rideId {
     _viewModel = [[LostItemViewModel alloc] initWithDataModel:formDataModel rideId:rideId];

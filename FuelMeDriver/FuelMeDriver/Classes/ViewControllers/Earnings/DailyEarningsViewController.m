@@ -54,6 +54,10 @@ typedef enum : NSUInteger {
     
     //setup UI
     [self configureUI];
+    
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -76,10 +80,6 @@ typedef enum : NSUInteger {
     if ([self respondsToSelector:@selector(loadData)]) {
         [self performSelector:@selector(loadData) withObject:self afterDelay:0.8];
     }
-}
-
-- (UIUserInterfaceStyle)overrideUserInterfaceStyle {
-    return UIUserInterfaceStyleLight;
 }
 
 - (void)configureTableView {
