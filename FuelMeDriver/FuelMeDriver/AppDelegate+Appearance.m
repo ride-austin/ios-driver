@@ -14,8 +14,12 @@
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:7.0/255.0 green:13.0/255.0 blue:22.0/255.0 alpha:1.0]];
     
     UIFont *font = [UIFont fontWithName:@"Montserrat-Light" size:19];
-    UIColor *textColor = [UIColor colorWithRed:44.0/255.0 green:50.0/255.0 blue:60.0/255.0 alpha:1.0];
-    
+    UIColor *textColor = [UIColor clearColor];
+    if (@available(iOS 11.0, *)) {
+        textColor = [UIColor colorNamed:@"navigationTitleColor"];
+    } else {
+        textColor = [UIColor colorWithRed:44.0/255.0 green:50.0/255.0 blue:60.0/255.0 alpha:1.0];
+    }
     NSMutableDictionary *titleBarAttributes = [NSMutableDictionary dictionaryWithDictionary: [[UINavigationBar appearance] titleTextAttributes]];
     [titleBarAttributes setValue:font forKey:NSFontAttributeName];
     [titleBarAttributes setValue:textColor forKey:NSForegroundColorAttributeName];

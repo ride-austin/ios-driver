@@ -31,6 +31,9 @@ static NSString * const kDriversLicense = @"Driver's License";
     self.menuArray = [NSMutableArray new];
     self.title = [@"Documents" localized];
     [self updateData];
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 - (void)updateData {

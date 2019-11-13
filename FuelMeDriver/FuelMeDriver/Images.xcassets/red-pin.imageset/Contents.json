@@ -2,22 +2,34 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "red-pin.png",
-      "scale" : "1x"
+      "filename" : "pinRed-light.pdf"
     },
     {
       "idiom" : "universal",
-      "filename" : "red-pin@2x.png",
-      "scale" : "2x"
+      "filename" : "pinRed-light-1.pdf",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ]
     },
     {
       "idiom" : "universal",
-      "filename" : "red-pin@3x.png",
-      "scale" : "3x"
+      "filename" : "pinRed-dark.pdf",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ]
     }
   ],
   "info" : {
     "version" : 1,
     "author" : "xcode"
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }

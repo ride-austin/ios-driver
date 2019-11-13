@@ -38,11 +38,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.fbLoginFailed = NO;
     
     [super configureAllTapsWillDismissKeyboard];
     [self setupDesign];
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -51,7 +54,7 @@
 }
 
 - (void)setupDesign {
-    self.title = [@"Sign In" localized];
+    self.title = @"Sign In".localizedCapitalizedString;
     self.edgesForExtendedLayout = UIRectEdgeNone;
     [self.navigationController setNavigationBarHidden:NO];
     

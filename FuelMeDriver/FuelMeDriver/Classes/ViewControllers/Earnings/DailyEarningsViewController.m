@@ -54,6 +54,10 @@ typedef enum : NSUInteger {
     
     //setup UI
     [self configureUI];
+    
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
