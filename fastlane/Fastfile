@@ -19,9 +19,9 @@ platform :ios do
   SCHEME_RELEASE_QA_ENTERPRISE = 'QA'
   SCHEME_RELEASE_PROD_ENTERPRISE = 'ProductionEnterprise'
 
-  desc "Create qa enterprise build and upload to hockey"
+  desc "Create qa enterprise build and upload to appcenter"
   lane :qa do |values|
-    raise "Missing APPCENTER_APP_NAME" unless ENV["APPCENTER_APP_NAME"] != nil
+    raise "Missing ENTERPRISE_APPCENTER_APP_NAME_QA" unless ENV["ENTERPRISE_APPCENTER_APP_NAME_QA"] != nil
     raise "Missing APPCENTER_OWNER_NAME" unless ENV["APPCENTER_OWNER_NAME"] != nil
     raise "Missing APPCENTER_API_TOKEN" unless ENV["APPCENTER_API_TOKEN"] != nil
     ####################################################
@@ -61,7 +61,7 @@ platform :ios do
       next
     end
     appcenter_upload(
-        app_name: ENV["APPCENTER_APP_NAME"],
+        app_name: ENV["ENTERPRISE_APPCENTER_APP_NAME_QA"],
         owner_type: "organization",
         release_notes: release_notes
     )
@@ -82,10 +82,10 @@ platform :ios do
     )
   end
 
-  desc "Create Archive, upload to hockeyapp - Production Austin"
+  desc "Create Archive, upload to appcenter"
   lane :prodenterprise do |values|
     raise "Missing FL_HOCKEY_API_TOKEN" unless ENV["FL_HOCKEY_API_TOKEN"] != nil
-    raise "Missing ENTERPRISE_APPCENTER_APP_NAME" unless ENV["ENTERPRISE_APPCENTER_APP_NAME"] != nil
+    raise "Missing ENTERPRISE_APPCENTER_APP_NAME_PROD" unless ENV["ENTERPRISE_APPCENTER_APP_NAME_PROD"] != nil
     raise "Missing APPCENTER_OWNER_NAME" unless ENV["APPCENTER_OWNER_NAME"] != nil
     raise "Missing APPCENTER_API_TOKEN" unless ENV["APPCENTER_API_TOKEN"] != nil
     release_notes = "Thank you for driving with RideAustin! For new installation, please go to Settings > General > Profiles & Device Management > Crossover Markets"
@@ -111,33 +111,17 @@ platform :ios do
     if values[:skipupload] == true
       next
     end
-    hockey(
-      public_identifier:ENV["HOCKEYAPP_ID_PRODUCTION"],
-      notes: release_notes,
-      notify: '0', # Means do not notify
-      status: '0', # 0 Means not available for download
-    )
     appcenter_upload(
-        app_name: ENV["ENTERPRISE_APPCENTER_APP_NAME"],
+        app_name: ENV["ENTERPRISE_APPCENTER_APP_NAME_PROD"],
         owner_type: "organization",
         release_notes: release_notes
     )
     clean_build_artifacts
     reset_git_repo(force: true, 
                    skip_clean: true)
-
-    hockey_info  = lane_context[SharedValues::HOCKEY_BUILD_INFORMATION]
-    hockey_link  = lane_context[SharedValues::HOCKEY_DOWNLOAD_LINK]
-    hockey_title = hockey_info[:title]
-    message =  "Production build uploaded to hockey by:" + ENV["FASTLANE_USER"]
-    slack(message:message,
-          attachment_properties: {
-              title:hockey_title, 
-              title_link:hockey_link
-          })
   end
 
-  desc "Create Archive, upload to hockeyapp - Production Austin"
+  desc "Create Archive, upload to testflight"
   lane :prod do |values|
     build   = get_build_number(xcodeproj: proj)
     test_version = get_version_number(xcodeproj: proj)

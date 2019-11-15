@@ -40,6 +40,9 @@
     [super viewDidLoad];
     [self setupUI];
     [self setupData];
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

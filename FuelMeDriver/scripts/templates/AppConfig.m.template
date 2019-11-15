@@ -40,12 +40,4 @@
     return @"{{md5PasswordSalt}}";
 }
 
-+ (NSString *)hockeyAppId {
-    return @"{{hockeyAppId}}";
-}
-
-+ (NSString *)hockeyAppTestId {
-    return @"{{hockeyAppTestId}}";
-}
-
 @end

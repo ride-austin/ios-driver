@@ -529,6 +529,7 @@
 		B52355CA1D64F7460071E136 /* DailyCancelledRideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B52355C61D64F7460071E136 /* DailyCancelledRideCell.m */; };
 		B52355CE1D64F7460071E136 /* DailyCancelledRideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52355C71D64F7460071E136 /* DailyCancelledRideCell.xib */; };
 		B55FBFD51CF77EF500B30128 /* HCSStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B55FBFD21CF77EF500B30128 /* HCSStarRatingView.m */; };
+		B577FFBC237760B60033C34C /* nightMode.json in Resources */ = {isa = PBXBuildFile; fileRef = B577FFBB237760B30033C34C /* nightMode.json */; };
 		B5790AE31DD72CED004AFD59 /* CarSelectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B5790AE11DD72CED004AFD59 /* CarSelectionHeader.m */; };
 		B5790AE91DD7354B004AFD59 /* CarSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5790AE71DD7354B004AFD59 /* CarSelectionViewController.m */; };
 		B5790AEE1DD78CF0004AFD59 /* CarSelectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5790AEC1DD78CF0004AFD59 /* CarSelectionHeader.xib */; };
@@ -1499,6 +1500,7 @@
 		B52355C71D64F7460071E136 /* DailyCancelledRideCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DailyCancelledRideCell.xib; path = FuelMeDriver/Classes/ViewControllers/Earnings/Cells/DailyCancelledRideCell.xib; sourceTree = SOURCE_ROOT; };
 		B55FBFD11CF77EF500B30128 /* HCSStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCSStarRatingView.h; sourceTree = "<group>"; };
 		B55FBFD21CF77EF500B30128 /* HCSStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSStarRatingView.m; sourceTree = "<group>"; };
+		B577FFBB237760B30033C34C /* nightMode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nightMode.json; sourceTree = "<group>"; };
 		B5790AE01DD72CED004AFD59 /* CarSelectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarSelectionHeader.h; sourceTree = "<group>"; };
 		B5790AE11DD72CED004AFD59 /* CarSelectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarSelectionHeader.m; sourceTree = "<group>"; };
 		B5790AE61DD7354B004AFD59 /* CarSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarSelectionViewController.h; sourceTree = "<group>"; };
@@ -2048,6 +2050,7 @@
 		13FC20011DF0887E00D6EBA2 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				B577FFBB237760B30033C34C /* nightMode.json */,
 				13FC20021DF0887E00D6EBA2 /* AustinConfigGlobal.json */,
 				13FC20031DF0887E00D6EBA2 /* HoustonConfigGlobal.json */,
 				13FC20041DF0887E00D6EBA2 /* RAConfigCars.json */,
@@ -4460,6 +4463,7 @@
 				A06252331ED86568000025A0 /* BaseXLButtonCell.xib in Resources */,
 				5BC879601E3E901400B94395 /* DriverCarDetails.storyboard in Resources */,
 				5BEF8DE21D98745900E078BA /* RASimpleAlertView.xib in Resources */,
+				B577FFBC237760B60033C34C /* nightMode.json in Resources */,
 				13FC201A1DF0887E00D6EBA2 /* AustinConfigGlobal.json in Resources */,
 				844BAAC31DFE932D002AFEC7 /* Launch.storyboard in Resources */,
 				13A0AB721D88CF51007BD923 /* ReferFriend.storyboard in Resources */,
@@ -5672,7 +5676,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 566;
+				CURRENT_PROJECT_VERSION = 573;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -5687,7 +5691,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 5.0.9;
+				MARKETING_VERSION = 5.1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -5737,7 +5741,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FuelMeDriver",
 				);
-				MARKETING_VERSION = 5.0.9;
+				MARKETING_VERSION = 5.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -5937,7 +5941,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 566;
+				CURRENT_PROJECT_VERSION = 573;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -5955,7 +5959,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 5.0.9;
+				MARKETING_VERSION = 5.1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -6006,7 +6010,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FuelMeDriver",
 				);
-				MARKETING_VERSION = 5.0.9;
+				MARKETING_VERSION = 5.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -6224,7 +6228,8 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 566;
+				CURRENT_PROJECT_VERSION = 573;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -6247,7 +6252,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 5.0.9;
+				MARKETING_VERSION = 5.1.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
@@ -6298,7 +6303,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FuelMeDriver",
 				);
-				MARKETING_VERSION = 5.0.9;
+				MARKETING_VERSION = 5.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -6497,7 +6502,8 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 566;
+				CURRENT_PROJECT_VERSION = 573;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -6518,7 +6524,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 5.0.9;
+				MARKETING_VERSION = 5.1.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
@@ -6562,7 +6568,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 566;
+				CURRENT_PROJECT_VERSION = 573;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6577,7 +6583,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 5.0.9;
+				MARKETING_VERSION = 5.1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -6627,7 +6633,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FuelMeDriver",
 				);
-				MARKETING_VERSION = 5.0.9;
+				MARKETING_VERSION = 5.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -6744,7 +6750,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FuelMeDriver",
 				);
-				MARKETING_VERSION = 5.0.9;
+				MARKETING_VERSION = 5.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",

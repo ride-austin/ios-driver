@@ -93,6 +93,9 @@
     self.previousContentSize = self.scrollViewContainer.contentSize;
     [self configureCountryPicker];
     [self configureData];
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
