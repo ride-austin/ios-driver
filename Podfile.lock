@@ -195,7 +195,7 @@ DEPENDENCIES:
   - GooglePlaces
   - LGRefreshView (~> 1)
   - Mantle
-  - MRCountryPicker (from `https://github.com/tedgonzalez/MRCountryPicker.git`, branch `objc`)
+  - MRCountryPicker (from `https://github.com/tedgonzalez/MRCountryPicker.git`, branch `fixed-canada-issue`)
   - "NSString+RemoveEmoji"
   - OHHTTPStubs
   - REFormattedNumberField
@@ -260,7 +260,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   MRCountryPicker:
-    :branch: objc
+    :branch: fixed-canada-issue
     :git: https://github.com/tedgonzalez/MRCountryPicker.git
   TrueTime:
     :commit: 8aadebabe2590d6ab295c390df5bbc109b346348
@@ -270,7 +270,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MRCountryPicker:
-    :commit: 2da0e003ea17c20457eb3f96f435c2e59fb29eae
+    :commit: ec0c73b11809649848805957ae80df8a2ead352e
     :git: https://github.com/tedgonzalez/MRCountryPicker.git
   TrueTime:
     :commit: 8aadebabe2590d6ab295c390df5bbc109b346348
@@ -329,6 +329,6 @@ SPEC CHECKSUMS:
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   XLForm: b8d47a9a00fb6166981cb40de7169d70d611e9be
 
-PODFILE CHECKSUM: 4a031b432c3c0cf9ec78b26eefec10958c63c32e
+PODFILE CHECKSUM: ae14423664436acf8b3d46d1a7f684cf119ac883
 
 COCOAPODS: 1.5.3
