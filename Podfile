@@ -38,7 +38,7 @@ abstract_target 'driver_pods' do
     #swift
 #    pod 'MRCountryPicker', :git => 'https://github.com/tedgonzalez/MRCountryPicker.git' #swift 3
 #    pod 'TrueTime', '~> 4.1.5' #swift 3
-    pod 'MRCountryPicker', :git => 'https://github.com/tedgonzalez/MRCountryPicker.git', :branch => 'objc' #swift 4
+    pod 'MRCountryPicker', :git => 'https://github.com/tedgonzalez/MRCountryPicker.git', :branch => 'fixed-canada-issue' #swift 4
     pod 'TrueTime', :git => 'https://github.com/instacart/TrueTime.swift.git', :commit => '8aadebabe2590d6ab295c390df5bbc109b346348' #swift 4
 
     #for testing

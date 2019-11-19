@@ -52,6 +52,7 @@
 @property (nonatomic) PhoneNumberFormatter* phoneNumberFormatter;
 @property (nonatomic) RAPhotoPickerControllerManager *pickerManager;
 @property (nonatomic) UIBarButtonItem *saveButton;
+@property (nonatomic) BOOL changePhoneText;
 
 @end
 
@@ -89,7 +90,7 @@
     
     [self configureNavigationBar];
     [self addEdgeInsetsToTextFields];
-    
+    self.changePhoneText = YES;
     self.previousContentSize = self.scrollViewContainer.contentSize;
     [self configureCountryPicker];
     [self configureData];
@@ -383,10 +384,22 @@
 
 @implementation EditViewController (CountryPickerDelegate)
 
+- (void)setMobileTextfieldEnabled {
+    BOOL enabled = YES;
+    UIImage *bg = enabled ? [UIImage imageNamed:@"Field"] : [UIImage imageNamed:@"Field-unactive"];
+    self.mobileTextField.background = bg;
+    self.mobileTextField.enabled = enabled;
+}
+
 - (void)countryPhoneCodePicker:(MRCountryPicker *)picker didSelectCountryWithName:(NSString *)name countryCode:(NSString *)countryCode phoneCode:(NSString *)phoneCode flag:(UIImage *)flag {
     [self.ivFlag setImage:flag];
-    [self.mobileTextField setText:phoneCode];
-    self.countryCode= phoneCode;
+    if (self.changePhoneText) {
+        [self.mobileTextField setText:phoneCode];
+        [self setMobileTextfieldEnabled];
+    } else {
+        self.changePhoneText = YES;
+    }
+    self.countryCode = phoneCode;
 }
 
 @end
@@ -456,6 +469,14 @@
 
 @implementation EditViewController (Private)
 
+- (void)verifyFlagForPhoneNumber:(NSString *)phoneNumber{
+    NSString *countryCode = [phoneNumber countryCode];
+    self.changePhoneText = NO;
+    if (countryCode) {
+        [self.countryPicker setCountryByPhoneCode:countryCode];
+    }
+}
+
 - (void)configureData {
     RADriverDataModel *driver = [RASessionManager shared].currentSession.driver;
     RAUserDataModel *user = driver.user;
@@ -472,14 +493,12 @@
                            placeholderImage:[UIImage imageNamed:@"person_placeholder"]
                 usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     }
-    NSString *phoneNumber = user.phoneNumber;
-    if (phoneNumber) {
-        NSString *countryCode = phoneNumber.countryCode;
-        if (countryCode) {
-            [self.countryPicker setCountryByPhoneCode:countryCode];
-            self.mobileTextField.text = phoneNumber.clearedPhoneNumber;
-        } else {
-            [self showAlertUnrecognizedCountryCode:user.phoneNumber];
+    
+    NSString *phone = [user.phoneNumber clearedPhoneNumber];
+    if (phone) {
+        [self verifyFlagForPhoneNumber:phone];
+        if (phone.countryCode == nil) {
+            [self showAlertUnrecognizedCountryCode:phone];
             [self.countryPicker setCountry:@"US"];
             self.mobileTextField.text = self.countryCode;
         }
