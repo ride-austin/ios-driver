@@ -20,6 +20,8 @@
 #import "UITextField+Utils.h"
 #import "UITextField+Valid.h"
 #import "RAAlertManager.h"
+#import "RAUserAPI.h"
+#import "RAEnvironmentManager.h"
 
 #import "KLCPopup.h"
 #import "MRCountryPicker-Swift.h"
@@ -203,7 +205,28 @@
     NSString *newPhone = self.mobileTextField.text;
     BOOL needsVerification = [newPhone isEqualToString:user.phoneNumber] == NO;
     if (needsVerification) {
-        [self verifyPhoneNumber:newPhone];
+        __weak EditViewController *weakSelf = self;
+        [RAUserAPI checkAvailabilityOfPhone:newPhone withCompletion:^(BOOL failed, NSError *error) {
+            if (failed) {
+                [RAAlertManager showErrorWithAlertItem:error andOptions:[RAAlertOption optionWithState:StateActive andShownOption:AllowNetworkError]];
+            } else {
+                if (![[RAEnvironmentManager sharedManager] isProdServer]) {
+                    
+                    RAAlertOption *alertOptions = [RAAlertOption optionWithState:StateActive];
+                    [alertOptions addAction:[RAAlertAction actionWithTitle:@"YES" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nullable action) {
+                    [weakSelf submitSaveRequestForUser];
+                }]];
+                       
+                    [alertOptions addAction:[RAAlertAction actionWithTitle:@"NO" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nullable action) {
+                        [weakSelf verifyPhoneNumber:newPhone];
+                    }]];
+                       
+                    [RAAlertManager showAlertWithTitle:@"TEST MODE" message:@"Do you want to bypass the pin verification?" options:alertOptions];
+                } else {
+                    [weakSelf verifyPhoneNumber:newPhone];
+                }
+            }
+        }];
     } else {
         [self submitSaveRequestForUser];
     }
