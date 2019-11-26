@@ -10,7 +10,10 @@
 #import "RAUserDataModel.h"
 
 typedef void(^RAUserAPICompletionBlock)(RAUserDataModel* user, NSError *error);
+typedef void (^APICheckResponseBlock)(BOOL failed, NSError* error);
 
 @interface RAUserAPI : RABaseAPI
 + (void) updateUser:(RAUserDataModel*)user withCompletion:(RAUserAPICompletionBlock)completion;
++ (void) checkAvailabilityOfPhone:(NSString*)phoneNumber withCompletion:(APICheckResponseBlock)handler;
+
 @end
