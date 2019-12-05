@@ -38,7 +38,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>576</string>
+	<string>577</string>
 	<key>FacebookAppID</key>
 	<string>{{facebookAppId}}</string>
 	<key>FacebookDisplayName</key>
@@ -104,6 +104,8 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>$(PRODUCT_NAME) uses bluetooth to find, connect and transfer data between different devices</string>
 	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) will request your photos to help riders recognize you and your car</string>
 	<key>NSContactsUsageDescription</key>
@@ -140,8 +142,6 @@
 	<string>$(PRODUCT_NAME) will give you ride requests that are near your location when you are online</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>$(PRODUCT_NAME) will request your photos to help riders recognize you and your car</string>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-    <string>$(PRODUCT_NAME) uses bluetooth to find, connect and transfer data between different devices</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat-SemiBold.otf</string>
