@@ -4,17 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleDocumentTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeName</key>
-			<string>MKDirectionsRequest</string>
-			<key>LSItemContentTypes</key>
-			<array>
-				<string>com.apple.maps.directionsrequest</string>
-			</array>
-		</dict>
-	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -151,6 +140,8 @@
 	<string>$(PRODUCT_NAME) will give you ride requests that are near your location when you are online</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>$(PRODUCT_NAME) will request your photos to help riders recognize you and your car</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+    <string>$(PRODUCT_NAME) uses bluetooth to find, connect and transfer data between different devices</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat-SemiBold.otf</string>
@@ -200,5 +191,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UISupportsDocumentBrowser</key>
+	<false/>
 </dict>
 </plist>
