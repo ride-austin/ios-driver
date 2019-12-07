@@ -7,7 +7,7 @@ platform :ios do
     ENV["FL_VERSION_NUMBER_TARGET"] = "RideDriverTest - Enterprise"
     ENV["FL_BUILD_NUMBER_PROJECT"] = "./FuelMeDriver/RideDriver.xcodeproj"
     ENV["FL_COCOAPODS_PODFILE"] = "./Podfile"
-    xcversion(version: "11.0")
+    xcversion(version: "11.3.0")
     setup_circle_ci
   end
 
