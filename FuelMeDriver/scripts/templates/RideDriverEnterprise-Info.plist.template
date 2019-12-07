@@ -4,17 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleDocumentTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeName</key>
-			<string>MKDirectionsRequest</string>
-			<key>LSItemContentTypes</key>
-			<array>
-				<string>com.apple.maps.directionsrequest</string>
-			</array>
-		</dict>
-	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -49,7 +38,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>573</string>
+	<string>577</string>
 	<key>FacebookAppID</key>
 	<string>{{facebookAppId}}</string>
 	<key>FacebookDisplayName</key>
@@ -115,6 +104,8 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>$(PRODUCT_NAME) uses bluetooth to find, connect and transfer data between different devices</string>
 	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) will request your photos to help riders recognize you and your car</string>
 	<key>NSContactsUsageDescription</key>
@@ -200,5 +191,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UISupportsDocumentBrowser</key>
+	<false/>
 </dict>
 </plist>

@@ -46,11 +46,11 @@
 #pragma mark - App life cycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self setupGoogle];
     [self setupDefaultEnv];
     [[RADateManager sharedInstance] fetchCurrentDate:nil]; //Initialize TrueTime
     
     [self setupAppearance];
-    [self setupGoogle];
     self.appContainer = [AppContainer new];
     [AutoAvailabilityManager sharedManager].featuresService = self.appContainer.featuresService;
     [self setupNotifications];
