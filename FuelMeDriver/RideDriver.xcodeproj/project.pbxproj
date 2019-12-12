@@ -4540,6 +4540,7 @@
 			files = (
 			);
 			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
 			name = Fabric;
 			outputPaths = (
@@ -5676,7 +5677,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 573;
+				CURRENT_PROJECT_VERSION = 577;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -5691,7 +5692,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 5.1.0;
+				MARKETING_VERSION = 5.1.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -5741,7 +5742,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FuelMeDriver",
 				);
-				MARKETING_VERSION = 5.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -5941,7 +5941,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 573;
+				CURRENT_PROJECT_VERSION = 577;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -5959,7 +5959,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 5.1.0;
+				MARKETING_VERSION = 5.1.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -6010,7 +6010,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FuelMeDriver",
 				);
-				MARKETING_VERSION = 5.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -6228,7 +6227,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 573;
+				CURRENT_PROJECT_VERSION = 577;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6252,7 +6251,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 5.1.0;
+				MARKETING_VERSION = 5.1.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
@@ -6303,7 +6302,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FuelMeDriver",
 				);
-				MARKETING_VERSION = 5.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -6502,7 +6500,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 573;
+				CURRENT_PROJECT_VERSION = 577;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6524,7 +6522,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 5.1.0;
+				MARKETING_VERSION = 5.1.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
@@ -6568,7 +6566,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 573;
+				CURRENT_PROJECT_VERSION = 577;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6583,7 +6581,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 5.1.0;
+				MARKETING_VERSION = 5.1.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -6633,7 +6631,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FuelMeDriver",
 				);
-				MARKETING_VERSION = 5.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -6750,7 +6747,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FuelMeDriver",
 				);
-				MARKETING_VERSION = 5.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
