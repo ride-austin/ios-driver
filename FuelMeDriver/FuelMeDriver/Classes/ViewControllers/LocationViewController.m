@@ -635,6 +635,7 @@ static NSString *const FAChevronDownIcon = @"\uf078";
             self.googleMapView.mapStyle = style;
             self.riderAddressView_pickup.textColor = UIColor.blackColor;
             self.riderAddressView_dropoff.textColor = UIColor.blackColor;
+            [self.btnRightBarButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             NSAttributedString *placeholder = [[NSAttributedString alloc] initWithString:@"Enter Destination" attributes:@{ NSForegroundColorAttributeName : [UIColor lightGrayColor] }];
             self.riderAddressView_dropoff.attributedPlaceholder = placeholder;
         }
@@ -647,6 +648,7 @@ static NSString *const FAChevronDownIcon = @"\uf078";
             }
 
             self.googleMapView.mapStyle = style;
+            [self.btnRightBarButton setTitleColor:[UIColor colorWithRed:44.0/255.0 green:50.0/255.0 blue:60.0/255.0 alpha:1.0] forState:UIControlStateNormal];
         }
     }
 }
