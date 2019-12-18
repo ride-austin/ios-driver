@@ -436,6 +436,8 @@ static NSString *const FAChevronDownIcon = @"\uf078";
 
 - (void)updateEndAddressValue {
     self.riderAddressView_dropoff.text = @"";
+    self.riderAddressView_dropoff.font = [UIFont preferredFontForTextStyle: UIFontTextStyleBody];
+    self.riderAddressView_dropoff.adjustsFontForContentSizeCategory = true;
     if (self.rideDataModel.endAddress && [LocationService isCoordinateValidForRide:self.rideDataModel.endAddress.coordinate]) {
         if (self.rideDataModel.endAddress.address) {
             self.riderAddressView_dropoff.text = [self.rideDataModel.endAddress.address stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
