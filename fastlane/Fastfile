@@ -109,6 +109,7 @@ platform :ios do
     end
     appcenter_upload(
         app_name: ENV["ENTERPRISE_APPCENTER_APP_NAME_PROD"],
+        destinations: "Public",
         owner_type: "organization",
         release_notes: release_notes
     )
