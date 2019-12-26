@@ -13,7 +13,6 @@
 #import "InsuranceDocumentViewController.h"
 #import "NSString+Ride.h"
 #import "RideUser.h"
-#import "WebViewController.h"
 #import "YearViewController.h"
 #import "NSString+Utils.h"
 #import "RAAlertManager.h"
