@@ -42,8 +42,11 @@ jobs:
       - run:
           name: Install CocoaPods
           command: |
-            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
-            bundle exec pod install
+            if [ ! -d "Pods" ]
+            then
+               curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
+              bundle exec pod install
+            fi
       - save_cache:
           key: 1-pods-{{ checksum "Podfile.lock" }}
           paths:
