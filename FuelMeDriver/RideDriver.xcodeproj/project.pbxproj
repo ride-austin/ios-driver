@@ -524,6 +524,7 @@
 		A0FAC45F1E311598007C5508 /* RACustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FAC4581E311598007C5508 /* RACustomView.m */; };
 		A0FAC4651E311598007C5508 /* RAHelpBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FAC45A1E311598007C5508 /* RAHelpBarView.m */; };
 		A0FAC46B1E311598007C5508 /* RAHelpBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0FAC45B1E311598007C5508 /* RAHelpBarView.xib */; };
+		ACD5749323C2830200F65AB5 /* UIImage+valueData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5749223C2830200F65AB5 /* UIImage+valueData.m */; };
 		AD231E701FA382F8F0DD7260 /* Pods_driver_pods_DriverUnitTestsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527E850AED05CB5C31D69594 /* Pods_driver_pods_DriverUnitTestsSwift.framework */; };
 		B507E6F1228F81BE0062D981 /* StringValidationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B507E6F0228F81BE0062D981 /* StringValidationTests.m */; };
 		B52355CA1D64F7460071E136 /* DailyCancelledRideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B52355C61D64F7460071E136 /* DailyCancelledRideCell.m */; };
@@ -1491,6 +1492,8 @@
 		A0FAC45A1E311598007C5508 /* RAHelpBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAHelpBarView.m; sourceTree = "<group>"; };
 		A0FAC45B1E311598007C5508 /* RAHelpBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAHelpBarView.xib; sourceTree = "<group>"; };
 		AAD038F29C73F8AFAF78759C /* Pods-driver_pods-RideDriverTest - Automation.debugqa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriverTest - Automation.debugqa.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Automation/Pods-driver_pods-RideDriverTest - Automation.debugqa.xcconfig"; sourceTree = "<group>"; };
+		ACD5749123C2830200F65AB5 /* UIImage+valueData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+valueData.h"; sourceTree = "<group>"; };
+		ACD5749223C2830200F65AB5 /* UIImage+valueData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+valueData.m"; sourceTree = "<group>"; };
 		AE4BBB5FA526B44EBF51EE71 /* Pods_driver_pods_RideDriverHoustonTest___Enterprise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_driver_pods_RideDriverHoustonTest___Enterprise.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B507E6F0228F81BE0062D981 /* StringValidationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringValidationTests.m; sourceTree = "<group>"; };
 		B52355C51D64F7460071E136 /* DailyCancelledRideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DailyCancelledRideCell.h; path = FuelMeDriver/Classes/ViewControllers/Earnings/Cells/DailyCancelledRideCell.h; sourceTree = SOURCE_ROOT; };
@@ -3179,6 +3182,8 @@
 				A06252171ED86568000025A0 /* DatePickerTypes.h */,
 				A062521C1ED86568000025A0 /* XLFormRowDescriptor+factory.h */,
 				A062521D1ED86568000025A0 /* XLFormRowDescriptor+factory.m */,
+				ACD5749123C2830200F65AB5 /* UIImage+valueData.h */,
+				ACD5749223C2830200F65AB5 /* UIImage+valueData.m */,
 			);
 			name = BaseForms;
 			path = Base/BaseForms;
@@ -5056,6 +5061,7 @@
 				B5F4C3D822D61E2600919D62 /* RAAlertAction.m in Sources */,
 				A03460851F82A2330093B5D8 /* CarSelectionItemCell.m in Sources */,
 				A0D868B61EE51D640030D0F6 /* RARideStatus.swift in Sources */,
+				ACD5749323C2830200F65AB5 /* UIImage+valueData.m in Sources */,
 				5B28B60B1DCB77AF0026B0AB /* Util.m in Sources */,
 				843399411FDA70F000D8748F /* RASideMenuItem.m in Sources */,
 				13FF8C301D3D8EAC00541363 /* DailyTotalCell.m in Sources */,
