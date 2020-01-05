@@ -116,9 +116,9 @@
     } else if (1.25 < sf && sf <= 1.50){
         alpha = 0.35;
     } else if (1.5 < sf && sf <= 2.0){
-        alpha = 0.55;
+        alpha = 0.50;
     } else if (2.0 < sf){
-        alpha = 0.65;
+        alpha = 0.60;
     }
     
     return [UIColor colorWithRed:29.0/255.0 green:169.0/255.0 blue:247.0/255.0 alpha:alpha];

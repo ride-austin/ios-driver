@@ -436,6 +436,8 @@ static NSString *const FAChevronDownIcon = @"\uf078";
 
 - (void)updateEndAddressValue {
     self.riderAddressView_dropoff.text = @"";
+    self.riderAddressView_dropoff.font = [UIFont preferredFontForTextStyle: UIFontTextStyleBody];
+    self.riderAddressView_dropoff.adjustsFontForContentSizeCategory = true;
     if (self.rideDataModel.endAddress && [LocationService isCoordinateValidForRide:self.rideDataModel.endAddress.coordinate]) {
         if (self.rideDataModel.endAddress.address) {
             self.riderAddressView_dropoff.text = [self.rideDataModel.endAddress.address stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -635,6 +637,7 @@ static NSString *const FAChevronDownIcon = @"\uf078";
             self.googleMapView.mapStyle = style;
             self.riderAddressView_pickup.textColor = UIColor.blackColor;
             self.riderAddressView_dropoff.textColor = UIColor.blackColor;
+            [self.btnRightBarButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             NSAttributedString *placeholder = [[NSAttributedString alloc] initWithString:@"Enter Destination" attributes:@{ NSForegroundColorAttributeName : [UIColor lightGrayColor] }];
             self.riderAddressView_dropoff.attributedPlaceholder = placeholder;
         }
@@ -647,6 +650,7 @@ static NSString *const FAChevronDownIcon = @"\uf078";
             }
 
             self.googleMapView.mapStyle = style;
+            [self.btnRightBarButton setTitleColor:[UIColor colorWithRed:44.0/255.0 green:50.0/255.0 blue:60.0/255.0 alpha:1.0] forState:UIControlStateNormal];
         }
     }
 }

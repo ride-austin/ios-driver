@@ -7,7 +7,7 @@ platform :ios do
     ENV["FL_VERSION_NUMBER_TARGET"] = "RideDriverTest - Enterprise"
     ENV["FL_BUILD_NUMBER_PROJECT"] = "./FuelMeDriver/RideDriver.xcodeproj"
     ENV["FL_COCOAPODS_PODFILE"] = "./Podfile"
-    xcversion(version: "11.0")
+    xcversion(version: "11.3.0")
     setup_circle_ci
   end
 
@@ -109,6 +109,7 @@ platform :ios do
     end
     appcenter_upload(
         app_name: ENV["ENTERPRISE_APPCENTER_APP_NAME_PROD"],
+        destinations: "Public",
         owner_type: "organization",
         release_notes: release_notes
     )
