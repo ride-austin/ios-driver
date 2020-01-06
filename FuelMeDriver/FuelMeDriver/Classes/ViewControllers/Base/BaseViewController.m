@@ -13,7 +13,6 @@
 #import "SMessageViewController.h"
 #import "UIAlertController+Window.h"
 #import "UIDevice+VersionCheck.h"
-#import "WebViewController.h"
 
 @interface BaseViewController ()
 
@@ -71,14 +70,6 @@
 
 - (void)hudWasHidden {
    [self.navigationController popViewControllerAnimated:YES];
-}
-
-#pragma mark - Launch Browser
-
-- (void)launchBrowser:(NSString *)url title:(NSString *)title {
-    WebViewController *webViewController = [[WebViewController alloc] initWithUrl:[NSURL URLWithString:url]
-                                                                         urlTitle:title];
-    [self.navigationController pushViewController:webViewController animated:YES];
 }
 
 #pragma mark - Instantiate a View Controller

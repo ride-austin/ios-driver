@@ -32,7 +32,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addNotificationObserver:(SEL)selector name:(NSString*)name;
 
 #pragma mark - Utility controller
-- (void)launchBrowser:(NSString*)url title:(NSString*) title;
 - (UIViewController*)createViewController:(NSString*)identifier;
 - (UIViewController*)createViewControllerFromStoryboard:(NSString*)storyboardName withIdentifier:(NSString*)identifier;
 

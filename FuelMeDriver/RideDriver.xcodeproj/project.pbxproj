@@ -524,6 +524,7 @@
 		A0FAC45F1E311598007C5508 /* RACustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FAC4581E311598007C5508 /* RACustomView.m */; };
 		A0FAC4651E311598007C5508 /* RAHelpBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FAC45A1E311598007C5508 /* RAHelpBarView.m */; };
 		A0FAC46B1E311598007C5508 /* RAHelpBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0FAC45B1E311598007C5508 /* RAHelpBarView.xib */; };
+		ACD5749323C2830200F65AB5 /* UIImage+valueData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5749223C2830200F65AB5 /* UIImage+valueData.m */; };
 		AD231E701FA382F8F0DD7260 /* Pods_driver_pods_DriverUnitTestsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527E850AED05CB5C31D69594 /* Pods_driver_pods_DriverUnitTestsSwift.framework */; };
 		B507E6F1228F81BE0062D981 /* StringValidationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B507E6F0228F81BE0062D981 /* StringValidationTests.m */; };
 		B52355CA1D64F7460071E136 /* DailyCancelledRideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B52355C61D64F7460071E136 /* DailyCancelledRideCell.m */; };
@@ -590,7 +591,6 @@
 		CBC631491CF5916400EE355D /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50B1AC1A536B7C00726826 /* SplashViewController.m */; };
 		CBC6314D1CF5916400EE355D /* NSString+Ride.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD73CB91CEF2E0C006DDE33 /* NSString+Ride.m */; };
 		CBC6314F1CF5916400EE355D /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD73CAC1CEF1E71006DDE33 /* EditViewController.m */; };
-		CBC631551CF5916400EE355D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50B1B01A536B7C00726826 /* WebViewController.m */; };
 		CBC631591CF5916400EE355D /* CALayer+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD73C5E1CEF0618006DDE33 /* CALayer+UIColor.m */; };
 		CBC6315B1CF5916400EE355D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEB35261A9DAF83001E1218 /* OpenGLES.framework */; };
 		CBC6315C1CF5916400EE355D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEB35241A9DAF72001E1218 /* AVFoundation.framework */; };
@@ -613,7 +613,6 @@
 		CBC631701CF5916400EE355D /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBD73C6B1CEF0A5F006DDE33 /* Montserrat-ExtraBold.otf */; };
 		CBC631711CF5916400EE355D /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBD73C6F1CEF0A5F006DDE33 /* Montserrat-SemiBold.otf */; };
 		CBC631721CF5916400EE355D /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBD73C6C1CEF0A5F006DDE33 /* Montserrat-Hairline.otf */; };
-		CBC631731CF5916400EE355D /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50B1B11A536B7C00726826 /* WebViewController.xib */; };
 		CBC631741CF5916400EE355D /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBD73C711CEF0A5F006DDE33 /* SourceSansPro-Black.ttf */; };
 		CBC631751CF5916400EE355D /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBD73C701CEF0A5F006DDE33 /* Montserrat-UltraLight.otf */; };
 		CBC631761CF5916400EE355D /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBD73C781CEF0A5F006DDE33 /* SourceSansPro-Light.ttf */; };
@@ -1493,6 +1492,8 @@
 		A0FAC45A1E311598007C5508 /* RAHelpBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAHelpBarView.m; sourceTree = "<group>"; };
 		A0FAC45B1E311598007C5508 /* RAHelpBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAHelpBarView.xib; sourceTree = "<group>"; };
 		AAD038F29C73F8AFAF78759C /* Pods-driver_pods-RideDriverTest - Automation.debugqa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriverTest - Automation.debugqa.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Automation/Pods-driver_pods-RideDriverTest - Automation.debugqa.xcconfig"; sourceTree = "<group>"; };
+		ACD5749123C2830200F65AB5 /* UIImage+valueData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+valueData.h"; sourceTree = "<group>"; };
+		ACD5749223C2830200F65AB5 /* UIImage+valueData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+valueData.m"; sourceTree = "<group>"; };
 		AE4BBB5FA526B44EBF51EE71 /* Pods_driver_pods_RideDriverHoustonTest___Enterprise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_driver_pods_RideDriverHoustonTest___Enterprise.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B507E6F0228F81BE0062D981 /* StringValidationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringValidationTests.m; sourceTree = "<group>"; };
 		B52355C51D64F7460071E136 /* DailyCancelledRideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DailyCancelledRideCell.h; path = FuelMeDriver/Classes/ViewControllers/Earnings/Cells/DailyCancelledRideCell.h; sourceTree = SOURCE_ROOT; };
@@ -1611,9 +1612,6 @@
 		CB50B1881A536B7C00726826 /* PasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordViewController.m; sourceTree = "<group>"; };
 		CB50B1AB1A536B7C00726826 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		CB50B1AC1A536B7C00726826 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		CB50B1AF1A536B7C00726826 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		CB50B1B01A536B7C00726826 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		CB50B1B11A536B7C00726826 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		CB50B1FD1A54909E00726826 /* RideDriver-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RideDriver-Prefix.pch"; sourceTree = "<group>"; };
 		CBC631901CF5916400EE355D /* RideDriverTest - Enterprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RideDriverTest - Enterprise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD73C5D1CEF0618006DDE33 /* CALayer+UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+UIColor.h"; sourceTree = "<group>"; };
@@ -3155,8 +3153,6 @@
 		A06251FC1ED86568000025A0 /* BaseForms */ = {
 			isa = PBXGroup;
 			children = (
-				A042E39E1EE7267500C94AB5 /* Validators */,
-				A0600AA71EDBF78000D5E242 /* TextInput */,
 				A06251FD1ED86568000025A0 /* BaseXLBooleanPickerCell.h */,
 				A06251FE1ED86568000025A0 /* BaseXLBooleanPickerCell.m */,
 				A06251FF1ED86568000025A0 /* BaseXLBooleanPickerCell.xib */,
@@ -3182,6 +3178,10 @@
 				A06252151ED86568000025A0 /* DatePickerModel.h */,
 				A06252161ED86568000025A0 /* DatePickerModel.m */,
 				A06252171ED86568000025A0 /* DatePickerTypes.h */,
+				A0600AA71EDBF78000D5E242 /* TextInput */,
+				ACD5749123C2830200F65AB5 /* UIImage+valueData.h */,
+				ACD5749223C2830200F65AB5 /* UIImage+valueData.m */,
+				A042E39E1EE7267500C94AB5 /* Validators */,
 				A062521C1ED86568000025A0 /* XLFormRowDescriptor+factory.h */,
 				A062521D1ED86568000025A0 /* XLFormRowDescriptor+factory.m */,
 			);
@@ -3951,7 +3951,6 @@
 				CB50B1961A536B7C00726826 /* Register */,
 				CB50B1AA1A536B7C00726826 /* Splash */,
 				846B2FC11D79885000FBE719 /* Support */,
-				CB50B1AE1A536B7C00726826 /* Web */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -4008,16 +4007,6 @@
 				CB50B1AC1A536B7C00726826 /* SplashViewController.m */,
 			);
 			path = Splash;
-			sourceTree = "<group>";
-		};
-		CB50B1AE1A536B7C00726826 /* Web */ = {
-			isa = PBXGroup;
-			children = (
-				CB50B1AF1A536B7C00726826 /* WebViewController.h */,
-				CB50B1B01A536B7C00726826 /* WebViewController.m */,
-				CB50B1B11A536B7C00726826 /* WebViewController.xib */,
-			);
-			path = Web;
 			sourceTree = "<group>";
 		};
 		E11D90B31E73197E0009C1CD /* SupportTopics */ = {
@@ -4430,7 +4419,6 @@
 				613D29E91ECC204D001069A2 /* FontAwesome.otf in Resources */,
 				840BBDA11D61D3A200A9DD7C /* AirportQueue.storyboard in Resources */,
 				CBC631721CF5916400EE355D /* Montserrat-Hairline.otf in Resources */,
-				CBC631731CF5916400EE355D /* WebViewController.xib in Resources */,
 				A0600ABB1EDBF78000D5E242 /* BaseXLTextFieldCell.xib in Resources */,
 				131E35EE1D46B58000776C66 /* WeeklyDayOfWeekCell.xib in Resources */,
 				843399331FDA6CC300D8748F /* RASideMenuHeaderView.xib in Resources */,
@@ -5073,6 +5061,7 @@
 				B5F4C3D822D61E2600919D62 /* RAAlertAction.m in Sources */,
 				A03460851F82A2330093B5D8 /* CarSelectionItemCell.m in Sources */,
 				A0D868B61EE51D640030D0F6 /* RARideStatus.swift in Sources */,
+				ACD5749323C2830200F65AB5 /* UIImage+valueData.m in Sources */,
 				5B28B60B1DCB77AF0026B0AB /* Util.m in Sources */,
 				843399411FDA70F000D8748F /* RASideMenuItem.m in Sources */,
 				13FF8C301D3D8EAC00541363 /* DailyTotalCell.m in Sources */,
@@ -5378,7 +5367,6 @@
 				131E35DF1D46B1AF00776C66 /* WeeklyTripHeaderCell.m in Sources */,
 				13A2AEA01D46746C0039D89E /* JTHorizontalCalendarView.m in Sources */,
 				A0D550F0232EA1C000DC41A7 /* AppContainer.swift in Sources */,
-				CBC631551CF5916400EE355D /* WebViewController.m in Sources */,
 				5B162CFB1EE85F1700491FFC /* ConfigRideUpgrade.m in Sources */,
 				A062531F1ED8B29D000025A0 /* LIRequestModel.m in Sources */,
 				CBC631591CF5916400EE355D /* CALayer+UIColor.m in Sources */,
@@ -5677,7 +5665,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 578;
+				CURRENT_PROJECT_VERSION = 580;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -5941,7 +5929,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 578;
+				CURRENT_PROJECT_VERSION = 580;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6227,7 +6215,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 578;
+				CURRENT_PROJECT_VERSION = 580;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6500,7 +6488,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 578;
+				CURRENT_PROJECT_VERSION = 580;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6566,7 +6554,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 578;
+				CURRENT_PROJECT_VERSION = 580;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
