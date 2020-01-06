@@ -152,7 +152,7 @@ NSString *const kAccountKeychain = @"com.rideaustin.driver";
     NSParameterAssert(completion);
     __weak __typeof__(self) weakself = self;
     FBSDKLoginManager *login = [FBSDKLoginManager new];
-    [login logInWithReadPermissions:@[@"public_profile", @"email"] fromViewController:viewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+    [login logInWithPermissions:@[@"public_profile", @"email"] fromViewController:viewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
         if (error) {
             BOOL userDidntAllowToOpenFacebook = [error.domain isEqualToString:@"com.apple.SafariServices.Authentication"] && error.code == 1;
             if (userDidntAllowToOpenFacebook) {
