@@ -1,22 +1,24 @@
 PODS:
-  - Bolts (1.9.0):
-    - Bolts/AppLinks (= 1.9.0)
-    - Bolts/Tasks (= 1.9.0)
-  - Bolts/AppLinks (1.9.0):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.9.0)
   - BugfenderSDK/ObjC (1.6.6)
   - Crashlytics (3.10.9):
     - Fabric (~> 1.7.13)
   - CZPhotoPickerController (1.2.5)
   - DACircularProgress (2.3.1)
   - Fabric (1.7.13)
-  - FBSDKCoreKit (4.44.1):
-    - Bolts (~> 1.9)
-  - FBSDKLoginKit (4.44.1):
-    - FBSDKCoreKit
-  - FBSDKShareKit (4.44.1):
-    - FBSDKCoreKit
+  - FBSDKCoreKit (5.13.1):
+    - FBSDKCoreKit/Basics (= 5.13.1)
+    - FBSDKCoreKit/Core (= 5.13.1)
+  - FBSDKCoreKit/Basics (5.13.1)
+  - FBSDKCoreKit/Core (5.13.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.13.1):
+    - FBSDKLoginKit/Login (= 5.13.1)
+  - FBSDKLoginKit/Login (5.13.1):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKShareKit (5.13.1):
+    - FBSDKShareKit/Share (= 5.13.1)
+  - FBSDKShareKit/Share (5.13.1):
+    - FBSDKCoreKit (~> 5.0)
   - Firebase/Analytics (6.5.0):
     - Firebase/Core
   - Firebase/Core (6.5.0):
@@ -212,7 +214,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Bolts
     - BugfenderSDK
     - Crashlytics
     - CZPhotoPickerController
@@ -280,15 +281,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/tedgonzalez/UIActivityIndicator-for-SDWebImage.git
 
 SPEC CHECKSUMS:
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   BugfenderSDK: d5ad218b13df453bb072a3c46f5a29b7de6d514c
   Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
   CZPhotoPickerController: b8d2c5fe286e9b8d1b1143a69975d9d9eabee047
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
-  FBSDKCoreKit: a823ae35bdb60ebb8d7a7e51abe7c5d87d2bfced
-  FBSDKLoginKit: 54ae59987f2a8703021557c90a9aebb9e5c2bef6
-  FBSDKShareKit: 526d4cfb713d24855fa23d0dd74e191accd3a720
+  FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
+  FBSDKLoginKit: c7c6ffd9ca9ea45aee32361840af040ad8f6706a
+  FBSDKShareKit: 8a0e4d7172c7b706991c834cff2bf74e7b4726e3
   Firebase: dedc9e48ea3f3649ad5f6b982f8a0c73508a14b5
   FirebaseABTesting: 662e8de812ceb5d57ad66381f6402f4d28dc5c91
   FirebaseAnalytics: 3fb375bc9d13779add4039716f868d233a473fad
