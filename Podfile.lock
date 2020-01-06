@@ -213,7 +213,7 @@ DEPENDENCIES:
   - XLForm
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - BugfenderSDK
     - Crashlytics
     - CZPhotoPickerController
@@ -306,7 +306,7 @@ SPEC CHECKSUMS:
   ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
   LGRefreshView: 34746afadbd23de8d1449cab15f3d89269645d43
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
-  MRCountryPicker: 1aeea66de25cdef79dce3b91d8ad9db643c1cc01
+  MRCountryPicker: fcb1fb1437ac7c8f52a68281450a4eb4b54997fd
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   "NSString+RemoveEmoji": 8bcac49d1d2ffd421fdc6582e739f2a1ea6e0fff
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
@@ -331,4 +331,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ae14423664436acf8b3d46d1a7f684cf119ac883
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

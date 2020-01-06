@@ -4506,7 +4506,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
@@ -4519,7 +4519,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		13B4A3111D4BAB8500B456CC /* Fabric */ = {
@@ -4543,7 +4543,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
@@ -4556,7 +4556,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6230CC078996D3F46066A195 /* [CP] Check Pods Manifest.lock */ = {
@@ -4583,7 +4583,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CZPhotoPickerController/CZPhotoPickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
@@ -4650,7 +4650,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8EAD9C2BDA44AF64E3B584C5 /* [CP] Embed Pods Frameworks */ = {
@@ -4659,7 +4659,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CZPhotoPickerController/CZPhotoPickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
@@ -4726,7 +4726,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A0BA431F22E4F4E2002DDC65 /* Map GoogleServiceInfoPlist */ = {
@@ -4811,7 +4811,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
@@ -4824,7 +4824,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B4C12EA323BDCE04C2A7642E /* [CP] Embed Pods Frameworks */ = {
@@ -4833,7 +4833,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CZPhotoPickerController/CZPhotoPickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
@@ -4900,7 +4900,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D4A836129897EF511535EA6D /* [CP] Check Pods Manifest.lock */ = {
