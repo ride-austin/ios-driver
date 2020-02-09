@@ -197,6 +197,23 @@
             }];
         }
     }
+    switch ([DriverManager shared].driverState) {
+        case OfflineDriverState:
+        case InvalidDriverState:
+            break;
+            
+        case AvailableDriverState:
+            [RAAlertManager showLocalNotificationWithTitle:@"The app has been terminated."
+                                                   message:@" Thank you for driving!"
+                                     andNotificationOption:[RAAlertNotificationOption notificationOptionWithState:StateBackground andAlertActionTitle:nil]];
+        case GoingToPickUpDriverState:
+        case ArrivingToPickUpDriverState:
+        case OnTripDriverState:
+        case AcceptingRequest:
+            [RAAlertManager showLocalNotificationWithTitle:@"The app has been terminated."
+                                                   message:@"Please reopen app to continue driving."
+                                     andNotificationOption:[RAAlertNotificationOption notificationOptionWithState:StateBackground andAlertActionTitle:nil]];
+    }
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
