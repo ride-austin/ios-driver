@@ -683,7 +683,7 @@
 
 /* Begin PBXFileReference section */
 		04E27C54612BB067BDB5ABFB /* Pods-driver_pods-RideDriver - Enterprise.releaseqaenterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriver - Enterprise.releaseqaenterprise.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriver - Enterprise/Pods-driver_pods-RideDriver - Enterprise.releaseqaenterprise.xcconfig"; sourceTree = "<group>"; };
-		08AF8F9999584B7931EE054C /* Pods_driver_pods_RideDriverHouston___Enterprise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_driver_pods_RideDriverHouston___Enterprise.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08AF8F9999584B7931EE054C /* Pods_driver_pods_RideDriverHouston___Enterprise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_driver_pods_RideDriverHouston___Enterprise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CF23D4ACFA2E3982EDF269 /* Pods-driver_pods-RideDriverTest - Enterprise.releaseenterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriverTest - Enterprise.releaseenterprise.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise.releaseenterprise.xcconfig"; sourceTree = "<group>"; };
 		1308BCCE1DDE1A04001785C3 /* ActionViewDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewDefines.h; sourceTree = "<group>"; };
 		130965751D9C55D800870914 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
@@ -840,7 +840,7 @@
 		1D7972975FDD04FFA3392474 /* Pods-driver_pods-DriverUnitTestsSwift.releaseenterpriseqa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-DriverUnitTestsSwift.releaseenterpriseqa.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift.releaseenterpriseqa.xcconfig"; sourceTree = "<group>"; };
 		246FE7FFF27A25E74F089316 /* Pods-driver_pods-DriverUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-DriverUnitTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		32917304CE838FF50C3E3509 /* Pods-driver_pods-RideDriverTest - Enterprise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriverTest - Enterprise.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise.debug.xcconfig"; sourceTree = "<group>"; };
-		35527EBB72A6E2C2A33A3B3E /* Pods_driver_pods_RideDriver___Enterprise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_driver_pods_RideDriver___Enterprise.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35527EBB72A6E2C2A33A3B3E /* Pods_driver_pods_RideDriver___Enterprise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_driver_pods_RideDriver___Enterprise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A122BB3F19FF21752E7A08 /* Pods-driver_pods-RideDriverHouston - Enterprise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriverHouston - Enterprise.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriverHouston - Enterprise/Pods-driver_pods-RideDriverHouston - Enterprise.debug.xcconfig"; sourceTree = "<group>"; };
 		4E243827C70BD5116BB24A0B /* Pods-driver_pods-DriverUnitTestsSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-DriverUnitTestsSwift.release.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift.release.xcconfig"; sourceTree = "<group>"; };
 		527E850AED05CB5C31D69594 /* Pods_driver_pods_DriverUnitTestsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_driver_pods_DriverUnitTestsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1070,11 +1070,11 @@
 		625D50600BF93DB7256CA226 /* Pods-driver_pods-RideDriverTest - Automation.releaseenterpriseqa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriverTest - Automation.releaseenterpriseqa.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Automation/Pods-driver_pods-RideDriverTest - Automation.releaseenterpriseqa.xcconfig"; sourceTree = "<group>"; };
 		652162D44026285CE3235CDF /* Pods-driver_pods-RideDriverTest - Enterprise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriverTest - Enterprise.release.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise.release.xcconfig"; sourceTree = "<group>"; };
 		666A68531DED1929A640A082 /* Pods-driver_pods-RideDriver - Enterprise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriver - Enterprise.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriver - Enterprise/Pods-driver_pods-RideDriver - Enterprise.debug.xcconfig"; sourceTree = "<group>"; };
-		67FAFE526043795B61EC6070 /* Pods_driver_pods_RideDriverTest___Enterprise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_driver_pods_RideDriverTest___Enterprise.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67FAFE526043795B61EC6070 /* Pods_driver_pods_RideDriverTest___Enterprise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_driver_pods_RideDriverTest___Enterprise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BEEDE4EF738407737EEB92 /* Pods-driver_pods-RideDriverTest - Enterprise.releaseenterpriseqa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriverTest - Enterprise.releaseenterpriseqa.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise.releaseenterpriseqa.xcconfig"; sourceTree = "<group>"; };
 		77615F16D7031ED6A1970286 /* Pods-driver_pods-DriverUnitTestsSwift.releaseqaenterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-DriverUnitTestsSwift.releaseqaenterprise.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift.releaseqaenterprise.xcconfig"; sourceTree = "<group>"; };
 		7A0905B9363FD52FBADBF596 /* Pods-driver_pods-RideDriverTest - Automation.releaseenterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriverTest - Automation.releaseenterprise.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Automation/Pods-driver_pods-RideDriverTest - Automation.releaseenterprise.xcconfig"; sourceTree = "<group>"; };
-		7A47F94F060147A822817DDA /* Pods_driver_pods_RideDriverTest___Automation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_driver_pods_RideDriverTest___Automation.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A47F94F060147A822817DDA /* Pods_driver_pods_RideDriverTest___Automation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_driver_pods_RideDriverTest___Automation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8405FC401D7EF478006A8C14 /* ErrorReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorReporter.h; sourceTree = "<group>"; };
 		8405FC411D7EF478006A8C14 /* ErrorReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorReporter.m; sourceTree = "<group>"; };
 		840ABFB51F3DE2190088F77C /* ADSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSearchViewController.h; sourceTree = "<group>"; };
@@ -1494,7 +1494,7 @@
 		AAD038F29C73F8AFAF78759C /* Pods-driver_pods-RideDriverTest - Automation.debugqa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driver_pods-RideDriverTest - Automation.debugqa.xcconfig"; path = "../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Automation/Pods-driver_pods-RideDriverTest - Automation.debugqa.xcconfig"; sourceTree = "<group>"; };
 		ACD5749123C2830200F65AB5 /* UIImage+valueData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+valueData.h"; sourceTree = "<group>"; };
 		ACD5749223C2830200F65AB5 /* UIImage+valueData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+valueData.m"; sourceTree = "<group>"; };
-		AE4BBB5FA526B44EBF51EE71 /* Pods_driver_pods_RideDriverHoustonTest___Enterprise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_driver_pods_RideDriverHoustonTest___Enterprise.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4BBB5FA526B44EBF51EE71 /* Pods_driver_pods_RideDriverHoustonTest___Enterprise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_driver_pods_RideDriverHoustonTest___Enterprise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B507E6F0228F81BE0062D981 /* StringValidationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringValidationTests.m; sourceTree = "<group>"; };
 		B52355C51D64F7460071E136 /* DailyCancelledRideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DailyCancelledRideCell.h; path = FuelMeDriver/Classes/ViewControllers/Earnings/Cells/DailyCancelledRideCell.h; sourceTree = SOURCE_ROOT; };
 		B52355C61D64F7460071E136 /* DailyCancelledRideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DailyCancelledRideCell.m; path = FuelMeDriver/Classes/ViewControllers/Earnings/Cells/DailyCancelledRideCell.m; sourceTree = SOURCE_ROOT; };
@@ -4506,7 +4506,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
@@ -4519,7 +4519,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		13B4A3111D4BAB8500B456CC /* Fabric */ = {
@@ -4543,7 +4543,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
@@ -4556,7 +4556,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6230CC078996D3F46066A195 /* [CP] Check Pods Manifest.lock */ = {
@@ -4583,8 +4583,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CZPhotoPickerController/CZPhotoPickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
@@ -4618,7 +4617,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CZPhotoPickerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
@@ -4652,7 +4650,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8EAD9C2BDA44AF64E3B584C5 /* [CP] Embed Pods Frameworks */ = {
@@ -4661,8 +4659,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CZPhotoPickerController/CZPhotoPickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
@@ -4696,7 +4693,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CZPhotoPickerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
@@ -4730,7 +4726,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTests/Pods-driver_pods-DriverUnitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A0BA431F22E4F4E2002DDC65 /* Map GoogleServiceInfoPlist */ = {
@@ -4815,7 +4811,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
@@ -4828,7 +4824,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-DriverUnitTestsSwift/Pods-driver_pods-DriverUnitTestsSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B4C12EA323BDCE04C2A7642E /* [CP] Embed Pods Frameworks */ = {
@@ -4837,8 +4833,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CZPhotoPickerController/CZPhotoPickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
@@ -4872,7 +4867,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CZPhotoPickerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
@@ -4906,7 +4900,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-driver_pods-RideDriverTest - Enterprise/Pods-driver_pods-RideDriverTest - Enterprise-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D4A836129897EF511535EA6D /* [CP] Check Pods Manifest.lock */ = {
@@ -5665,7 +5659,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 580;
+				CURRENT_PROJECT_VERSION = 583;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -5929,7 +5923,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 580;
+				CURRENT_PROJECT_VERSION = 583;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6215,7 +6209,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 580;
+				CURRENT_PROJECT_VERSION = 583;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6488,7 +6482,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 580;
+				CURRENT_PROJECT_VERSION = 583;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6554,7 +6548,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 580;
+				CURRENT_PROJECT_VERSION = 583;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
