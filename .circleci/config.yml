@@ -6,7 +6,7 @@ version: 2
 jobs:
   initialize:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     environment:
       FL_OUTPUT_DIR: output
     steps:
@@ -57,7 +57,7 @@ jobs:
             - .
   unit-tests:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     environment:
       FL_OUTPUT_DIR: output
     steps:
@@ -73,7 +73,7 @@ jobs:
           path: output/scan
   upload-qa:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     steps:
       - attach_workspace:
           at: .
@@ -85,7 +85,7 @@ jobs:
           command: bundle exec fastlane qa
   upload-production-appstore:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     steps:
       - attach_workspace:
           at: .
@@ -97,7 +97,7 @@ jobs:
           command: bundle exec fastlane prod
   upload-production-enterprise:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     steps:
       - attach_workspace:
           at: .
@@ -109,7 +109,7 @@ jobs:
           command: bundle exec fastlane prodenterprise
   building-tests-qa:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     steps:
       - attach_workspace:
           at: .
@@ -121,7 +121,7 @@ jobs:
           command: bundle exec fastlane qa skipupload:true
   building-tests-prod:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     steps:
       - attach_workspace:
           at: .
@@ -133,7 +133,7 @@ jobs:
           command: bundle exec fastlane prod skipupload:true
   building-tests-prodenterprise:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     steps:
       - attach_workspace:
           at: .
