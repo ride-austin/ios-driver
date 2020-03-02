@@ -42,7 +42,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>580</string>
+	<string>584</string>
 	<key>FacebookAppID</key>
 	<string>{{facebookAppId}}</string>
 	<key>FacebookDisplayName</key>
@@ -75,10 +75,6 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>MKDirectionsApplicationSupportedModes</key>
-	<array>
-		<string>MKDirectionsModeCar</string>
-	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -109,11 +105,11 @@
 		</dict>
 	</dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>$(PRODUCT_NAME) uses bluetooth to find, connect and transfer data between different devices</string>
+	<string>DriveAustin uses bluetooth to find, connect and transfer data between different devices</string>
 	<key>NSCameraUsageDescription</key>
-	<string>$(PRODUCT_NAME) will request your photos to help riders recognize you and your car</string>
+	<string>DriveAustin will request your photos to help riders recognize you and your car</string>
 	<key>NSContactsUsageDescription</key>
-	<string>$(PRODUCT_NAME) uses your contacts to refer a friend so that you can receive incentives</string>
+	<string>DriveAustin uses your contacts to refer a friend so that you can receive incentives</string>
 	<key>NSExceptionDomains</key>
 	<dict>
 		<key>akamaidh.net</key>
@@ -139,13 +135,13 @@
 		</dict>
 	</dict>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>$(PRODUCT_NAME) will give you ride requests that are near your location when you are online</string>
+	<string>DriveAustin will give you ride requests that are near your location when you are online</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>$(PRODUCT_NAME) will give you ride requests that are near your location when you are online</string>
+	<string>DriveAustin will give you ride requests that are near your location when you are online</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>$(PRODUCT_NAME) will give you ride requests that are near your location when you are online</string>
+	<string>DriveAustin will give you ride requests that are near your location when you are online</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>$(PRODUCT_NAME) will request your photos to help riders recognize you and your car</string>
+	<string>DriveAustin will request your photos to help riders recognize you and your car</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat-SemiBold.otf</string>

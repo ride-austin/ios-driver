@@ -1,22 +1,24 @@
 PODS:
-  - Bolts (1.9.0):
-    - Bolts/AppLinks (= 1.9.0)
-    - Bolts/Tasks (= 1.9.0)
-  - Bolts/AppLinks (1.9.0):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.9.0)
   - BugfenderSDK/ObjC (1.6.6)
   - Crashlytics (3.10.9):
     - Fabric (~> 1.7.13)
   - CZPhotoPickerController (1.2.5)
   - DACircularProgress (2.3.1)
   - Fabric (1.7.13)
-  - FBSDKCoreKit (4.44.1):
-    - Bolts (~> 1.9)
-  - FBSDKLoginKit (4.44.1):
-    - FBSDKCoreKit
-  - FBSDKShareKit (4.44.1):
-    - FBSDKCoreKit
+  - FBSDKCoreKit (5.13.1):
+    - FBSDKCoreKit/Basics (= 5.13.1)
+    - FBSDKCoreKit/Core (= 5.13.1)
+  - FBSDKCoreKit/Basics (5.13.1)
+  - FBSDKCoreKit/Core (5.13.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.13.1):
+    - FBSDKLoginKit/Login (= 5.13.1)
+  - FBSDKLoginKit/Login (5.13.1):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKShareKit (5.13.1):
+    - FBSDKShareKit/Share (= 5.13.1)
+  - FBSDKShareKit/Share (5.13.1):
+    - FBSDKCoreKit (~> 5.0)
   - Firebase/Analytics (6.5.0):
     - Firebase/Core
   - Firebase/Core (6.5.0):
@@ -157,12 +159,12 @@ PODS:
     - TransitionKit (~> 2.2)
   - Result (3.2.4)
   - RKValueTransformers (1.1.3)
-  - RxCocoa (5.0.0):
+  - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.0.0):
+  - RxRelay (5.0.1):
     - RxSwift (~> 5)
-  - RxSwift (5.0.0)
+  - RxSwift (5.0.1)
   - SAMKeychain (1.5.3)
   - SDWebImage (3.8.3):
     - SDWebImage/Core (= 3.8.3)
@@ -211,8 +213,7 @@ DEPENDENCIES:
   - XLForm
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Bolts
+  https://github.com/CocoaPods/Specs.git:
     - BugfenderSDK
     - Crashlytics
     - CZPhotoPickerController
@@ -280,15 +281,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/tedgonzalez/UIActivityIndicator-for-SDWebImage.git
 
 SPEC CHECKSUMS:
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   BugfenderSDK: d5ad218b13df453bb072a3c46f5a29b7de6d514c
   Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
   CZPhotoPickerController: b8d2c5fe286e9b8d1b1143a69975d9d9eabee047
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
-  FBSDKCoreKit: a823ae35bdb60ebb8d7a7e51abe7c5d87d2bfced
-  FBSDKLoginKit: 54ae59987f2a8703021557c90a9aebb9e5c2bef6
-  FBSDKShareKit: 526d4cfb713d24855fa23d0dd74e191accd3a720
+  FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
+  FBSDKLoginKit: c7c6ffd9ca9ea45aee32361840af040ad8f6706a
+  FBSDKShareKit: 8a0e4d7172c7b706991c834cff2bf74e7b4726e3
   Firebase: dedc9e48ea3f3649ad5f6b982f8a0c73508a14b5
   FirebaseABTesting: 662e8de812ceb5d57ad66381f6402f4d28dc5c91
   FirebaseAnalytics: 3fb375bc9d13779add4039716f868d233a473fad
@@ -306,7 +306,7 @@ SPEC CHECKSUMS:
   ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
   LGRefreshView: 34746afadbd23de8d1449cab15f3d89269645d43
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
-  MRCountryPicker: 1aeea66de25cdef79dce3b91d8ad9db643c1cc01
+  MRCountryPicker: fcb1fb1437ac7c8f52a68281450a4eb4b54997fd
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   "NSString+RemoveEmoji": 8bcac49d1d2ffd421fdc6582e739f2a1ea6e0fff
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
@@ -315,9 +315,9 @@ SPEC CHECKSUMS:
   RestKit: 0baa8b61899d1e00c24f4f2d8aea07ecef0c88bc
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RKValueTransformers: e5ed67e3811229b616fe01bddeeafe3bb337b1b9
-  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
-  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
-  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
   SinchVerification: 3bf62ff2d57eb10ecc27796ce9736c786644fe23
@@ -331,4 +331,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ae14423664436acf8b3d46d1a7f684cf119ac883
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
