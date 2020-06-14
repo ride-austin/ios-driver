@@ -55,6 +55,9 @@ jobs:
           root: .
           paths:
             - .
+      - add_ssh_keys:
+          fingerprints:
+            - "<< MATCH_GIT_SSH_FINGERPRINT >>"
   unit-tests:
     macos:
       xcode: "11.3.1"
