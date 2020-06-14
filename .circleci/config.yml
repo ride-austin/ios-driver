@@ -79,7 +79,7 @@ jobs:
           at: .
       - add_ssh_keys: 
           fingerprints:
-            - "60:9b:99:39:c7:d9:31:df:6b:51:73:2d:be:31:c9:5e"
+            - "<< MATCH_GIT_SSH_FINGERPRINT >>"
       - run:
           name: Build QA
           command: bundle exec fastlane qa
