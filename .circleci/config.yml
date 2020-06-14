@@ -51,13 +51,10 @@ jobs:
           key: 1-pods-{{ checksum "Podfile.lock" }}
           paths:
             - ./Pods
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .
       - add_ssh_keys:
           fingerprints:
-            - "<< MATCH_GIT_SSH_FINGERPRINT >>"
+            - "{{ MATCH_GIT_SSH_FINGERPRINT }}"
+
   unit-tests:
     macos:
       xcode: "11.3.1"
