@@ -79,7 +79,7 @@ jobs:
           at: .
       - add_ssh_keys: 
           fingerprints:
-            - {{ MATCH_GIT_SSH_FINGERPRINT }}
+            - "60:9b:99:39:c7:d9:31:df:6b:51:73:2d:be:31:c9:5e"
       - run:
           name: Build QA
           command: bundle exec fastlane qa
@@ -91,7 +91,7 @@ jobs:
           at: .
       - add_ssh_keys: 
             fingerprints:
-              - {{ MATCH_GIT_SSH_FINGERPRINT }}
+              - "60:9b:99:39:c7:d9:31:df:6b:51:73:2d:be:31:c9:5e"
       - run:
           name: Build Production
           command: bundle exec fastlane prod
@@ -103,7 +103,7 @@ jobs:
           at: .
       - add_ssh_keys: 
             fingerprints:
-              - {{ MATCH_GIT_SSH_FINGERPRINT }}
+              - "60:9b:99:39:c7:d9:31:df:6b:51:73:2d:be:31:c9:5e"
       - run:
           name: Build Production Enterprise
           command: bundle exec fastlane prodenterprise
@@ -115,7 +115,7 @@ jobs:
           at: .
       - add_ssh_keys:
           fingerprints:
-            - {{ MATCH_GIT_SSH_FINGERPRINT }}
+            - "60:9b:99:39:c7:d9:31:df:6b:51:73:2d:be:31:c9:5e"
       - run:
           name: Build QA
           command: bundle exec fastlane qa skipupload:true
@@ -127,7 +127,7 @@ jobs:
           at: .
       - add_ssh_keys:
           fingerprints:
-            - {{ MATCH_GIT_SSH_FINGERPRINT }}
+            - "60:9b:99:39:c7:d9:31:df:6b:51:73:2d:be:31:c9:5e"
       - run:
           name: Build Production
           command: bundle exec fastlane prod skipupload:true
@@ -139,7 +139,7 @@ jobs:
           at: .
       - add_ssh_keys:
           fingerprints:
-            - {{ MATCH_GIT_SSH_FINGERPRINT }}
+            - "60:9b:99:39:c7:d9:31:df:6b:51:73:2d:be:31:c9:5e"
       - run:
           name: Build Production Enterprise
           command: bundle exec fastlane prodenterprise skipupload:true
